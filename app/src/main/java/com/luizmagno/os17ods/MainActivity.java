@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity
         //Set Fragment Home
         fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.content_fragment, new HomeFragment())
+                .replace(R.id.content_fragment, new HomeFragment(), "home")
                 .commit();
     }
 
@@ -66,9 +66,25 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
 
         //Se o Nav está aberto e a Pilha de Fragments é > 0
-        if (drawer.isDrawerOpen(GravityCompat.START) && fragmentManager.getBackStackEntryCount() > 0) {
+        if (drawer.isDrawerOpen(GravityCompat.START) ) {
+
             drawer.closeDrawer(GravityCompat.START);
+
+        } else if(fragmentManager.getBackStackEntryCount() > 0) {
+
+            fragmentManager.beginTransaction()
+                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                    .replace(R.id.content_fragment, new HomeFragment(), "home")
+                    .commit();
             fragmentManager.popBackStack();
+
+        } else if(fragmentManager.getBackStackEntryCount() == 0 && fragmentManager.getFragments().size() == 1 && fragmentManager.findFragmentByTag("home") == null) {
+
+            fragmentManager.beginTransaction()
+                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                    .replace(R.id.content_fragment, new HomeFragment(), "home")
+                    .commit();
+
         } else {
             super.onBackPressed();
         }
@@ -94,15 +110,32 @@ public class MainActivity extends AppCompatActivity
             return true;
         } else if (id == R.id.action_home) {
 
-            verifyStackOfFragments();
-
             //Não coloca o home na Pilha de Fragments
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_fragment, new HomeFragment())
-                    .commit();
+            if (fragmentManager.getBackStackEntryCount() > 0) {
+                fragmentManager.beginTransaction()
+                        .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                        .replace(R.id.content_fragment, new HomeFragment(), "home")
+                        .commit();
+                //Set Toolbar
+                toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                toolbar.setTitle(R.string.app_name);
 
-            toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-            toolbar.setTitle(R.string.app_name);
+                //Retira o Fragment anterior da Pilha
+                verifyStackOfFragments();
+
+            } else if (fragmentManager.getBackStackEntryCount() == 0 && fragmentManager.getFragments().size() == 1 && fragmentManager.findFragmentByTag("home") == null) {
+                fragmentManager.beginTransaction()
+                        .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                        .replace(R.id.content_fragment, new HomeFragment(), "home")
+                        .commit();
+                //Set Toolbar
+                toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                toolbar.setTitle(R.string.app_name);
+
+                //Retira o Fragment anterior da Pilha
+                verifyStackOfFragments();
+            }
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -116,39 +149,47 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_declaration) {
 
-            verifyStackOfFragments();
+            //Abre o Fragment Declaração
             fragmentManager.beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new DeclarationFragment())
-                    .addToBackStack(null)
+                    //.addToBackStack(null)
                     .commit();
+            //Retira o Fragment anterior da Pilha
+            //verifyStackOfFragments();
 
         } else if (id == R.id.nav_docs) {
 
-            verifyStackOfFragments();
+            //Abre Fragment Documentos
             fragmentManager.beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new DocumentsFragment())
-                    .addToBackStack(null)
+                    //.addToBackStack(null)
                     .commit();
+            //Retira o Fragment anterior da Pilha
+            //verifyStackOfFragments();
 
         } else if (id == R.id.nav_cupula) {
 
-            verifyStackOfFragments();
+            //Abre o Fragment Cupula
             fragmentManager.beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new CupulaFragment())
-                    .addToBackStack(null)
+                    //.addToBackStack(null)
                     .commit();
+            //Retira o Fragment anterior da Pilha
+            //verifyStackOfFragments();
 
         } else if (id == R.id.nav_agenda) {
 
-            verifyStackOfFragments();
+            //Abre o Fragment Agenda
             fragmentManager.beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new AgendaFragment())
-                    .addToBackStack(null)
+                    //.addToBackStack(null)
                     .commit();
+            //Retira o Fragment anterior da Pilha
+            //verifyStackOfFragments();
 
         } else if (id == R.id.nav_send) {
 
