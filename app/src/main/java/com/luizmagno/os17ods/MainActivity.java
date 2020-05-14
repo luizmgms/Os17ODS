@@ -72,18 +72,12 @@ public class MainActivity extends AppCompatActivity
 
         } else if(fragmentManager.getBackStackEntryCount() > 0) {
 
-            fragmentManager.beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                    .replace(R.id.content_fragment, new HomeFragment(), "home")
-                    .commit();
+            setHome();
             fragmentManager.popBackStack();
 
         } else if(fragmentManager.getBackStackEntryCount() == 0 && fragmentManager.getFragments().size() == 1 && fragmentManager.findFragmentByTag("home") == null) {
 
-            fragmentManager.beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                    .replace(R.id.content_fragment, new HomeFragment(), "home")
-                    .commit();
+            setHome();
 
         } else {
             super.onBackPressed();
@@ -112,28 +106,14 @@ public class MainActivity extends AppCompatActivity
 
             //Não coloca o home na Pilha de Fragments
             if (fragmentManager.getBackStackEntryCount() > 0) {
-                fragmentManager.beginTransaction()
-                        .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                        .replace(R.id.content_fragment, new HomeFragment(), "home")
-                        .commit();
-                //Set Toolbar
-                toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                toolbar.setTitle(R.string.app_name);
 
-                //Retira o Fragment anterior da Pilha
+                setHome();
+                setToolbar();
                 verifyStackOfFragments();
 
             } else if (fragmentManager.getBackStackEntryCount() == 0 && fragmentManager.getFragments().size() == 1 && fragmentManager.findFragmentByTag("home") == null) {
-                fragmentManager.beginTransaction()
-                        .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                        .replace(R.id.content_fragment, new HomeFragment(), "home")
-                        .commit();
-                //Set Toolbar
-                toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                toolbar.setTitle(R.string.app_name);
-
-                //Retira o Fragment anterior da Pilha
-                verifyStackOfFragments();
+                setHome();
+                setToolbar();
             }
 
         }
@@ -153,10 +133,7 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new DeclarationFragment())
-                    //.addToBackStack(null)
                     .commit();
-            //Retira o Fragment anterior da Pilha
-            //verifyStackOfFragments();
 
         } else if (id == R.id.nav_docs) {
 
@@ -164,10 +141,7 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new DocumentsFragment())
-                    //.addToBackStack(null)
                     .commit();
-            //Retira o Fragment anterior da Pilha
-            //verifyStackOfFragments();
 
         } else if (id == R.id.nav_cupula) {
 
@@ -175,10 +149,7 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new CupulaFragment())
-                    //.addToBackStack(null)
                     .commit();
-            //Retira o Fragment anterior da Pilha
-            //verifyStackOfFragments();
 
         } else if (id == R.id.nav_agenda) {
 
@@ -186,10 +157,7 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new AgendaFragment())
-                    //.addToBackStack(null)
                     .commit();
-            //Retira o Fragment anterior da Pilha
-            //verifyStackOfFragments();
 
         } else if (id == R.id.nav_send) {
 
@@ -207,4 +175,17 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    //Set Home
+    private void setHome(){
+        fragmentManager.beginTransaction()
+                .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                .replace(R.id.content_fragment, new HomeFragment(), "home")
+                .commit();
+    }
+
+    //Set Toolbar
+    private void setToolbar(){
+        toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        toolbar.setTitle(R.string.app_name);
+    }
 }
