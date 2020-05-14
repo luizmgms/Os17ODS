@@ -1,0 +1,549 @@
+<resources>
+
+    <string name="app_name">17 Objetivos</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Os 17 Objetivos para o Desenvolvimento Sustentável</string>
+    <string name="nav_header_subtitle">luiz.mg@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_about">Sobre</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_agenda">A Agenda 2030</string>
+    <string name="menu_declaration">A Declaração</string>
+    <string name="menu_docs">Documentos Temáticos</string>
+    <string name="menu_cupula">A Cúpula</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="splash_description">Os 17 Objetivos para o desenvolvimento sustentável da ONU</string>
+    <string name="logo_description">Os 17 Objetivos para um desenvolvimento sustentável</string>
+    <string name="url_nacoes_unidas_ods_2030">https://nacoesunidas.org/pos2015/agenda2030/</string>
+    <string name="ods1_description">Objetivo de Desenvolvimento Sustentável 1 - Erradicação da Pobreza</string>
+    <string name="ods2_description">Obetivo de Desenvolvimento Sustentável 2 - Fome Zero e Agricultura Sustentável</string>
+    <string name="ods3_description">Obetivo de Desenvolvimento Sustentável 3 - Boa Saúde e Bem-Estar</string>
+    <string name="ods4_description">Obetivo de Desenvolvimento Sustentável 4 - Educação de Qualidade</string>
+    <string name="ods5_description">Obetivo de Desenvolvimento Sustentável 5 - Igualdade de Gênero</string>
+    <string name="ods6_description">Obetivo de Desenvolvimento Sustentável 6 - Água Potável e Saneamento</string>
+    <string name="ods7_description">Obetivo de Desenvolvimento Sustentável 7 - Energia Limpa e Acessível</string>
+    <string name="ods8_description">Objetivo de Desenvolvimento Sustentável 8 - Trabalho Decente e Crescimento Econômico</string>
+    <string name="ods9_description">Obetivo de Desenvolvimento Sustentável 9 - Indústria, Inovação e Infraestrutura</string>
+    <string name="ods10_description">Obetivo de Desenvolvimento Sustentável 10 - Redução das Desilgualdades</string>
+    <string name="ods11_description">Obetivo de Desenvolvimento Sustentável 11 - Cidades e Comunidades Sustentáveis</string>
+    <string name="ods12_description">Obetivo de Desenvolvimento Sustentável 12 - Consumo e Produção Responsáveis</string>
+    <string name="ods13_description">Obetivo de Desenvolvimento Sustentável 13 - Ação Contra a Mudança Global do Clima</string>
+    <string name="ods14_description">Obetivo de Desenvolvimento Sustentável 14 - Vida na Água</string>
+    <string name="ods15_description">Obetivo de Desenvolvimento Sustentável 15 - Vida Terrestre</string>
+    <string name="ods16_description">Obetivo de Desenvolvimento Sustentável 16 - Paz, Justiça e Instituições Eficazes</string>
+    <string name="ods17_description">Obetivo de Desenvolvimento Sustentável 17 - Parcerias e Meios de Implantação</string>
+    <string name="ods_onu_desc">Os 17 Objetivos de Desenvolvimento Sustentáveis da ONU</string>
+    <string name="defaultNumberOfOds">1</string>
+    <string name="defaultTitleOfOds">ERRADIÇÃO DA POBREZA</string>
+    <string name="subTitleOfOds">Acabar com a pobreza em todas as suas formas, em todos os lugares</string>
+
+    <!--Strings of ODS - Titles-->
+    <string name="ods1_title">ERRADICAÇÃO DA POBREZA</string>
+    <string name="ods2_title">FOME ZERO E AGRICULTURA SUSTENTÁVEL</string>
+    <string name="ods3_title">SAÚDE E BEM-ESTAR</string>
+    <string name="ods4_title">EDUCAÇÃO DE QUALIDADE</string>
+    <string name="ods5_title">IGUALDADE DE GÊNERO</string>
+    <string name="ods6_title">ÁGUA POTÁVEL E SANEAMENTO</string>
+    <string name="ods7_title">ENERGIA LIMPA E ACESSÍVEL</string>
+    <string name="ods8_title">TRABALHO DECENTE E CRESCIMENTO ECONÔMICO</string>
+    <string name="ods9_title">INDÚSTRIA, INOVAÇÃO E INFRAESTRUTURA</string>
+    <string name="ods10_title">REDUÇÃO DAS DESIGUALDADES</string>
+    <string name="ods11_title">CIDADES E COMUNIDADES SUSTENTÁVEIS</string>
+    <string name="ods12_title">CONSUMO E PRODUÇÃO RESPONSÁVEIS</string>
+    <string name="ods13_title">AÇÃO CONTRA A MUDANÇA GLOBAL DO CLIMA</string>
+    <string name="ods14_title">VIDA NA ÁGUA</string>
+    <string name="ods15_title">VIDA TERRESTRE</string>
+    <string name="ods16_title">PAZ, JUSTIÇA E INSTITUIÇÕES EFICAZES</string>
+    <string name="ods17_title">PARCERIAS E MEIOS DE IMPLANTAÇÃO</string>
+    <string name="ods_onu_title">TRANSFORMANDO NOSSO MUNDO:</string>
+
+    <!--Strings of ODS - Subtitles-->
+    <string name="ods1_subtitle">Acabar com a pobreza em todas as suas formas, em todos os lugares</string>
+    <string name="ods2_subtitle">Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável</string>
+    <string name="ods3_subtitle">Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades</string>
+    <string name="ods4_subtitle">Assegurar a educação inclusiva e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos</string>
+    <string name="ods5_subtitle">Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas</string>
+    <string name="ods6_subtitle">Assegurar a disponibilidade e gestão sustentável da água e saneamento para todos</string>
+    <string name="ods7_subtitle">Assegurar o acesso confiável, sustentável, moderno e a preço acessível à energia para todos</string>
+    <string name="ods8_subtitle">Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo e trabalho decente para todos</string>
+    <string name="ods9_subtitle">Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação</string>
+    <string name="ods10_subtitle">Reduzir a desigualdade dentro dos países e entre eles</string>
+    <string name="ods11_subtitle">Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis</string>
+    <string name="ods12_subtitle">Assegurar padrões de produção e de consumo sustentáveis</string>
+    <string name="ods13_subtitle">Tomar medidas urgentes para combater a mudança do clima e seus impactos(*)</string>
+    <string name="ods14_subtitle">Conservação e uso sustentável dos oceanos, dos mares e dos recursos marinhos para o desenvolvimento sustentável</string>
+    <string name="ods15_subtitle">Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade</string>
+    <string name="ods16_subtitle">Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis</string>
+    <string name="ods17_subtitle">Fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável</string>
+    <string name="ods_onu_subtitle">A Agenda 2030 para o Desenvolvimento Sustentável</string>
+
+
+    <!--Strings of ODS - Descriptions-->
+    <string name="ods1_desc">
+        1.1 Até 2030, erradicar a pobreza extrema para todas as pessoas em todos os lugares, atualmente medida como pessoas vivendo com menos de US$ 1,90 por dia.\n
+
+        \n1.2 Até 2030, reduzir pelo menos à metade a proporção de homens, mulheres e crianças, de todas as idades, que vivem na pobreza, em todas as suas dimensões, de acordo com as definições nacionais.\n
+
+        \n1.3 Implementar, em nível nacional, medidas e sistemas de proteção social adequados, para todos, incluindo pisos, e até 2030 atingir a cobertura substancial dos pobres e vulneráveis.\n
+
+        \n1.4 Até 2030, garantir que todos os homens e mulheres, particularmente os pobres e vulneráveis, tenham direitos iguais aos recursos econômicos, bem como o acesso a serviços básicos, propriedade e controle sobre a terra e outras formas de propriedade, herança, recursos naturais, novas tecnologias apropriadas e serviços financeiros, incluindo microfinanças.\n
+
+        \n1.5 Até 2030, construir a resiliência dos pobres e daqueles em situação de vulnerabilidade, e reduzir a exposição e vulnerabilidade destes a eventos extremos relacionados com o clima e outros choques e desastres econômicos, sociais e ambientais.\n
+
+        \n1.a Garantir uma mobilização significativa de recursos a partir de uma variedade de fontes, inclusive por meio do reforço da cooperação para o desenvolvimento, para proporcionar meios adequados e previsíveis para que os países em desenvolvimento, em particular os países menos desenvolvidos, implementem programas e políticas para acabar com a pobreza em todas as suas dimensões.\n
+
+        \n1.b Criar marcos políticos sólidos em níveis nacional, regional e internacional, com base em estratégias de desenvolvimento a favor dos pobres e sensíveis a gênero, para apoiar investimentos acelerados nas ações de erradicação da pobreza.\n
+    </string>
+    <string name="ods2_desc">
+        2.1 Até 2030, acabar com a fome e garantir o acesso de todas as pessoas, em particular os pobres e pessoas em situações vulneráveis, incluindo crianças, a alimentos seguros, nutritivos e suficientes durante todo o ano.\n
+
+        \n2.2 Até 2030, acabar com todas as formas de desnutrição, incluindo atingir, até 2025, as metas acordadas internacionalmente sobre nanismo e caquexia em crianças menores de cinco anos de idade, e atender às necessidades nutricionais dos adolescentes, mulheres grávidas e lactantes e pessoas idosas.\n
+
+        \n2.3 Até 2030, dobrar a produtividade agrícola e a renda dos pequenos produtores de alimentos, particularmente das mulheres, povos indígenas, agricultores familiares, pastores e pescadores, inclusive por meio de acesso seguro e igual à terra, outros recursos produtivos e insumos, conhecimento, serviços financeiros, mercados e oportunidades de agregação de valor e de emprego não agrícola.\n
+
+        \n2.4 Até 2030, garantir sistemas sustentáveis de produção de alimentos e implementar práticas agrícolas resilientes, que aumentem a produtividade e a produção, que ajudem a manter os ecossistemas, que fortaleçam a capacidade de adaptação às mudanças climáticas, às condições meteorológicas extremas, secas, inundações e outros desastres, e que melhorem progressivamente a qualidade da terra e do solo.\n
+
+        \n2.5 Até 2020, manter a diversidade genética de sementes, plantas cultivadas, animais de criação e domesticados e suas respectivas espécies selvagens, inclusive por meio de bancos de sementes e plantas diversificados e bem geridos em nível nacional, regional e internacional, e garantir o acesso e a repartição justa e equitativa dos benefícios decorrentes da utilização dos recursos genéticos e conhecimentos tradicionais associados, como acordado internacionalmente.\n
+
+        \n2.a Aumentar o investimento, inclusive via o reforço da cooperação internacional, em infraestrutura rural, pesquisa e extensão de serviços agrícolas, desenvolvimento de tecnologia, e os bancos de genes de plantas e animais, para aumentar a capacidade de produção agrícola nos países em desenvolvimento, em particular nos países menos desenvolvidos.\n
+
+        \n2.b Corrigir e prevenir as restrições ao comércio e distorções nos mercados agrícolas mundiais, incluindo a eliminação paralela de todas as formas de subsídios à exportação e todas as medidas de exportação com efeito equivalente, de acordo com o mandato da Rodada de Desenvolvimento de Doha.\n
+
+        \n2.c Adotar medidas para garantir o funcionamento adequado dos mercados de commodities de alimentos e seus derivados, e facilitar o acesso oportuno à informação de mercado, inclusive sobre as reservas de alimentos, a fim de ajudar a limitar a volatilidade extrema dos preços dos alimentos.\n
+    </string>
+    <string name="ods3_desc">
+        3.1 Até 2030, reduzir a taxa de mortalidade materna global para menos de 70 mortes por 100.000 nascidos vivos.\n
+
+        \n3.2 Até 2030, acabar com as mortes evitáveis de recém-nascidos e crianças menores de 5 anos, com todos os países objetivando reduzir a mortalidade neonatal para pelo menos 12 por 1.000 nascidos vivos e a mortalidade de crianças menores de 5 anos para pelo menos 25 por 1.000 nascidos vivos.\n
+
+        \n3.3 Até 2030, acabar com as epidemias de AIDS, tuberculose, malária e doenças tropicais negligenciadas, e combater a hepatite, doenças transmitidas pela água, e outras doenças transmissíveis.\n
+
+        \n3.4 Até 2030, reduzir em um terço a mortalidade prematura por doenças não transmissíveis via prevenção e tratamento, e promover a saúde mental e o bem-estar.\n
+
+        \n3.5 Reforçar a prevenção e o tratamento do abuso de substâncias, incluindo o abuso de drogas entorpecentes e uso nocivo do álcool.\n
+
+        \n3.6 Até 2020, reduzir pela metade as mortes e os ferimentos globais por acidentes em estradas.\n
+
+        \n3.7 Até 2030, assegurar o acesso universal aos serviços de saúde sexual e reprodutiva, incluindo o planejamento familiar, informação e educação, bem como a integração da saúde reprodutiva em estratégias e programas nacionais.\n
+
+        \n3.8 Atingir a cobertura universal de saúde, incluindo a proteção do risco financeiro, o acesso a serviços de saúde essenciais de qualidade e o acesso a medicamentos e vacinas essenciais seguros, eficazes, de qualidade e a preços acessíveis para todos.\n
+
+        \n3.9 Até 2030, reduzir substancialmente o número de mortes e doenças por produtos químicos perigosos, contaminação e poluição do ar e água do solo.\n
+
+        \n3.a Fortalecer a implementação da Convenção-Quadro para o Controle do Tabaco em todos os países, conforme apropriado.\n
+
+        \n3.b Apoiar a pesquisa e o desenvolvimento de vacinas e medicamentos para as doenças transmissíveis e não transmissíveis, que afetam principalmente os países em desenvolvimento, proporcionar o acesso a medicamentos e vacinas essenciais a preços acessíveis, de acordo com a Declaração de Doha, que afirma o direito dos países em desenvolvimento de utilizarem plenamente as disposições do acordo TRIPS sobre flexibilidades para proteger a saúde pública e, em particular, proporcionar o acesso a medicamentos para todos.\n
+
+        \n3.c Aumentar substancialmente o financiamento da saúde e o recrutamento, desenvolvimento e formação, e retenção do pessoal de saúde nos países em desenvolvimento, especialmente nos países menos desenvolvidos e nos pequenos Estados insulares em desenvolvimento
+
+        \n3.d Reforçar a capacidade de todos os países, particularmente os países em desenvolvimento, para o alerta precoce, redução de riscos e gerenciamento de riscos nacionais e globais de saúde
+    </string>
+    <string name="ods4_desc">
+        4.1 Até 2030, garantir que todas as meninas e meninos completem o ensino primário e secundário livre, equitativo e de qualidade, que conduza a resultados de aprendizagem relevantes e eficazes.\n
+
+        \n4.2 Até 2030, garantir que todos as meninas e meninos tenham acesso a um desenvolvimento de qualidade na primeira infância, cuidados e educação pré-escolar, de modo que eles estejam prontos para o ensino primário.\n
+
+        \n4.3 Até 2030, assegurar a igualdade de acesso para todos os homens e mulheres à educação técnica, profissional e superior de qualidade, a preços acessíveis, incluindo universidade.\n
+
+        \n4.4 Até 2030, aumentar substancialmente o número de jovens e adultos que tenham habilidades relevantes, inclusive competências técnicas e profissionais, para emprego, trabalho decente e empreendedorismo.\n
+
+        \n4.5 Até 2030, eliminar as disparidades de gênero na educação e garantir a igualdade de acesso a todos os níveis de educação e formação profissional para os mais vulneráveis, incluindo as pessoas com deficiência, povos indígenas e as crianças em situação de vulnerabilidade.\n
+
+        \n4.6 Até 2030, garantir que todos os jovens e uma substancial proporção dos adultos, homens e mulheres estejam alfabetizados e tenham adquirido o conhecimento básico de matemática.\n
+
+        \n4.7 Até 2030, garantir que todos os alunos adquiram conhecimentos e habilidades necessárias para promover o desenvolvimento sustentável, inclusive, entre outros, por meio da educação para o desenvolvimento sustentável e estilos de vida sustentáveis, direitos humanos, igualdade de gênero, promoção de uma cultura de paz e não violência, cidadania global e valorização da diversidade cultural e da contribuição da cultura para o desenvolvimento sustentável.\n
+
+        \n4.a Construir e melhorar instalações físicas para educação, apropriadas para crianças e sensíveis às deficiências e ao gênero, e que proporcionem ambientes de aprendizagem seguros e não violentos, inclusivos e eficazes para todos.\n
+
+        \n4.b Até 2020, substancialmente ampliar globalmente o número de bolsas de estudo para os países em desenvolvimento, em particular os países menos desenvolvidos, pequenos Estados insulares em desenvolvimento e os países africanos, para o ensino superior, incluindo programas de formação profissional, de tecnologia da informação e da comunicação, técnicos, de engenharia e programas científicos em países desenvolvidos e outros países em desenvolvimento.\n
+
+        \n4.c Até 2030, substancialmente aumentar o contingente de professores qualificados, inclusive por meio da cooperação internacional para a formação de professores, nos países em desenvolvimento, especialmente os países menos desenvolvidos e pequenos Estados insulares em desenvolvimento.\n
+    </string>
+    <string name="ods5_desc">
+        5.1 Acabar com todas as formas de discriminação contra todas as mulheres e meninas em toda parte.\n
+
+        \n5.2 Eliminar todas as formas de violência contra todas as mulheres e meninas nas esferas públicas e privadas, incluindo o tráfico e exploração sexual e de outros tipos.\n
+
+        \n5.3 Eliminar todas as práticas nocivas, como os casamentos prematuros, forçados e de crianças e mutilações genitais femininas.\n
+
+        \n5.4 Reconhecer e valorizar o trabalho de assistência e doméstico não remunerado, por meio da disponibilização de serviços públicos, infraestrutura e políticas de proteção social, bem como a promoção da responsabilidade compartilhada dentro do lar e da família, conforme os contextos nacionais.\n
+
+        \n5.5 Garantir a participação plena e efetiva das mulheres e a igualdade de oportunidades para a liderança em todos os níveis de tomada de decisão na vida política, econômica e pública.\n
+
+        \n5.6 Assegurar o acesso universal à saúde sexual e reprodutiva e os direitos reprodutivos, como acordado em conformidade com o Programa de Ação da Conferência Internacional sobre População e Desenvolvimento e com a Plataforma de Ação de Pequim e os documentos resultantes de suas conferências de revisão.\n
+
+        \n5.a Realizar reformas para dar às mulheres direitos iguais aos recursos econômicos, bem como o acesso a propriedade e controle sobre a terra e outras formas de propriedade, serviços financeiros, herança e os recursos naturais, de acordo com as leis nacionais.\n
+
+        \n5.b Aumentar o uso de tecnologias de base, em particular as tecnologias de informação e comunicação, para promover o empoderamento das mulheres.\n
+
+        \n5.c Adotar e fortalecer políticas sólidas e legislação aplicável para a promoção da igualdade de gênero e o empoderamento de todas as mulheres e meninas em todos os níveis.\n
+    </string>
+    <string name="ods6_desc">
+        6.1 Até 2030, alcançar o acesso universal e equitativo a água potável e segura para todos.\n
+
+        \n6.2 Até 2030, alcançar o acesso a saneamento e higiene adequados e equitativos para todos, e acabar com a defecação a céu aberto, com especial atenção para as necessidades das mulheres e meninas e daqueles em situação de vulnerabilidade.\n
+
+        \n6.3 Até 2030, melhorar a qualidade da água, reduzindo a poluição, eliminando despejo e minimizando a liberação de produtos químicos e materiais perigosos, reduzindo à metade a proporção de águas residuais não tratadas e aumentando substancialmente a reciclagem e reutilização segura globalmente.\n
+
+        \n6.4 Até 2030, aumentar substancialmente a eficiência do uso da água em todos os setores e assegurar retiradas sustentáveis e o abastecimento de água doce para enfrentar a escassez de água, e reduzir substancialmente o número de pessoas que sofrem com a escassez de água.\n
+
+        \n6.5 Até 2030, implementar a gestão integrada dos recursos hídricos em todos os níveis, inclusive via cooperação transfronteiriça, conforme apropriado.\n
+
+        \n6.6 Até 2020, proteger e restaurar ecossistemas relacionados com a água, incluindo montanhas, florestas, zonas úmidas, rios, aquíferos e lagos.\n
+
+        \n6.a Até 2030, ampliar a cooperação internacional e o apoio à capacitação para os países em desenvolvimento em atividades e programas relacionados à água e saneamento, incluindo a coleta de água, a dessalinização, a eficiência no uso da água, o tratamento de efluentes, a reciclagem e as tecnologias de reuso.\n
+
+        \n6.b Apoiar e fortalecer a participação das comunidades locais, para melhorar a gestão da água e do saneamento.\n
+    </string>
+    <string name="ods7_desc">
+        7.1 Até 2030, assegurar o acesso universal, confiável, moderno e a preços acessíveis a serviços de energia.\n
+
+        \n7.2 Até 2030, aumentar substancialmente a participação de energias renováveis na matriz energética global.\n
+
+        \n7.3 Até 2030, dobrar a taxa global de melhoria da eficiência energética.\n
+
+        \n7.a Até 2030, reforçar a cooperação internacional para facilitar o acesso a pesquisa e tecnologias de energia limpa, incluindo energias renováveis, eficiência energética e tecnologias de combustíveis fósseis avançadas e mais limpas, e promover o investimento em infraestrutura de energia e em tecnologias de energia limpa.\n
+
+        \n7.b Até 2030, expandir a infraestrutura e modernizar a tecnologia para o fornecimento de serviços de energia modernos e sustentáveis para todos nos países em desenvolvimento, particularmente nos países menos desenvolvidos, nos pequenos Estados insulares em desenvolvimento e nos países em desenvolvimento sem litoral, de acordo com seus respectivos programas de apoio.\n
+    </string>
+    <string name="ods8_desc">
+        8.1 Sustentar o crescimento econômico per capita de acordo com as circunstâncias nacionais e, em particular, um crescimento anual de pelo menos 7% do produto interno bruto [PIB] nos países menos desenvolvidos.\n
+
+        \n8.2 Atingir níveis mais elevados de produtividade das economias por meio da diversificação, modernização tecnológica e inovação, inclusive por meio de um foco em setores de alto valor agregado e dos setores intensivos em mão de obra.\n
+
+        \n8.3 Promover políticas orientadas para o desenvolvimento que apoiem as atividades produtivas, geração de emprego decente, empreendedorismo, criatividade e inovação, e incentivar a formalização e o crescimento das micro, pequenas e médias empresas, inclusive por meio do acesso a serviços financeiros.\n
+
+        \n8.4 Melhorar progressivamente, até 2030, a eficiência dos recursos globais no consumo e na produção, e empenhar-se para dissociar o crescimento econômico da degradação ambiental, de acordo com o Plano Decenal de Programas sobre Produção e Consumo Sustentáveis, com os países desenvolvidos assumindo a liderança.\n
+
+        \n8.5 Até 2030, alcançar o emprego pleno e produtivo e trabalho decente para todas as mulheres e homens, inclusive para os jovens e as pessoas com deficiência, e remuneração igual para trabalho de igual valor.\n
+
+        \n8.6 Até 2020, reduzir substancialmente a proporção de jovens sem emprego, educação ou formação.\n
+
+        \n8.7 Tomar medidas imediatas e eficazes para erradicar o trabalho forçado, acabar com a escravidão moderna e o tráfico de pessoas, e assegurar a proibição e eliminação das piores formas de trabalho infantil, incluindo recrutamento e utilização de crianças-soldado, e até 2025 acabar com o trabalho infantil em todas as suas formas.\n
+
+        \n8.8 Proteger os direitos trabalhistas e promover ambientes de trabalho seguros e protegidos para todos os trabalhadores, incluindo os trabalhadores migrantes, em particular as mulheres migrantes, e pessoas em empregos precários.\n
+
+        \n8.9 Até 2030, elaborar e implementar políticas para promover o turismo sustentável, que gera empregos e promove a cultura e os produtos locais.\n
+
+        \n8.10 Fortalecer a capacidade das instituições financeiras nacionais para incentivar a expansão do acesso aos serviços bancários, de seguros e financeiros para todos.\n
+
+        \n8.a Aumentar o apoio da Iniciativa de Ajuda para o Comércio [Aid for Trade] para os países em desenvolvimento, particularmente os países menos desenvolvidos, inclusive por meio do Quadro Integrado Reforçado para a Assistência Técnica Relacionada com o Comércio para os países menos desenvolvidos.\n
+
+        \n8.b Até 2020, desenvolver e operacionalizar uma estratégia global para o emprego dos jovens e implementar o Pacto Mundial para o Emprego da Organização Internacional do Trabalho [OIT].\n
+    </string>
+    <string name="ods9_desc">
+        9.1 Desenvolver infraestrutura de qualidade, confiável, sustentável e resiliente, incluindo infraestrutura regional e transfronteiriça, para apoiar o desenvolvimento econômico e o bem-estar humano, com foco no acesso equitativo e a preços acessíveis para todos.\n
+
+        \n9.2 Promover a industrialização inclusiva e sustentável e, até 2030, aumentar significativamente a participação da indústria no setor de emprego e no PIB, de acordo com as circunstâncias nacionais, e dobrar sua participação nos países menos desenvolvidos.\n
+
+        \n9.3 Aumentar o acesso das pequenas indústrias e outras empresas, particularmente em países em desenvolvimento, aos serviços financeiros, incluindo crédito acessível e sua integração em cadeias de valor e mercados.\n
+
+        \n9.4 Até 2030, modernizar a infraestrutura e reabilitar as indústrias para torná-las sustentáveis, com eficiência aumentada no uso de recursos e maior adoção de tecnologias e processos industriais limpos e ambientalmente corretos; com todos os países atuando de acordo com suas respectivas capacidades.\n
+
+        \n9.5 Fortalecer a pesquisa científica, melhorar as capacidades tecnológicas de setores industriais em todos os países, particularmente os países em desenvolvimento, inclusive, até 2030, incentivando a inovação e aumentando substancialmente o número de trabalhadores de pesquisa e desenvolvimento por milhão de pessoas e os gastos público e privado em pesquisa e desenvolvimento.\n
+
+        \n9.a Facilitar o desenvolvimento de infraestrutura sustentável e resiliente em países em desenvolvimento, por meio de maior apoio financeiro, tecnológico e técnico aos países africanos, aos países menos desenvolvidos, aos países em desenvolvimento sem litoral e aos pequenos Estados insulares em desenvolvimento.\n
+
+        \n9.b Apoiar o desenvolvimento tecnológico, a pesquisa e a inovação nacionais nos países em desenvolvimento, inclusive garantindo um ambiente político propício para, entre outras coisas, a diversificação industrial e a agregação de valor às commodities.\n
+
+        \n9.c Aumentar significativamente o acesso às tecnologias de informação e comunicação e se empenhar para oferecer acesso universal e a preços acessíveis à internet nos países menos desenvolvidos, até 2020.\n
+    </string>
+    <string name="ods10_desc">
+        10.1 Até 2030, progressivamente alcançar e sustentar o crescimento da renda dos 40% da população mais pobre a uma taxa maior que a média nacional.\n
+
+        \n10.2 Até 2030, empoderar e promover a inclusão social, econômica e política de todos, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra.\n
+
+        \n10.3 Garantir a igualdade de oportunidades e reduzir as desigualdades de resultados, inclusive por meio da eliminação de leis, políticas e práticas discriminatórias e da promoção de legislação, políticas e ações adequadas a este respeito.\n
+
+        \n10.4 Adotar políticas, especialmente fiscal, salarial e de proteção social, e alcançar progressivamente uma maior igualdade.\n
+
+        \n10.5 Melhorar a regulamentação e monitoramento dos mercados e instituições financeiras globais e fortalecer a implementação de tais regulamentações.\n
+
+        \n10.6 Assegurar uma representação e voz mais forte dos países em desenvolvimento em tomadas de decisão nas instituições econômicas e financeiras internacionais globais, a fim de produzir instituições mais eficazes, críveis, responsáveis e legítimas.\n
+
+        \n10.7 Facilitar a migração e a mobilidade ordenada, segura, regular e responsável das pessoas, inclusive por meio da implementação de políticas de migração planejadas e bem geridas.\n
+
+        \n10.a Implementar o princípio do tratamento especial e diferenciado para países em desenvolvimento, em particular os países menos desenvolvidos, em conformidade com os acordos da OMC.\n
+
+        \n10.b Incentivar a assistência oficial ao desenvolvimento e fluxos financeiros, incluindo o investimento externo direto, para os Estados onde a necessidade é maior, em particular os países menos desenvolvidos, os países africanos, os pequenos Estados insulares em desenvolvimento e os países em desenvolvimento sem litoral, de acordo com seus planos e programas nacionais.\n
+
+        \n10.c Até 2030, reduzir para menos de 3% os custos de transação de remessas dos migrantes e eliminar os corredores de remessas com custos superiores a 5%.\n
+    </string>
+    <string name="ods11_desc">
+        11.1 Até 2030, garantir o acesso de todos à habitação segura, adequada e a preço acessível, e aos serviços básicos e urbanizar as favelas.\n
+
+        \n11.2 Até 2030, proporcionar o acesso a sistemas de transporte seguros, acessíveis, sustentáveis e a preço acessível para todos, melhorando a segurança rodoviária por meio da expansão dos transportes públicos, com especial atenção para as necessidades das pessoas em situação de vulnerabilidade, mulheres, crianças, pessoas com deficiência e idosos.\n
+
+        \n11.3 Até 2030, aumentar a urbanização inclusiva e sustentável, e as capacidades para o planejamento e gestão de assentamentos humanos participativos, integrados e sustentáveis, em todos os países.\n
+
+        \n11.4 Fortalecer esforços para proteger e salvaguardar o patrimônio cultural e natural do mundo.\n
+
+        \n11.5 Até 2030, reduzir significativamente o número de mortes e o número de pessoas afetadas por catástrofes e substancialmente diminuir as perdas econômicas diretas causadas por elas em relação ao produto interno bruto global, incluindo os desastres relacionados à água, com o foco em proteger os pobres e as pessoas em situação de vulnerabilidade.\n
+
+        \n11.6 Até 2030, reduzir o impacto ambiental negativo per capita das cidades, inclusive prestando especial atenção à qualidade do ar, gestão de resíduos municipais e outros.\n
+
+        \n11.7 Até 2030, proporcionar o acesso universal a espaços públicos seguros, inclusivos, acessíveis e verdes, particularmente para as mulheres e crianças, pessoas idosas e pessoas com deficiência.\n
+
+        \n11.a Apoiar relações econômicas, sociais e ambientais positivas entre áreas urbanas, periurbanas e rurais, reforçando o planejamento nacional e regional de desenvolvimento.\n
+
+        \n11.b Até 2020, aumentar substancialmente o número de cidades e assentamentos humanos adotando e implementando políticas e planos integrados para a inclusão, a eficiência dos recursos, mitigação e adaptação às mudanças climáticas, a resiliência a desastres; e desenvolver e implementar, de acordo com o Marco de Sendai para a Redução do Risco de Desastres 2015-2030, o gerenciamento holístico do risco de desastres em todos os níveis.\n
+
+        \n11.c Apoiar os países menos desenvolvidos, inclusive por meio de assistência técnica e financeira, para construções sustentáveis e resilientes, utilizando materiais locais.\n
+    </string>
+    <string name="ods12_desc">
+        12.1 Implementar o Plano Decenal de Programas sobre Produção e Consumo Sustentáveis, com todos os países tomando medidas, e os países desenvolvidos assumindo a liderança, tendo em conta o desenvolvimento e as capacidades dos países em desenvolvimento.\n
+
+        \n12.2 Até 2030, alcançar a gestão sustentável e o uso eficiente dos recursos naturais.\n
+
+        \n12.3 Até 2030, reduzir pela metade o desperdício de alimentos per capita mundial, nos níveis de varejo e do consumidor, e reduzir as perdas de alimentos ao longo das cadeias de produção e abastecimento, incluindo as perdas pós-colheita.\n
+
+        \n12.4 Até 2020, alcançar o manejo ambientalmente saudável dos produtos químicos e todos os resíduos, ao longo de todo o ciclo de vida destes, de acordo com os marcos internacionais acordados, e reduzir significativamente a liberação destes para o ar, água e solo, para minimizar seus impactos negativos sobre a saúde humana e o meio ambiente.\n
+
+        \n12.5 Até 2030, reduzir substancialmente a geração de resíduos por meio da prevenção, redução, reciclagem e reuso.\n
+
+        \n12.6 Incentivar as empresas, especialmente as empresas grandes e transnacionais, a adotar práticas sustentáveis e a integrar informações de sustentabilidade em seu ciclo de relatórios.\n
+
+        \n12.7 Promover práticas de compras públicas sustentáveis, de acordo com as políticas e prioridades nacionais.\n
+
+        \n12.8 Até 2030, garantir que as pessoas, em todos os lugares, tenham informação relevante e conscientização para o desenvolvimento sustentável e estilos de vida em harmonia com a natureza.\n
+
+        \n12.a Apoiar países em desenvolvimento a fortalecer suas capacidades científicas e tecnológicas para mudar para padrões mais sustentáveis de produção e consumo.\n
+
+        \n12.b Desenvolver e implementar ferramentas para monitorar os impactos do desenvolvimento sustentável para o turismo sustentável, que gera empregos, promove a cultura e os produtos locais.\n
+
+        \n12.c Racionalizar subsídios ineficientes aos combustíveis fósseis, que encorajam o consumo exagerado, eliminando as distorções de mercado, de acordo com as circunstâncias nacionais, inclusive por meio da reestruturação fiscal e a eliminação gradual desses subsídios prejudiciais, caso existam, para refletir os seus impactos ambientais, tendo plenamente em conta as necessidades específicas e condições dos países em desenvolvimento e minimizando os possíveis impactos adversos sobre o seu desenvolvimento de uma forma que proteja os pobres e as comunidades afetadas.\n
+    </string>
+    <string name="ods13_desc">
+        13.1 Reforçar a resiliência e a capacidade de adaptação a riscos relacionados ao clima e às catástrofes naturais em todos os países.\n
+
+        \n13.2 Integrar medidas da mudança do clima nas políticas, estratégias e planejamentos nacionais.\n
+
+        \n13.3 Melhorar a educação, aumentar a conscientização e a capacidade humana e institucional sobre mitigação, adaptação, redução de impacto e alerta precoce da mudança do clima.\n
+
+        \n13.a Implementar o compromisso assumido pelos países desenvolvidos partes da Convenção Quadro das Nações Unidas sobre Mudança do Clima [UNFCCC] para a meta de mobilizar conjuntamente US$ 100 bilhões por ano a partir de 2020, de todas as fontes, para atender às necessidades dos países em desenvolvimento, no contexto das ações de mitigação significativas e transparência na implementação; e operacionalizar plenamente o Fundo Verde para o Clima por meio de sua capitalização o mais cedo possível.\n
+
+        \n13.b Promover mecanismos para a criação de capacidades para o planejamento relacionado à mudança do clima e à gestão eficaz, nos países menos desenvolvidos, inclusive com foco em mulheres, jovens, comunidades locais e marginalizadas.\n
+
+        \n(*) Reconhecendo que a Convenção Quadro das Nações Unidas sobre Mudança do Clima [UNFCCC] é o fórum internacional intergovernamental primário para negociar a resposta global à mudança do clima.\n
+    </string>
+    <string name="ods14_desc">
+        14.1 Até 2025, prevenir e reduzir significativamente a poluição marinha de todos os tipos, especialmente a advinda de atividades terrestres, incluindo detritos marinhos e a poluição por nutrientes.\n
+
+        \n14.2 Até 2020, gerir de forma sustentável e proteger os ecossistemas marinhos e costeiros para evitar impactos adversos significativos, inclusive por meio do reforço da sua capacidade de resiliência, e tomar medidas para a sua restauração, a fim de assegurar oceanos saudáveis e produtivos.\n
+
+        \n14.3 Minimizar e enfrentar os impactos da acidificação dos oceanos, inclusive por meio do reforço da cooperação científica em todos os níveis.\n
+
+        \n14.4 Até 2020, efetivamente regular a coleta, e acabar com a sobrepesca, ilegal, não reportada e não regulamentada e as práticas de pesca destrutivas, e implementar planos de gestão com base científica, para restaurar populações de peixes no menor tempo possível, pelo menos a níveis que possam produzir rendimento máximo sustentável, como determinado por suas características biológicas.\n
+
+        \n14.5 Até 2020, conservar pelo menos 10% das zonas costeiras e marinhas, de acordo com a legislação nacional e internacional, e com base na melhor informação científica disponível.\n
+
+        \n14.6 Até 2020, proibir certas formas de subsídios à pesca, que contribuem para a sobrecapacidade e a sobrepesca, e eliminar os subsídios que contribuam para a pesca ilegal, não reportada e não regulamentada, e abster-se de introduzir novos subsídios como estes, reconhecendo que o tratamento especial e diferenciado adequado e eficaz para os países em desenvolvimento e os países menos desenvolvidos deve ser parte integrante da negociação sobre subsídios à pesca da Organização Mundial do Comércio.\n
+
+        \n14.7 Até 2030, aumentar os benefícios econômicos para os pequenos Estados insulares em desenvolvimento e os países menos desenvolvidos, a partir do uso sustentável dos recursos marinhos, inclusive por meio de uma gestão sustentável da pesca, aquicultura e turismo.\n
+
+        \n14.a Aumentar o conhecimento científico, desenvolver capacidades de pesquisa e transferir tecnologia marinha, tendo em conta os critérios e orientações sobre a Transferência de Tecnologia Marinha da Comissão Oceanográfica Intergovernamental, a fim de melhorar a saúde dos oceanos e aumentar a contribuição da biodiversidade marinha para o desenvolvimento dos países em desenvolvimento, em particular os pequenos Estados insulares em desenvolvimento e os países menos desenvolvidos.\n
+
+        \n14.b Proporcionar o acesso dos pescadores artesanais de pequena escala aos recursos marinhos e mercados.\n
+
+        \n14.c Assegurar a conservação e o uso sustentável dos oceanos e seus recursos pela implementação do direito internacional, como refletido na UNCLOS [Convenção das Nações Unidas sobre o Direito do Mar], que provê o arcabouço legal para a conservação e utilização sustentável dos oceanos e dos seus recursos, conforme registrado no parágrafo 158 do “Futuro Que Queremos”.\n
+    </string>
+    <string name="ods15_desc">
+        15.1 Até 2020, assegurar a conservação, recuperação e uso sustentável de ecossistemas terrestres e de água doce interiores e seus serviços, em especial florestas, zonas úmidas, montanhas e terras áridas, em conformidade com as obrigações decorrentes dos acordos internacionais.\n
+
+        \n15.2 Até 2020, promover a implementação da gestão sustentável de todos os tipos de florestas, deter o desmatamento, restaurar florestas degradadas e aumentar substancialmente o florestamento e o reflorestamento globalmente.\n
+
+        \n15.3 Até 2030, combater a desertificação, restaurar a terra e o solo degradado, incluindo terrenos afetados pela desertificação, secas e inundações, e lutar para alcançar um mundo neutro em termos de degradação do solo.\n
+
+        \n15.4 Até 2030, assegurar a conservação dos ecossistemas de montanha, incluindo a sua biodiversidade, para melhorar a sua capacidade de proporcionar benefícios que são essenciais para o desenvolvimento sustentável.\n
+
+        \n15.5 Tomar medidas urgentes e significativas para reduzir a degradação de habitat naturais, deter a perda de biodiversidade e, até 2020, proteger e evitar a extinção de espécies ameaçadas.\n
+
+        \n15.6 Garantir uma repartição justa e equitativa dos benefícios derivados da utilização dos recursos genéticos e promover o acesso adequado aos recursos genéticos.\n
+
+        \n15.7 Tomar medidas urgentes para acabar com a caça ilegal e o tráfico de espécies da flora e fauna protegidas e abordar tanto a demanda quanto a oferta de produtos ilegais da vida selvagem.\n
+
+        \n15.8 Até 2020, implementar medidas para evitar a introdução e reduzir significativamente o impacto de espécies exóticas invasoras em ecossistemas terrestres e aquáticos, e controlar ou erradicar as espécies prioritárias.\n
+
+        \n15.9 Até 2020, integrar os valores dos ecossistemas e da biodiversidade ao planejamento nacional e local, nos processos de desenvolvimento, nas estratégias de redução da pobreza e nos sistemas de contas.\n
+
+        \n15.a Mobilizar e aumentar significativamente, a partir de todas as fontes, os recursos financeiros para a conservação e o uso sustentável da biodiversidade e dos ecossistemas.\n
+
+        \n15.b Mobilizar recursos significativos de todas as fontes e em todos os níveis para financiar o manejo florestal sustentável e proporcionar incentivos adequados aos países em desenvolvimento para promover o manejo florestal sustentável, inclusive para a conservação e o reflorestamento.\n
+
+        \n15.c Reforçar o apoio global para os esforços de combate à caça ilegal e ao tráfico de espécies protegidas, inclusive por meio do aumento da capacidade das comunidades locais para buscar oportunidades de subsistência sustentável.\n
+    </string>
+    <string name="ods16_desc">
+        16.1 Reduzir significativamente todas as formas de violência e as taxas de mortalidade relacionada em todos os lugares.\n
+
+        \n16.2 Acabar com abuso, exploração, tráfico e todas as formas de violência e tortura contra crianças.\n
+
+        \n16.3 Promover o Estado de Direito, em nível nacional e internacional, e garantir a igualdade de acesso à justiça para todos.\n
+
+        \n16.4 Até 2030, reduzir significativamente os fluxos financeiros e de armas ilegais, reforçar a recuperação e devolução de recursos roubados e combater todas as formas de crime organizado.\n
+
+        \n16.5 Reduzir substancialmente a corrupção e o suborno em todas as suas formas.\n
+
+        \n16.6 Desenvolver instituições eficazes, responsáveis e transparentes em todos os níveis.\n
+
+        \n16.7 Garantir a tomada de decisão responsiva, inclusiva, participativa e representativa em todos os níveis.\n
+
+        \n16.8 Ampliar e fortalecer a participação dos países em desenvolvimento nas instituições de governança global.\n
+
+        \n16.9 Até 2030, fornecer identidade legal para todos, incluindo o registro de nascimento.\n
+
+        \n16.10 Assegurar o acesso público à informação e proteger as liberdades fundamentais, em conformidade com a legislação nacional e os acordos internacionais.\n
+
+        \n16.a Fortalecer as instituições nacionais relevantes, inclusive por meio da cooperação internacional, para a construção de capacidades em todos os níveis, em particular nos países em desenvolvimento, para a prevenção da violência e o combate ao terrorismo e ao crime.\n
+
+        \n16.b Promover e fazer cumprir leis e políticas não discriminatórias para o desenvolvimento sustentável.\n
+    </string>
+    <string name="ods17_desc">
+        Finanças\n
+
+        \n\t17.1 Fortalecer a mobilização de recursos internos, inclusive por meio do apoio internacional aos países em desenvolvimento, para melhorar a capacidade nacional para arrecadação de impostos e outras receitas.\n
+
+        \n\t17.2 Países desenvolvidos implementarem plenamente os seus compromissos em matéria de assistência oficial ao desenvolvimento [AOD], inclusive fornecer 0,7% da renda nacional bruta [RNB] em AOD aos países em desenvolvimento, dos quais 0,15% a 0,20% para os países menos desenvolvidos; provedores de AOD são encorajados a considerar a definir uma meta para fornecer pelo menos 0,20% da renda nacional bruta em AOD para os países menos desenvolvidos.\n
+
+        \n\t17.3 Mobilizar recursos financeiros adicionais para os países em desenvolvimento a partir de múltiplas fontes.\n
+
+        \n\t17.4 Ajudar os países em desenvolvimento a alcançar a sustentabilidade da dívida de longo prazo por meio de políticas coordenadas destinadas a promover o financiamento, a redução e a reestruturação da dívida, conforme apropriado, e tratar da dívida externa dos países pobres altamente endividados para reduzir o superendividamento.\n
+
+        \n\t17.5 Adotar e implementar regimes de promoção de investimentos para os países menos desenvolvidos.\n
+
+        \nTecnologia
+
+        \n\t17.6 Melhorar a cooperação Norte-Sul, Sul-Sul e triangular regional e internacional e o acesso à ciência, tecnologia e inovação, e aumentar o compartilhamento de conhecimentos em termos mutuamente acordados, inclusive por meio de uma melhor coordenação entre os mecanismos existentes, particularmente no nível das Nações Unidas, e por meio de um mecanismo de facilitação de tecnologia global.\n
+
+        \n\t17.7 Promover o desenvolvimento, a transferência, a disseminação e a difusão de tecnologias ambientalmente corretas para os países em desenvolvimento, em condições favoráveis, inclusive em condições concessionais e preferenciais, conforme mutuamente acordado.\n
+
+        \n\t17.8 Operacionalizar plenamente o Banco de Tecnologia e o mecanismo de capacitação em ciência, tecnologia e inovação para os países menos desenvolvidos até 2017, e aumentar o uso de tecnologias de capacitação, em particular das tecnologias de informação e comunicação.\n
+
+        \nCapacitação\n
+
+        \n\t17.9 Reforçar o apoio internacional para a implementação eficaz e orientada da capacitação em países em desenvolvimento, a fim de apoiar os planos nacionais para implementar todos os objetivos de desenvolvimento sustentável, inclusive por meio da cooperação Norte-Sul, Sul-Sul e triangular.\n
+
+        \nComércio\n
+
+        \n\t17.10 Promover um sistema multilateral de comércio universal, baseado em regras, aberto, não discriminatório e equitativo no âmbito da Organização Mundial do Comércio, inclusive por meio da conclusão das negociações no âmbito de sua Agenda de Desenvolvimento de Doha.\n
+
+        \n\t17.11 Aumentar significativamente as exportações dos países em desenvolvimento, em particular com o objetivo de duplicar a participação dos países menos desenvolvidos nas exportações globais até 2020.\n
+
+        \n\t17.12 Concretizar a implementação oportuna de acesso a mercados livres de cotas e taxas, de forma duradoura, para todos os países menos desenvolvidos, de acordo com as decisões da OMC, inclusive por meio de garantias de que as regras de origem preferenciais aplicáveis às importações provenientes de países menos desenvolvidos sejam transparentes e simples, e contribuam para facilitar o acesso ao mercado.\n
+
+        \nQuestões sistêmicas\n
+
+        \n\tCoerência de políticas e institucional\n
+
+        \n\t\t17.13 Aumentar a estabilidade macroeconômica global, inclusive por meio da coordenação e da coerência de políticas.\n
+
+        \n\t\t17.14 Aumentar a coerência das políticas para o desenvolvimento sustentável.\n
+
+        \n\t\t17.15 Respeitar o espaço político e a liderança de cada país para estabelecer e implementar políticas para a erradicação da pobreza e o desenvolvimento sustentável.\n
+
+        \n\tAs parcerias multissetoriais\n
+
+        \n\t\t17.16 Reforçar a parceria global para o desenvolvimento sustentável, complementada por parcerias multissetoriais que mobilizem e compartilhem conhecimento, expertise, tecnologia e recursos financeiros, para apoiar a realização dos objetivos do desenvolvimento sustentável em todos os países, particularmente nos países em desenvolvimento.\n
+
+        \n\t\t17.17 Incentivar e promover parcerias públicas, público-privadas e com a sociedade civil eficazes, a partir da experiência das estratégias de mobilização de recursos dessas parcerias.\n
+
+        \n\tDados, monitoramento e prestação de contas.\n
+
+        \n\t\t17.18 Até 2020, reforçar o apoio à capacitação para os países em desenvolvimento, inclusive para os países menos desenvolvidos e pequenos Estados insulares em desenvolvimento, para aumentar significativamente a disponibilidade de dados de alta qualidade, atuais e confiáveis, desagregados por renda, gênero, idade, raça, etnia, status migratório, deficiência, localização geográfica e outras características relevantes em contextos nacionais.\n
+
+        \n\t\t17.19 Até 2030, valer-se de iniciativas existentes para desenvolver medidas do progresso do desenvolvimento sustentável que complementem o produto interno bruto [PIB] e apoiem a capacitação estatística nos países em desenvolvimento.\n
+    </string>
+
+    <string name="ods_onu_desc_full">
+        \nPreâmbulo\n
+
+        \nEsta Agenda é um plano de ação para as pessoas, para o planeta e para a prosperidade. Ela também busca fortalecer a paz universal com mais liberdade. Reconhecemos que a erradicação da pobreza em todas as suas formas e dimensões, incluindo a pobreza extrema, é o maior desafio global e um requisito indispensável para o desenvolvimento sustentável.\n
+
+        \nTodos os países e todas as partes interessadas, atuando em parceria colaborativa, implementarão este plano. Estamos decididos a libertar a raça humana da tirania da pobreza e da penúria e a curar e proteger o nosso planeta. Estamos determinados a tomar as medidas ousadas e transformadoras que são urgentemente necessárias para direcionar o mundo para um caminho sustentável e resiliente. Ao embarcarmos nesta jornada coletiva, comprometemo-nos que ninguém seja deixado para trás.\n
+
+        \nOs 17 Objetivos de Desenvolvimento Sustentável e 169 metas que estamos anunciando hoje demonstram a escala e a ambição desta nova Agenda universal. Eles se constroem sobre o legado dos Objetivos de Desenvolvimento do Milênio e concluirão o que estes não conseguiram alcançar. Eles buscam concretizar os direitos humanos de todos e alcançar a igualdade de gênero e o empoderamento das mulheres e meninas. Eles são integrados e indivisíveis, e equilibram as três dimensões do desenvolvimento sustentável: a econômica, a social e a ambiental.\n
+
+        \nOs Objetivos e metas estimularão a ação para os próximos 15 anos em áreas de importância crucial para a humanidade e para o planeta:\n
+
+        \nPessoas\n
+
+        \nEstamos determinados a acabar com a pobreza e a fome, em todas as suas formas e dimensões, e garantir que todos os seres humanos possam realizar o seu potencial em dignidade e igualdade, em um ambiente saudável.\n
+
+        \nPlaneta\n
+
+        \nEstamos determinados a proteger o planeta da degradação, sobretudo por meio do consumo e da produção sustentáveis, da gestão sustentável dos seus recursos naturais e tomando medidas urgentes sobre a mudança climática, para que ele possa suportar as necessidades das gerações presentes e futuras.\n
+
+        \nProsperidade\n
+
+        \nEstamos determinados a assegurar que todos os seres humanos possam desfrutar de uma vida próspera e de plena realização pessoal, e que o progresso econômico, social e tecnológico ocorra em harmonia com a natureza.\n
+
+        \nPaz\n
+
+        \nEstamos determinados a promover sociedades pacíficas, justas e inclusivas que estão livres do medo e da violência. Não pode haver desenvolvimento sustentável sem paz e não há paz sem desenvolvimento sustentável.\n
+
+        \nParceria\n
+
+        \nEstamos determinados a mobilizar os meios necessários para implementar esta Agenda por meio de uma Parceria Global para o Desenvolvimento Sustentável revitalizada, com base num espírito de solidariedade global reforçada, concentrada em especial nas necessidades dos mais pobres e mais vulneráveis e com a participação de todos os países, todas as partes interessadas e todas as pessoas.\n
+
+        \nOs vínculos e a natureza integrada dos Objetivos de Desenvolvimento Sustentável são de importância crucial para assegurar que o propósito da nova Agenda seja realizado. Se realizarmos as nossas ambições em toda a extensão da Agenda, a vida de todos será profundamente melhorada e nosso mundo será transformado para melhor.\n
+    </string>
+
+    <string name="intro_declaration">
+        1. Nós, chefes de Estado e de Governo e altos representantes, reunidos na sede das Nações Unidas em Nova York de 25 a 27 de setembro de 2015 no momento em que a Organização comemora seu septuagésimo aniversário, decidimos hoje sobre os novos Objetivos de Desenvolvimento Sustentável globais.
+
+        \n\n2. Em nome dos povos que servimos, nós adotamos uma decisão histórica sobre um conjunto de Objetivos e metas universais e transformadoras que é abrangente, de longo alcance e centrado nas pessoas. Comprometemo-nos a trabalhar incansavelmente para a plena implementação desta Agenda em 2030. Reconhecemos que a erradicação da pobreza em todas as suas formas e dimensões, incluindo a pobreza extrema, é o maior desafio global e um requisito indispensável para o desenvolvimento sustentável. Estamos empenhados em alcançar o desenvolvimento sustentável nas suas três dimensões – econômica, social e ambiental – de forma equilibrada e integrada. Também vamos dar continuidade às conquistas dos Objetivos de Desenvolvimento do Milênio e buscar atingir suas metas inacabadas.
+
+        \n\n3. Nós resolvemos, entre agora e 2030, acabar com a pobreza e a fome em todos os lugares; combater as desigualdades dentro e entre os países; construir sociedades pacíficas, justas e inclusivas; proteger os direitos humanos e promover a igualdade de gênero e o empoderamento das mulheres e meninas; e assegurar a proteção duradoura do planeta e seus recursos naturais. Resolvemos também criar condições para um crescimento sustentável, inclusivo e economicamente sustentado, prosperidade compartilhada e trabalho decente para todos, tendo em conta os diferentes níveis de desenvolvimento e capacidades nacionais.
+
+        \n\n4. Ao embarcarmos nesta grande jornada coletiva, comprometemo-nos que ninguém será deixado para trás. Reconhecendo a dignidade da pessoa humana como fundamental, queremos ver os Objetivos e metas cumpridos para todas as nações e povos e para todos os segmentos da sociedade. E faremos o possível para alcançar, em primeiro lugar, aqueles que ficaram mais para trás.
+
+        \n\n5. Esta é uma Agenda de alcance e significado sem precedentes. Ela é aceito por todos os países e é aplicável a todos, levando em conta diferentes realidades nacionais, capacidades e níveis de desenvolvimento e respeitando as políticas e prioridades nacionais. Estes são objetivos e metas universais que envolvem todo o mundo, igualmente os países desenvolvidos e os em desenvolvimento. Eles são integrados e indivisíveis, e equilibram as três dimensões do desenvolvimento sustentável.
+
+        \n\n6. Os Objetivos e metas são o resultado de mais de dois anos de consulta pública intensiva e envolvimento junto à sociedade civil e outras partes interessadas em todo o mundo, prestando uma atenção especial às vozes dos mais pobres e mais vulneráveis. Esta consulta incluiu o valioso trabalho realizado pelo Grupo de Trabalho Aberto sobre Objetivos de Desenvolvimento Sustentável da Assembleia Geral e pelas Nações Unidas, cujo secretário-geral apresentou um relatório síntese em dezembro de 2014.
+    </string>
+    <string name="icon_ods_desc">Ícone ODS 1</string>
+    <string name="simbol_of_ods">Simbolo do ODS</string>
+    <string name="numOfObjective1">1</string>
+    <string name="numOfObjective2">2</string>
+    <string name="numOfObjective3">3</string>
+    <string name="numOfObjective4">4</string>
+    <string name="numOfObjective5">5</string>
+    <string name="numOfObjective6">6</string>
+    <string name="numOfObjective7">7</string>
+    <string name="numOfObjective8">8</string>
+    <string name="numOfObjective9">9</string>
+    <string name="numOfObjective10">10</string>
+    <string name="numOfObjective11">11</string>
+    <string name="numOfObjective12">12</string>
+    <string name="numOfObjective13">13</string>
+    <string name="numOfObjective14">14</string>
+    <string name="numOfObjective15">15</string>
+    <string name="numOfObjective16">16</string>
+    <string name="numOfObjective17">17</string>
+    <string name="title_activity_menu_navigation">MenuNavigationActivity</string>
+    <string name="image2030_desc">Agenda 2030</string>
+    <string name="credit_image_2030">Crédito da arte: Ken Robinson/Global Goals</string>
+    <string name="title_intro_declaration">Introdução</string>
+    <string name="title_vision_declaration">Nossa Visão</string>
+    <string name="vision_declaration">
+        7. Nestes Objetivos e metas, estamos estabelecendo uma visão extremamente ambiciosa e transformadora. Prevemos um mundo livre da pobreza, fome, doença e penúria, onde toda a vida pode prosperar. Prevemos um mundo livre do medo e da violência. Um mundo com alfabetização universal. Um mundo com o acesso equitativo e universal à educação de qualidade em todos os níveis, aos cuidados de saúde e proteção social, onde o bem-estar físico, mental e social estão assegurados. Um mundo em que reafirmamos os nossos compromissos relativos ao direito humano à água potável e ao saneamento e onde há uma melhor higiene; e onde o alimento é suficiente, seguro, acessível e nutritivo. Um mundo onde habitats humanos são seguros, resilientes e sustentáveis, e onde existe acesso universal à energia acessível, confiável e sustentável.
+
+        \n\n8. Prevemos um mundo de respeito universal dos direitos humanos e da dignidade humana, do Estado de Direito, da justiça, da igualdade e da não discriminação; do respeito pela raça, etnia e diversidade cultural; e da igualdade de oportunidades que permita a plena realização do potencial humano e contribua para a prosperidade compartilhada. Um mundo que investe em suas crianças e em que cada criança cresce livre da violência e da exploração. Um mundo em que cada mulher e menina desfruta da plena igualdade de gênero e no qual todos os entraves jurídicos, sociais e econômicos para seu empoderamento foram removidos. Um mundo justo, equitativo, tolerante, aberto e socialmente inclusivo em que sejam atendidas as necessidades das pessoas mais vulneráveis.
+
+        \n\n9. Prevemos um mundo em que cada país desfrute de um crescimento econômico sustentado, inclusivo e sustentável e de trabalho decente para todos. Um mundo em que os padrões de consumo e produção e o uso de todos os recursos naturais – do ar à terra; dos rios, lagos e aquíferos aos oceanos e mares – são sustentáveis. Um mundo em que a democracia, a boa governança e o Estado de Direito, bem como um ambiente propício em níveis nacional e internacional, são essenciais para o desenvolvimento sustentável, incluindo crescimento econômico inclusivo e sustentado, desenvolvimento social, proteção ambiental e erradicação da pobreza e da fome. Um mundo em que o desenvolvimento e a aplicação da tecnologia são sensíveis ao clima, respeitem a biodiversidade e são resilientes. Um mundo em que a humanidade viva em harmonia com a natureza e em que animais selvagens e outras espécies vivas estão protegidos.
+    </string>
+    <string name="title_principles_declaration">Nossos Princípios e Compromissos Compartilhados</string>
+    <string name="principles_declaration">
+        10. A nova Agenda é guiada pelos propósitos e princípios da Carta das Nações Unidas, incluindo o pleno respeito pelo direito internacional. Fundamenta-se na Declaração Universal dos Direitos Humanos, tratados internacionais de direitos humanos, a Declaração do Milênio e os resultados da Cúpula Mundial de 2005. Ela é informada por outros instrumentos, tais como a Declaração sobre o Direito ao Desenvolvimento.
+
+        \n\n11. Reafirmamos os resultados de todas as grandes conferências e cúpulas das Nações Unidas que estabeleceram uma base sólida para o desenvolvimento sustentável e ajudaram a moldar a nova Agenda. Estas incluem a Declaração do Rio sobre Meio Ambiente e Desenvolvimento; a Cúpula Mundial sobre o Desenvolvimento Sustentável; a Cúpula Mundial para o Desenvolvimento Social; o Programa de Ação da Conferência Internacional sobre População e Desenvolvimento, a Plataforma de Ação de Pequim; e a Conferência das Nações Unidas sobre Desenvolvimento Sustentável (Rio+20). Reafirmamos também a continuidade dada a estas conferências, incluindo os resultados da Quarta Conferência das Nações Unidas sobre os Países Menos Desenvolvidos, a Terceira Conferência Internacional sobre Pequenos Estados Insulares em Desenvolvimento; a Segunda Conferência das Nações Unidas sobre Países em Desenvolvimento Sem Litoral; e da Terceira Conferência Mundial da ONU sobre a Redução do Risco de Desastres.
+
+        \n\n12. Reafirmamos todos os princípios da Declaração do Rio sobre Meio Ambiente e Desenvolvimento, incluindo, entre outros, o princípio das responsabilidades comuns mas diferenciadas, tal como estabelecido no princípio 7º desta Declaração.
+
+        \n\n13. Os desafios e compromissos contidos nestas grandes conferências e cúpulas são inter-relacionados e exigem soluções integradas. Para resolvê-los de forma eficaz, é necessária uma nova abordagem. O desenvolvimento sustentável reconhece que a erradicação da pobreza em todas as suas formas e dimensões, o combate às desigualdades dentro dos e entre os países, a preservação do planeta, a criação do crescimento econômico sustentado, inclusivo e sustentável e a promoção da inclusão social estão vinculados uns aos outros e são interdependentes.
+    </string>
+
+</resources>
