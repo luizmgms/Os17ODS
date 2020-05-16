@@ -89,6 +89,114 @@
                 android:padding="10dp"
                 android:text="@string/principles_declaration"
                 android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/titleWordId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/title_world_declaration"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/worldDeclarationId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/world_declaration"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/titleNewAgendaDeclarationId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/title_new_agenda_declaration"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/newAgendaDeclarationId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/new_agenda_declaration"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/titleMiddlesDeclarationId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/title_middles_declaration"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/middlesDeclarationId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/middles_declaration"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/titleAvaliationDeclarationId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/title_avaliation_declaration"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/avaliationDeclarationId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/avaliation_declaration"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/titleChamadoDeclarationId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/title_chamado_decla"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chamadoDeclarationId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/chamado_decla"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/titleObjeDeclarationId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/title_obje_decla"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/objeDeclarationId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/obje_decla"
+                android:textSize="16sp" />
         </LinearLayout>
 
     </ScrollView>
