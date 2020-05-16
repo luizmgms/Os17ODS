@@ -73,11 +73,13 @@ public class MainActivity extends AppCompatActivity
         } else if(fragmentManager.getBackStackEntryCount() > 0) {
 
             setHome();
+            setToolbar();
             fragmentManager.popBackStack();
 
         } else if(fragmentManager.getBackStackEntryCount() == 0 && fragmentManager.getFragments().size() == 1 && fragmentManager.findFragmentByTag("home") == null) {
 
             setHome();
+            setToolbar();
 
         } else {
             super.onBackPressed();
@@ -134,6 +136,7 @@ public class MainActivity extends AppCompatActivity
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new DeclarationFragment())
                     .commit();
+            setToolbar();
 
         } else if (id == R.id.nav_docs) {
 
@@ -142,6 +145,7 @@ public class MainActivity extends AppCompatActivity
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new DocumentsFragment())
                     .commit();
+            setToolbar();
 
         } else if (id == R.id.nav_cupula) {
 
@@ -150,6 +154,7 @@ public class MainActivity extends AppCompatActivity
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new CupulaFragment())
                     .commit();
+            setToolbar();
 
         } else if (id == R.id.nav_agenda) {
 
@@ -158,6 +163,7 @@ public class MainActivity extends AppCompatActivity
                     .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
                     .replace(R.id.content_fragment, new AgendaFragment())
                     .commit();
+            setToolbar();
 
         } else if (id == R.id.nav_send) {
 

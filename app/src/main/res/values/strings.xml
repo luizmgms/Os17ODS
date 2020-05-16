@@ -670,4 +670,20 @@
         \n\n59. Reconhecemos que existem diferentes abordagens, visões, modelos e ferramentas disponíveis para cada país, de acordo com suas circunstâncias e prioridades nacionais, para alcançar o desenvolvimento sustentável; e reafirmamos que o planeta Terra e seus ecossistemas são a nossa casa comum e que a ‘Mãe Terra’ é uma expressão comum em vários países e regiões.
     </string>
 
+    <string name="title_moment_agenda">Momento de Ação Global Para as Pessoas e o Planeta</string>
+    <string name="moment_agenda">
+        O ano de 2015 apresentou uma oportunidade histórica e sem precedentes para reunir os países e a população global e decidir sobre novos caminhos, melhorando a vida das pessoas em todos os lugares.
+
+        \n\nEssas decisões determinarão o curso global de ação para acabar com a pobreza, promover a prosperidade e o bem-estar para todos, proteger o meio ambiente e enfrentar as mudanças climáticas.
+
+        \n\nEm 2015, os países tiveram a oportunidade de adotar a nova agenda de desenvolvimento sustentável e chegar a um acordo global sobre a mudança climática.
+
+        \n\nAs ações tomadas em 2015 resultaram nos novos Objetivos de Desenvolvimento Sustentável (ODS), que se baseiam nos oito Objetivos de Desenvolvimento do Milênio (ODM).
+
+        \n\nAs Nações Unidas trabalharam junto aos governos, sociedade civil e outros parceiros para aproveitar o impulso gerado pelos ODM e levar à frente uma agenda de desenvolvimento pós-2015 ambiciosa.
+    </string>
+    <string name="legend_image_moment_agenda">
+        A redução da pobreza é um dos eixos da agenda de desenvolvimento pós-2015. Crianças na favela de Kallayanpur, uma das favelas urbanas em Daca, Bangladesh. Foto: ONU/Kibae Park
+    </string>
+
 </resources>
