@@ -685,5 +685,30 @@
     <string name="legend_image_moment_agenda">
         A redução da pobreza é um dos eixos da agenda de desenvolvimento pós-2015. Crianças na favela de Kallayanpur, uma das favelas urbanas em Daca, Bangladesh. Foto: ONU/Kibae Park
     </string>
+    <string name="title_rumo_agenda">Rumo à Agenda de Desenvolvimento Sustentável</string>
+    <string name="rumo_agenda">
+        Garantir uma vida com dignidade – 2015 foi o ano no qual os países se adaptaram e adotaram uma nova agenda de desenvolvimento que se baseou nos Objetivos de Desenvolvimento do Milênio (ODM).
+
+        \n\nOs ODM foram estabelecidos no ano 2000 e incluem oito objetivos de combate à pobreza a ser alcançados até o final de 2015. Desde então, progressos significativos foram realizados:
+
+        \n\t - A pobreza global continua diminuindo;
+        \n\t - Mais crianças do que nunca estão frequentando a escola primária;
+        \n\t - Mortes infantis caíram drasticamente;
+        \n\t - O acesso a água potável expandiu significativamente;
+        \n\t - As metas de investimento para combater a malária, a aids e a tuberculose salvaram milhões de pessoas.
+        \n\nOs ODM fizeram uma verdadeira diferença na vida das pessoas, e esse progresso pode ser expandindo na maioria dos países com forte liderança e responsabilidade.
+    </string>
+    <string name="title_now_agenda">O que Vem Agora?</string>
+    <string name="now_agenda">
+        Os Objetivos de Desenvolvimento do Milênio mostram que metas funcionam. Eles ajudaram a acabar com a pobreza, mas não completamente.
+
+        \n\nAs Nações Unidas definiram os Objetivos de Desenvolvimento Sustentável (ODS) como parte de uma nova agenda de desenvolvimento sustentável que deve finalizar o trabalho dos ODM e não deixar ninguém para trás.
+
+        \n\nEssa agenda, lançada em setembro de 2015 durante a Cúpula de Desenvolvimento Sustentável, foi discutida na Assembleia Geral da ONU, onde os Estados-membros e a sociedade civil negociaram suas contribuições.
+
+        \n\nO processo rumo à agenda de desenvolvimento pós-2015 foi liderado pelos Estados-membros com a participação dos principais grupos e partes interessadas da sociedade civil. A agenda reflete os novos desafios de desenvolvimento e está ligada ao resultado da Rio+20 – a Conferência da ONU sobre Desenvolvimento Sustentável – que foi realizada em junho de 2012 no Rio de Janeiro, Brasil.
+    </string>
+    <string name="text_link_playslist_videos">\n\t - Acesse todos os vídeos sobre a agenda pós-2015 clicando aqui!</string>
+    <string name="link_playslist">https://www.youtube.com/playlist?list=PLUZOt6bFc2fghKopTJcswi3GSYntbRsY3</string>
 
 </resources>
