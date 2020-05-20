@@ -1,5 +1,6 @@
 package com.luizmagno.os17ods;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.core.view.GravityCompat;
@@ -8,7 +9,6 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
-import com.luizmagno.os17ods.fragments.AgendaFragment;
 import com.luizmagno.os17ods.fragments.CupulaFragment;
 import com.luizmagno.os17ods.fragments.DeclarationFragment;
 import com.luizmagno.os17ods.fragments.DocumentsFragment;
@@ -158,12 +158,8 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_agenda) {
 
-            //Abre o Fragment Agenda
-            fragmentManager.beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                    .replace(R.id.content_fragment, new AgendaFragment())
-                    .commit();
-            setToolbar();
+            Intent intent = new Intent(this, AgendaActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_send) {
 
@@ -194,4 +190,5 @@ public class MainActivity extends AppCompatActivity
         toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         toolbar.setTitle(R.string.app_name);
     }
+
 }

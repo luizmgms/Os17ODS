@@ -26,7 +26,7 @@ public class OdsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        odsView = inflater.inflate(R.layout.activity_ods, container, false);
+        odsView = inflater.inflate(R.layout.layout_ods, container, false);
 
         containerTitleOfOds = odsView.findViewById(R.id.backgroundTitleId);
         numOfOds = odsView.findViewById(R.id.numOdsId);
