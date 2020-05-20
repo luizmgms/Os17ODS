@@ -137,7 +137,27 @@
                 android:id="@+id/youTubeFragmentId"
                 android:name="com.google.android.youtube.player.YouTubePlayerFragment"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/nowAgenda2Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/now_agenda_2"
+                android:textSize="16sp" />
+
+            <fragment
+                android:id="@+id/youTubeFragment2Id"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
 
         </LinearLayout>
     </ScrollView>

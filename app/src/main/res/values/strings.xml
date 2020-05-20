@@ -708,9 +708,20 @@
 
         \n\nO processo rumo à agenda de desenvolvimento pós-2015 foi liderado pelos Estados-membros com a participação dos principais grupos e partes interessadas da sociedade civil. A agenda reflete os novos desafios de desenvolvimento e está ligada ao resultado da Rio+20 – a Conferência da ONU sobre Desenvolvimento Sustentável – que foi realizada em junho de 2012 no Rio de Janeiro, Brasil.
     </string>
-    <string name="text_link_playslist_videos">\n\t - Acesse todos os vídeos sobre a agenda pós-2015 clicando aqui!</string>
+    <string name="text_link_playslist_videos">\n\t - Acesse todos os vídeos sobre a agenda pós-2015 clicando aqui!\n</string>
     <string name="link_playslist">https://www.youtube.com/playlist?list=PLUZOt6bFc2fghKopTJcswi3GSYntbRsY3</string>
     <string name="video_yt_agenda">nD3gPDJNk88</string>
     <string name="title_agenda">A Agenda 2030</string>
+    <string name="now_agenda_2">
+        \nHouve inúmeras contribuições para a agenda – em especial os Objetivos de Desenvolvimento Sustentável –, propostas por um grupo de trabalho da Assembleia Geral, através de um relatório do comitê intergovernamental de especialistas em financiamento para o desenvolvimento sustentável, de diálogos da Assembleia Geral sobre facilitação tecnológica e muitos outros.
+
+        \n\nEm dezembro de 2014, o secretário-geral da ONU, Ban Ki-moon, lançou seu Relatório de Síntese, onde resume essas contribuições e apresenta sua visão para a agenda de desenvolvimento sustentável pós-2015.
+
+        \n\nBaseado na experiência de duas décadas de prática de desenvolvimento e a partir de contribuições obtidas através de um processo aberto e inclusivo, o relatório “O Caminho para a Dignidade em 2030” apresentou um mapa com o objetivo de alcançar a dignidade nos próximos 15 anos. Ban apresentou formalmente seu relatório em janeiro de 2015 para os Estados-membros da ONU.
+
+        \n\nEm uma entrevista realizada em 2015, a então assessora especial do secretário-geral sobre o Plano de Desenvolvimento Pós-2015, Amina J. Mohammed, disse que um dos principais pontos do relatório é “a esperança e a oportunidade que temos diante de nós (…). Essa é a geração que pode fazer o que precisa fazer para vencer muitos dos atuais desafios. Então, se há alguma coisa que nós podemos tirar desse relatório, é que até 2030 podemos acabar com a pobreza, podemos transformar vidas e podemos encontrar formas de proteger o planeta enquanto fazemos isso”.
+
+        \n\nA ONU também facilitou a conversa global sobre a agenda de desenvolvimento pós-2015 e apoiou amplas consultas, tais como a pesquisa “Meu Mundo”. Também teve a responsabilidade de apoiar os Estados-membros, fornecendo ajuda baseada em evidências, análises contextuais e experiência de campo.\n
+    </string>
 
 </resources>

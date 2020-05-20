@@ -25,6 +25,7 @@ public class AgendaActivity extends AppCompatActivity implements YouTubePlayer.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_agenda);
 
+        //Set Toolbar
         toolbar = findViewById(R.id.toolbarInAgendaId);
         toolbar.setNavigationIcon(R.drawable.ic_back);
         toolbar.setTitle(getResources().getString(R.string.title_agenda));
@@ -36,11 +37,8 @@ public class AgendaActivity extends AppCompatActivity implements YouTubePlayer.O
             }
         });
 
+        //Set Text
         textLink = findViewById(R.id.textLinkPlaylistAgendaId);
-
-        youTubePlayerFragment = (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youTubeFragmentId);
-        youTubePlayerFragment.initialize(DeveloperKey.DEVELOPER_KEY, this);
-
         textLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,6 +48,11 @@ public class AgendaActivity extends AppCompatActivity implements YouTubePlayer.O
                 startActivity(i);
             }
         });
+
+        //Set PlayerYouTube
+        youTubePlayerFragment = (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youTubeFragmentId);
+        youTubePlayerFragment.initialize(DeveloperKey.DEVELOPER_KEY, this);
+
     }
 
     @Override
