@@ -158,10 +158,10 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_agenda) {
 
-            setHome();
-            setToolbar();
             Intent intent = new Intent(this, AgendaActivity.class);
             startActivity(intent);
+            setHome();
+            setToolbar();
 
         } else if (id == R.id.nav_send) {
 
