@@ -1,6 +1,7 @@
 package com.luizmagno.os17ods;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -17,12 +18,23 @@ public class AgendaActivity extends AppCompatActivity implements YouTubePlayer.O
     private TextView textLink;
     private YouTubePlayerFragment youTubePlayerFragment;
     private YouTubePlayer youTubePlayer;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_agenda);
 
+        toolbar = findViewById(R.id.toolbarInAgendaId);
+        toolbar.setNavigationIcon(R.drawable.ic_back);
+        toolbar.setTitle(getResources().getString(R.string.title_agenda));
+        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AgendaActivity.super.onBackPressed();
+            }
+        });
 
         textLink = findViewById(R.id.textLinkPlaylistAgendaId);
 

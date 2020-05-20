@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:background="@android:color/white">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarInAgendaId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
     <ScrollView
         android:id="@+id/scrollInAgendaId"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarInAgendaId">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -120,14 +130,14 @@
                 android:paddingRight="8dp"
                 android:paddingBottom="8dp"
                 android:text="@string/text_link_playslist_videos"
-                android:textSize="16sp"
-                android:textColor="@color/colorPrimary"/>
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
 
             <fragment
+                android:id="@+id/youTubeFragmentId"
                 android:name="com.google.android.youtube.player.YouTubePlayerFragment"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/youTubeFragmentId"/>
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
     </ScrollView>
