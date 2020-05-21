@@ -16,8 +16,8 @@ import com.google.android.youtube.player.YouTubePlayerFragment;
 public class AgendaActivity extends AppCompatActivity implements YouTubePlayer.OnInitializedListener{
 
     private TextView textLink;
-    private YouTubePlayerFragment youTubePlayerFragment;
-    private YouTubePlayer youTubePlayer;
+    private YouTubePlayerFragment youTubePlayerFragment1;
+    private YouTubePlayer youTubePlayer1;
     private Toolbar toolbar;
 
     @Override
@@ -50,35 +50,33 @@ public class AgendaActivity extends AppCompatActivity implements YouTubePlayer.O
         });
 
         //Set PlayerYouTube
-        youTubePlayerFragment = (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youTubeFragmentId);
-        youTubePlayerFragment.initialize(DeveloperKey.DEVELOPER_KEY, this);
+        youTubePlayerFragment1 = (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youTubeFragmentId);
+        youTubePlayerFragment1.initialize(DeveloperKey.DEVELOPER_KEY, this);
 
     }
 
     @Override
-    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer ytPlayer, boolean b) {
-        youTubePlayer = ytPlayer;
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer ytPlayer, boolean wasRestored) {
+
+        youTubePlayer1 = ytPlayer;
 
         //Enables automatic control of orientation
-        youTubePlayer.setFullscreenControlFlags(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_ORIENTATION);
-
-        //Show full screen in landscape mode always
-        //youTubePlayer.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_ALWAYS_FULLSCREEN_IN_LANDSCAPE);
+        youTubePlayer1.setFullscreenControlFlags(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_ORIENTATION);
 
         //System controls will appear automatically
-        youTubePlayer.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_SYSTEM_UI);
+        youTubePlayer1.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_SYSTEM_UI);
 
-        if (!b) {
-            youTubePlayer.cueVideo(getResources().getString(R.string.video_yt_agenda));
+        if (!wasRestored) {
+            youTubePlayer1.cueVideo(getResources().getString(R.string.video_yt_agenda_1));
         }
         else
         {
-            youTubePlayer.play();
+            youTubePlayer1.play();
         }
     }
 
     @Override
     public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-        youTubePlayer = null;
+        youTubePlayer1 = null;
     }
 }

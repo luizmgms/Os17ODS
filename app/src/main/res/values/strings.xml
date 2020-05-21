@@ -710,7 +710,8 @@
     </string>
     <string name="text_link_playslist_videos">\n\t - Acesse todos os vídeos sobre a agenda pós-2015 clicando aqui!\n</string>
     <string name="link_playslist">https://www.youtube.com/playlist?list=PLUZOt6bFc2fghKopTJcswi3GSYntbRsY3</string>
-    <string name="video_yt_agenda">nD3gPDJNk88</string>
+    <string name="video_yt_agenda_1">j8L1CcanjT8</string>
+    <string name="video_yt_os_17_t_m">u2K0Ff6bzZ4</string>
     <string name="title_agenda">A Agenda 2030</string>
     <string name="now_agenda_2">
         \nHouve inúmeras contribuições para a agenda – em especial os Objetivos de Desenvolvimento Sustentável –, propostas por um grupo de trabalho da Assembleia Geral, através de um relatório do comitê intergovernamental de especialistas em financiamento para o desenvolvimento sustentável, de diálogos da Assembleia Geral sobre facilitação tecnológica e muitos outros.
@@ -723,5 +724,20 @@
 
         \n\nA ONU também facilitou a conversa global sobre a agenda de desenvolvimento pós-2015 e apoiou amplas consultas, tais como a pesquisa “Meu Mundo”. Também teve a responsabilidade de apoiar os Estados-membros, fornecendo ajuda baseada em evidências, análises contextuais e experiência de campo.\n
     </string>
+    <string name="menu_17_obj">Transformar o Mundo</string>
+    <string name="legend_image_17_obj">Acesse aqui a Agenda 2030 na íntegra, com o documento final adotado na Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, em setembro de 2015.</string>
+    <string name="legend_image2_17_obj">Acessa a Plataforma Agenda 2030 clicando na imagem ou em agenda2030.org.br</string>
+    <string name="text_noticias">Acesse todas as notícias em português clicando aqui ou acessando: onu.org.br/tema/agenda2030</string>
+    <string name="title_roteiro_17obj">Roteiro para a Localização dos Objetivos de Desenvolvimento Sustentável: Implementação e Acompanhamento no nível subnacional</string>
+    <string name="roteiro_obj17">
+        \nO grupo interagencial da ONU no Brasil para a Agenda 2030 elaborou a adaptação em português da publicação “Roteiro para a Localização dos Objetivos de Desenvolvimento Sustentável: implementação e acompanhamento no nível subnacional”, baseada na que foi originalmente elaborada pela Força-Tarefa Global de Governos Locais e Regionais, pelo PNUD e pela ONU-Habitat para apoiar cidades e regiões no cumprimento da Agenda 2030.
+
+        \n\nO documento é uma ferramenta para a localização dos ODS, cujo objetivo é prestar suporte a governos locais e regionais para a implementação da Agenda 2030 em âmbito local. Apresenta também estratégias que podem ser adaptadas a contextos específicos e a necessidades de diferentes cidades e regiões.
+
+        \n\nMais do que uma mera tradução para o português, o documento foi adaptado para o contexto brasileiro, incluindo boas práticas dos organismos da ONU no Brasil em iniciativas envolvendo a localização dos ODS. Os casos relatados pelas agências especializadas, fundos, programas e entidades que atuam no Brasil e que embasam este documento foram cuidadosamente selecionados e colaborativamente organizados por especialistas das Nações Unidas no Brasil, das mais diversas áreas de conhecimento.
+
+        \n\nEm exercício desde 2014, o grupo interagencial da ONU no Brasil para a Agenda 2030 conta com a participação de membros do Governo Federal, bem como de 18 organismos do Sistema ONU: PNUD (inclusive por meio do IPC-IG), CEPAL, FAO, ONU-Habitat, ONU Mulheres, OPAS/OMS, OIT, ONU Meio Ambiente, PMA, UNAIDS, UNESCO, UNFPA, UNICEF, UNIDO, UNISDR-CERRD, UNODC, UNOPS e UNV. (Niky Fabiancic, Coordenador Residente da ONU no Brasil).
+    </string>
+    <string name="title_17_obj">Transformar o Mundo</string>
 
 </resources>

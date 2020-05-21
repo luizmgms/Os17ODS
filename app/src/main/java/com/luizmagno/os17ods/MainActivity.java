@@ -163,8 +163,11 @@ public class MainActivity extends AppCompatActivity
             setHome();
             setToolbar();
 
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_17_obj) {
+            Intent intent = new Intent(this, Obj17Activity.class);
+            startActivity(intent);
+            setHome();
+            setToolbar();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
