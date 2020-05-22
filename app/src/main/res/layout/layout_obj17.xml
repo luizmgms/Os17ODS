@@ -121,6 +121,196 @@
                 android:textSize="16sp"
                 tools:targetApi="o" />
 
+            <TextView
+                android:id="@+id/textLinkDocumentId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/text_link_document"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/textDuvidasId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/text_duvidas"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <ImageView
+                android:id="@+id/imageDuvidasId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/text_duvidas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/duvidas" />
+
+            <TextView
+                android:id="@+id/descDuvidasId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/desc_duvidas"
+                android:textSize="16sp"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textLinkDuvidasId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/text_link_duvidas"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/textLinkDadosId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/text_link_dados"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_play_arrow"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textLinkSaibaId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/text_link_saiba"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_play_arrow"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textLinkAcompId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/text_link_acomp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_play_arrow"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textLinkPageEspId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/text_link_page_esp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_play_arrow"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textLinkTempRealId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/text_link_temp_real"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_play_arrow"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textLinkAgendPtId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/text_link_agend_pt"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_play_arrow"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textLinkAgendIngId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/text_link_agend_ing"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_play_arrow"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textLinkInicadoresId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/text_link_indicadores"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_play_arrow"
+                tools:targetApi="o" />
+
+            <TextView
+                android:id="@+id/textLinkDocsTemaId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/text_link_docs_tema"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_play_arrow"
+                tools:targetApi="o" />
+
         </LinearLayout>
 
     </ScrollView>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center"
     android:background="@android:color/white">
 
@@ -70,11 +70,13 @@
                 android:id="@+id/MomentAgendaId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:paddingBottom="8dp"
                 android:text="@string/moment_agenda"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O"/>
 
             <TextView
                 android:id="@+id/titleRumoAgendaId"
@@ -93,11 +95,13 @@
                 android:id="@+id/rumoAgendaId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:paddingBottom="8dp"
                 android:text="@string/rumo_agenda"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O"/>
 
             <TextView
                 android:id="@+id/titleNowAgendaId"
@@ -116,11 +120,13 @@
                 android:id="@+id/nowAgendaId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:paddingBottom="8dp"
                 android:text="@string/now_agenda"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O" />
 
             <TextView
                 android:id="@+id/textLinkPlaylistAgendaId"
@@ -145,11 +151,13 @@
                 android:id="@+id/nowAgenda2Id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:paddingBottom="8dp"
                 android:text="@string/now_agenda_2"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O"/>
 
         </LinearLayout>
     </ScrollView>

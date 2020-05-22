@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/backDeclarationId"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -51,9 +51,11 @@
                 android:id="@+id/introDeclarationId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:padding="10dp"
                 android:text="@string/intro_declaration"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O"/>
 
             <TextView
                 android:id="@+id/titleVisionId"
@@ -68,9 +70,11 @@
                 android:id="@+id/visionDeclarationId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:padding="10dp"
                 android:text="@string/vision_declaration"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O"/>
 
             <TextView
                 android:id="@+id/titlePrinciplesId"
@@ -86,9 +90,11 @@
                 android:id="@+id/principlesDeclarationId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:padding="10dp"
                 android:text="@string/principles_declaration"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O"/>
 
             <TextView
                 android:id="@+id/titleWordId"
@@ -104,9 +110,11 @@
                 android:id="@+id/worldDeclarationId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:padding="10dp"
                 android:text="@string/world_declaration"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O"/>
 
             <TextView
                 android:id="@+id/titleNewAgendaDeclarationId"
@@ -122,9 +130,11 @@
                 android:id="@+id/newAgendaDeclarationId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:padding="10dp"
                 android:text="@string/new_agenda_declaration"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O"/>
 
             <TextView
                 android:id="@+id/titleMiddlesDeclarationId"
@@ -140,9 +150,11 @@
                 android:id="@+id/middlesDeclarationId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:padding="10dp"
                 android:text="@string/middles_declaration"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O"/>
 
             <TextView
                 android:id="@+id/titleAvaliationDeclarationId"
@@ -158,9 +170,11 @@
                 android:id="@+id/avaliationDeclarationId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:padding="10dp"
                 android:text="@string/avaliation_declaration"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O"/>
 
             <TextView
                 android:id="@+id/titleChamadoDeclarationId"
@@ -176,9 +190,11 @@
                 android:id="@+id/chamadoDeclarationId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:padding="10dp"
                 android:text="@string/chamado_decla"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O" />
 
             <TextView
                 android:id="@+id/titleObjeDeclarationId"
@@ -194,9 +210,12 @@
                 android:id="@+id/objeDeclarationId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:padding="10dp"
                 android:text="@string/obje_decla"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:targetApi="O" />
+
         </LinearLayout>
 
     </ScrollView>

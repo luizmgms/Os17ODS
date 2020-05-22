@@ -739,5 +739,20 @@
         \n\nEm exercício desde 2014, o grupo interagencial da ONU no Brasil para a Agenda 2030 conta com a participação de membros do Governo Federal, bem como de 18 organismos do Sistema ONU: PNUD (inclusive por meio do IPC-IG), CEPAL, FAO, ONU-Habitat, ONU Mulheres, OPAS/OMS, OIT, ONU Meio Ambiente, PMA, UNAIDS, UNESCO, UNFPA, UNICEF, UNIDO, UNISDR-CERRD, UNODC, UNOPS e UNV. (Niky Fabiancic, Coordenador Residente da ONU no Brasil).
     </string>
     <string name="title_17_obj">Transformar o Mundo</string>
+    <string name="text_link_document">Acesse aqui o documento clicando aqui.</string>
+    <string name="text_duvidas">"Tire suas dúvidas "</string>
+    <string name="desc_duvidas">
+        \nConheça a cartilha do Programa das Nações Unidas para o Desenvolvimento (PNUD) com perguntas e respostas sobre os Objetivos Globais. A publicação destaca a importância da participação de toda a sociedade para o cumprimento da Agenda 2030.
+    </string>
+    <string name="text_link_duvidas">Clique aqui ou na imagem acima para acessar a cartilha!</string>
+    <string name="text_link_dados">Confira dados do Brasil no site da comissão de estatísticas da ONU</string>
+    <string name="text_link_saiba">Saiba mais, nos seis idiomas oficiais da ONU, em un.org/sustainabledevelopment</string>
+    <string name="text_link_acomp">Acompanhe notícias em português em nacoesunidas.org/tema/agenda2030</string>
+    <string name="text_link_page_esp">Acesse a página especial do PNUD (em português) em pnud.org.br/ODS</string>
+    <string name="text_link_temp_real">Acompanhe em tempo real pela nossa página no Facebook: facebook.com/ONUBrasil</string>
+    <string name="text_link_agend_pt">Acesse a Agenda 2030 em português aqui.</string>
+    <string name="text_link_agend_ing">Acesse a Agenda 2030 em inglês aqui.</string>
+    <string name="text_link_indicadores">Indicadores de monitoramento dos ODS</string>
+    <string name="text_link_docs_tema">Documentos temáticos sobre os ODS</string>
 
 </resources>
