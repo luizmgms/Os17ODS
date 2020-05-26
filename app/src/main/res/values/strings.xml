@@ -739,7 +739,7 @@
         \n\nEm exercício desde 2014, o grupo interagencial da ONU no Brasil para a Agenda 2030 conta com a participação de membros do Governo Federal, bem como de 18 organismos do Sistema ONU: PNUD (inclusive por meio do IPC-IG), CEPAL, FAO, ONU-Habitat, ONU Mulheres, OPAS/OMS, OIT, ONU Meio Ambiente, PMA, UNAIDS, UNESCO, UNFPA, UNICEF, UNIDO, UNISDR-CERRD, UNODC, UNOPS e UNV. (Niky Fabiancic, Coordenador Residente da ONU no Brasil).
     </string>
     <string name="title_17_obj">Transformar o Mundo</string>
-    <string name="text_link_document">Acesse aqui o documento clicando aqui.</string>
+    <string name="text_link_document">Acesse o documento clicando aqui.</string>
     <string name="text_duvidas">"Tire suas dúvidas "</string>
     <string name="desc_duvidas">
         \nConheça a cartilha do Programa das Nações Unidas para o Desenvolvimento (PNUD) com perguntas e respostas sobre os Objetivos Globais. A publicação destaca a importância da participação de toda a sociedade para o cumprimento da Agenda 2030.
@@ -754,5 +754,20 @@
     <string name="text_link_agend_ing">Acesse a Agenda 2030 em inglês aqui.</string>
     <string name="text_link_indicadores">Indicadores de monitoramento dos ODS</string>
     <string name="text_link_docs_tema">Documentos temáticos sobre os ODS</string>
+    <string name="link_of_image_1_of_obj17">https://nacoesunidas.org/pos2015/agenda2030/</string>
+    <string name="link_of_image_2_of_obj17">http://www.agenda2030.org.br/</string>
+    <string name="link_noticias_pt_of_obj17">https://nacoesunidas.org/tema/agenda2030/</string>
+    <string name="video_yt_obj17">u2K0Ff6bzZ4</string>
+    <string name="link_document_of_obj17">https://nacoesunidas.org/wp-content/uploads/2017/06/Roteiro-para-a-Localizacao-dos-ODS.pdf</string>
+    <string name="link_duvidas_of_obj17">http://www.br.undp.org/content/brazil/pt/home/library/ods/cartilha-de-perguntas-e-respostas-dos-ods.html</string>
+    <string name="link_dados_of_obj17">https://country-profiles.unstatshub.org/bra</string>
+    <string name="link_saiba_of_obj17">http://www.un.org/sustainabledevelopment/</string>
+    <string name="link_acomp_of_obj17">https://nacoesunidas.org/tema/agenda2030/</string>
+    <string name="link_page_esp_of_obj17">http://www.br.undp.org/content/brazil/pt/home/post-2015.html</string>
+    <string name="link_temp_real_of_obj17">https://www.facebook.com/ONUBrasil</string>
+    <string name="link_agend_pt_of_obj17">https://nacoesunidas.org/pos2015/agenda2030/</string>
+    <string name="link_agend_ing_of_obj17">http://bit.ly/2030agenda</string>
+    <string name="link_indi_of_obj17">http://unstats.un.org/sdgs/</string>
+    <string name="link_docs_tem_of_obj17">https://nacoesunidas.org/pos2015/documentos-tematicos/</string>
 
 </resources>

@@ -139,8 +139,7 @@
                 android:padding="8dp"
                 android:text="@string/text_duvidas"
                 android:textStyle="bold"
-                android:textSize="18sp"
-                android:textColor="@color/colorPrimary"/>
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/imageDuvidasId"
