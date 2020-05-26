@@ -131,11 +131,9 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_declaration) {
 
-            //Abre o Fragment Declaração
-            fragmentManager.beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                    .replace(R.id.content_fragment, new DeclarationFragment())
-                    .commit();
+            Intent intent = new Intent(this, DeclaracaoActivity.class);
+            startActivity(intent);
+            setHome();
             setToolbar();
 
         } else if (id == R.id.nav_docs) {

@@ -7,13 +7,24 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarInDeclaracaoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
     <ScrollView
         android:id="@+id/scrollInDeclarationId"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/toolbarInDeclaracaoId">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,7 +66,7 @@
                 android:padding="10dp"
                 android:text="@string/intro_declaration"
                 android:textSize="16sp"
-                tools:targetApi="O"/>
+                tools:targetApi="O" />
 
             <TextView
                 android:id="@+id/titleVisionId"
@@ -74,7 +85,7 @@
                 android:padding="10dp"
                 android:text="@string/vision_declaration"
                 android:textSize="16sp"
-                tools:targetApi="O"/>
+                tools:targetApi="O" />
 
             <TextView
                 android:id="@+id/titlePrinciplesId"
@@ -94,7 +105,7 @@
                 android:padding="10dp"
                 android:text="@string/principles_declaration"
                 android:textSize="16sp"
-                tools:targetApi="O"/>
+                tools:targetApi="O" />
 
             <TextView
                 android:id="@+id/titleWordId"
@@ -114,7 +125,7 @@
                 android:padding="10dp"
                 android:text="@string/world_declaration"
                 android:textSize="16sp"
-                tools:targetApi="O"/>
+                tools:targetApi="O" />
 
             <TextView
                 android:id="@+id/titleNewAgendaDeclarationId"
@@ -134,7 +145,7 @@
                 android:padding="10dp"
                 android:text="@string/new_agenda_declaration"
                 android:textSize="16sp"
-                tools:targetApi="O"/>
+                tools:targetApi="O" />
 
             <TextView
                 android:id="@+id/titleMiddlesDeclarationId"
@@ -154,7 +165,7 @@
                 android:padding="10dp"
                 android:text="@string/middles_declaration"
                 android:textSize="16sp"
-                tools:targetApi="O"/>
+                tools:targetApi="O" />
 
             <TextView
                 android:id="@+id/titleAvaliationDeclarationId"
@@ -174,7 +185,7 @@
                 android:padding="10dp"
                 android:text="@string/avaliation_declaration"
                 android:textSize="16sp"
-                tools:targetApi="O"/>
+                tools:targetApi="O" />
 
             <TextView
                 android:id="@+id/titleChamadoDeclarationId"
