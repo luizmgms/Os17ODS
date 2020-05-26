@@ -769,5 +769,21 @@
     <string name="link_agend_ing_of_obj17">http://bit.ly/2030agenda</string>
     <string name="link_indi_of_obj17">http://unstats.un.org/sdgs/</string>
     <string name="link_docs_tem_of_obj17">https://nacoesunidas.org/pos2015/documentos-tematicos/</string>
+    <string name="link_pdf_doc_tem">https://www.undp.org/content/dam/brazil/docs/publicacoes/documentos-tematicos-ods-07-2017.pdf</string>
+    <string name="title_text_docs_tems">Documentos temáticos sobre os ODS</string>
+    <string name="text_docs_tems">
+        \n\nDurante evento na Câmara dos Deputados em junho de 2017, reunindo parlamentares e representantes da sociedade civil, o copresidente do Grupo Assessor do Sistema ONU para a Agenda 2030, Haroldo Machado Filho, entregou documentos temáticos sobre os Objetivos do Desenvolvimento Sustentável (ODS).
+
+        \n\nOs documentos temáticos são contribuições de 18 agências, fundos e programas da ONU no Brasil, de acordo com as áreas temáticas de atuação.
+
+        \n\nO conjunto de relatórios apresenta temas e questões que o Sistema ONU no Brasil considera relevantes no âmbito do processo de implementação dos ODS no Brasil, e pretendem servir como subsídios à Comissão Nacional para os Objetivos de Desenvolvimento Sustentável para as discussões temáticas correspondentes na fase preparatória para o fórum. A comissão nacional para os objetivos globais conta com oito membros da sociedade civil e oito do governo brasileiro.
+
+        \n\nEm exercício desde 2014, o Grupo Assessor do Sistema ONU para a Agenda 2030 conta com a participação de 18 organismos do Sistema ONU, além de membros do governo federal. Acesse ao lado cada um dos documentos temáticos.
+    </string>
+    <string name="text_link_pdf_doc_tem">
+        "Acesse clicando aqui o documento temático sobre os Objetivos de Desenvolvimeto Sustentável "
+        "1 - Erradicação da pobreza, 2 - Fome zero e agricultura sustentável, 3 - Saúde e bem-estar,"
+        " 5 - Igualdade de Gênero, 9 - Indústria, inovação e infraestrutura, e 14 - Vida na água."
+    </string>
 
 </resources>

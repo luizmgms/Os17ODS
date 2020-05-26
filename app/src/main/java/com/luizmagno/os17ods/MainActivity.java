@@ -2,24 +2,15 @@ package com.luizmagno.os17ods;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
-
 import android.view.MenuItem;
-
 import com.google.android.material.navigation.NavigationView;
-import com.luizmagno.os17ods.fragments.CupulaFragment;
-import com.luizmagno.os17ods.fragments.DeclarationFragment;
-import com.luizmagno.os17ods.fragments.DocumentsFragment;
 import com.luizmagno.os17ods.fragments.HomeFragment;
-
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
-
 import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity
@@ -138,21 +129,14 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_docs) {
 
-            //Abre Fragment Documentos
-            fragmentManager.beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                    .replace(R.id.content_fragment, new DocumentsFragment())
-                    .commit();
+            Intent intent = new Intent(this, DocumentsActivity.class);
+            startActivity(intent);
+            setHome();
             setToolbar();
 
         } else if (id == R.id.nav_cupula) {
 
-            //Abre o Fragment Cupula
-            fragmentManager.beginTransaction()
-                    .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                    .replace(R.id.content_fragment, new CupulaFragment())
-                    .commit();
-            setToolbar();
+
 
         } else if (id == R.id.nav_agenda) {
 
