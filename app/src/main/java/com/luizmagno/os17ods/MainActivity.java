@@ -136,7 +136,10 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_cupula) {
 
-
+            Intent intent = new Intent(this, CupulaActivity.class);
+            startActivity(intent);
+            setHome();
+            setToolbar();
 
         } else if (id == R.id.nav_agenda) {
 

@@ -772,7 +772,7 @@
     <string name="link_pdf_doc_tem">https://www.undp.org/content/dam/brazil/docs/publicacoes/documentos-tematicos-ods-07-2017.pdf</string>
     <string name="title_text_docs_tems">Documentos temáticos sobre os ODS</string>
     <string name="text_docs_tems">
-        \n\nDurante evento na Câmara dos Deputados em junho de 2017, reunindo parlamentares e representantes da sociedade civil, o copresidente do Grupo Assessor do Sistema ONU para a Agenda 2030, Haroldo Machado Filho, entregou documentos temáticos sobre os Objetivos do Desenvolvimento Sustentável (ODS).
+        Durante evento na Câmara dos Deputados em junho de 2017, reunindo parlamentares e representantes da sociedade civil, o copresidente do Grupo Assessor do Sistema ONU para a Agenda 2030, Haroldo Machado Filho, entregou documentos temáticos sobre os Objetivos do Desenvolvimento Sustentável (ODS).
 
         \n\nOs documentos temáticos são contribuições de 18 agências, fundos e programas da ONU no Brasil, de acordo com as áreas temáticas de atuação.
 
@@ -781,9 +781,44 @@
         \n\nEm exercício desde 2014, o Grupo Assessor do Sistema ONU para a Agenda 2030 conta com a participação de 18 organismos do Sistema ONU, além de membros do governo federal. Acesse ao lado cada um dos documentos temáticos.
     </string>
     <string name="text_link_pdf_doc_tem">
-        "Acesse clicando aqui o documento temático sobre os Objetivos de Desenvolvimeto Sustentável "
-        "1 - Erradicação da pobreza, 2 - Fome zero e agricultura sustentável, 3 - Saúde e bem-estar,"
-        " 5 - Igualdade de Gênero, 9 - Indústria, inovação e infraestrutura, e 14 - Vida na água."
+        "Acesse clicando aqui o documento temático sobre os ODS "
+        "1, 2, 3, 5, 9 e 14."
     </string>
+    <string name="title_text_cup">Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável</string>
+    <string name="text_subtitle_cup">
+        Transformar nosso mundo para as Pessoas e o Planeta (25 a 27 de setembro de 2015)
+    </string>
+    <string name="text_title_new_agend_cup">Nova agenda de desenvolvimento sustentável: não deixando ninguém para trás</string>
+    <string name="text_new_agend_cup">
+        Mais de 150 líderes mundiais são esperados para participar na Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, que acontece entre 25 e 27 de setembro na sede da ONU em Nova York, para adotar formalmente uma nova agenda de desenvolvimento sustentável. Esta agenda servirá como plataforma de ação da comunidade internacional e dos governos nacionais na promoção da prosperidade comum e do bem-estar para todos ao longo dos próximos 15 anos.
+        \n\nEm uma declaração emitida após o consenso alcançado pelos Estados-membros sobre o documento final da Cúpula, em 2 de agosto, o secretário-geral da ONU, Ban Ki-moon, disse: “[O acordo] abrange uma agenda universal, transformadora e integrada que anuncia um momento decisivo histórico para nosso mundo”.
+        \n\n“Esta é a Agenda do Povo, um plano de ação para acabar com a pobreza em todas as suas dimensões, de forma irreversível, em todos os lugares, não deixando ninguém para trás”, disse.
+    </string>
+    <string name="text_new_agend_cup2">
+        Acordada pelos 193 Estados-membros da ONU, a agenda proposta, intitulada “Transformando Nosso Mundo: a Agenda 2030 para o Desenvolvimento Sustentável”, consiste de uma Declaração, 17 Objetivos de Desenvolvimento Sustentável e 169 metas, uma seção sobre meios de implementação e uma renovada parceria mundial, além de um mecanismo para avaliação e acompanhamento.
+        \n\nA agenda é única em seu apelo por ação a todos os países – pobres, ricos e de renda média. Ela reconhece que acabar com a pobreza deve caminhar lado a lado com um plano que promova o crescimento econômico e responda a uma gama de necessidades sociais, incluindo educação, saúde, proteção social e oportunidades de trabalho, ao mesmo tempo em que aborda as mudanças climáticas e proteção ambiental. Ela também cobre questões como desigualdade, infraestrutura, energia, consumo, biodiversidade, oceanos e industrialização.
+        \n\nA nova agenda de desenvolvimento sustentável se enquadra no êxito do resultado da Conferência sobre o Financiamento para o Desenvolvimento, recentemente concluída em Adis Abeba (Etiópia). Espera-se que ela também afete positivamente as negociações sobre um novo acordo climático significativo e universal, que acontecerá em Paris (França), em dezembro deste ano.
+    </string>
+    <string name="title_text_process_inter">
+        Processo Intergovernamental rumo à Ação Global para as Pessoas e o Planeta
+    </string>
+    <string name="text_process_inter">
+        Os Objetivos de Desenvolvimento do Milênio (ODM), que produziram o mais bem-sucedido movimento antipobreza da História, serve como um trampolim para a nova agenda de desenvolvimento sustentável que será adotada por líderes mundiais.
+        \n\nDesde a Conferência das Nações Unidas sobre Meio Ambiente e Desenvolvimento de 1992 – a Cúpula da Terra – no Rio de Janeiro, o mundo identificou um novo caminho para o bem-estar humano, o do desenvolvimento sustentável. O conceito de desenvolvimento sustentável, apresentado na Agenda 21, reconhece que o desenvolvimento econômico deve ser equilibrado com um crescimento que responda às necessidades das pessoas e proteja o meio ambiente.
+    </string>
+    <string name="text_process_inter2">
+        A nova agenda de desenvolvimento sustentável baseia-se no resultado da Cúpula Mundial sobre Desenvolvimento Sustentável de 2002, da Cúpula de 2010 sobre os ODM, o resultado da Conferência das Nações Unidas sobre Desenvolvimento Sustentável de 2012 (Rio+20) e os pontos de vista de pessoas em todo o mundo.
+        \n\nReconhecendo os sucessos dos ODM, os países concordaram sobre “O futuro que Queremos” – o documento final do Rio+20 – para estabelecer um grupo de trabalho aberto para elaborar um conjunto de metas de desenvolvimento sustentável para consideração e ação apropriada. Depois de mais de um ano de deliberações consultivas abrangentes e intensivas, o Grupo de Trabalho Aberto propôs 17 objetivos específicos com 169 metas associadas.
+        \n\nAs negociações intergovernamentais sobre a composição das metas durou mais de dois anos e incluiu numerosas contribuições da sociedade civil e outras partes interessadas. As consultas inclusivas e transparentes levaram ao alcance de um consenso em 2 de agosto do documento final para a nova agenda de desenvolvimento sustentável.
+        \n\nA nova agenda será oficialmente adotada pelos líderes mundiais na Cúpula das Nações Unidas sobre o Desenvolvimento Sustentável, que acontece nos dias 25, 26 e 27 de setembro de 2015.
+    </string>
+    <string name="text_link_acess_agend">
+        Acesse a Agenda 2030: nacoesunidas.org/pos2015/agenda2030
+    </string>
+    <string name="link_acess_agend">https://nacoesunidas.org/pos2015/agenda2030/</string>
+    <string name="link_video_que">https://www.youtube.com/watch?v=Bue5c2kpgPo</string>
+    <string name="link_video_trans">https://www.youtube.com/watch?v=p1I_OiSO1DU</string>
+    <string name="link_video_qual">https://www.youtube.com/watch?v=bhFwHcKtVXU</string>
+
 
 </resources>
