@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Obj17Activity"
+    tools:showIn="@layout/layout_obj17">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageOf17Obj1Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/legend_image_17_obj"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/obj_17_transf_mundo" />
+
+        <TextView
+            android:id="@+id/legendImage117ObjId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/legend_image_17_obj"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageOf17Obj2Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_of_images"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/legend_image2_17_obj"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/plataforma2030" />
+
+        <TextView
+            android:id="@+id/legendImage217ObjId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/legend_image2_17_obj"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textNoticiasId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_noticias"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <fragment
+            android:id="@+id/youTubeFragmentIn17ObjId"
+            android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_of_texts"
+            android:layout_marginLeft="@dimen/margin_of_texts"
+            android:layout_marginRight="@dimen/margin_of_texts"
+            android:text="@string/title_roteiro_17obj"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/roteiro17ObjId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/roteiro_obj17"
+            android:textSize="16sp"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/textLinkDocumentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/text_link_document"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/textDuvidasId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/text_duvidas"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageDuvidasId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/text_duvidas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/duvidas" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/desc_duvidas"
+            android:textSize="16sp"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/textLinkDuvidasId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_link_duvidas"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/textLinkDadosId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_link_dados"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_play_arrow"
+            tools:targetApi="o"
+            android:drawableStart="@drawable/ic_play_arrow" />
+
+        <TextView
+            android:id="@+id/textLinkSaibaId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_link_saiba"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_play_arrow"
+            tools:targetApi="o"
+            android:drawableStart="@drawable/ic_play_arrow" />
+
+        <TextView
+            android:id="@+id/textLinkAcompId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_link_acomp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_play_arrow"
+            tools:targetApi="o"
+            android:drawableStart="@drawable/ic_play_arrow" />
+
+        <TextView
+            android:id="@+id/textLinkPageEspId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_link_page_esp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_play_arrow"
+            tools:targetApi="o"
+            android:drawableStart="@drawable/ic_play_arrow" />
+
+        <TextView
+            android:id="@+id/textLinkTempRealId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_link_temp_real"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_play_arrow"
+            tools:targetApi="o"
+            android:drawableStart="@drawable/ic_play_arrow" />
+
+        <TextView
+            android:id="@+id/textLinkAgendPtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_link_agend_pt"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_play_arrow"
+            tools:targetApi="o"
+            android:drawableStart="@drawable/ic_play_arrow" />
+
+        <TextView
+            android:id="@+id/textLinkAgendIngId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_link_agend_ing"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_play_arrow"
+            tools:targetApi="o"
+            android:drawableStart="@drawable/ic_play_arrow" />
+
+        <TextView
+            android:id="@+id/textLinkInicadoresId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_link_indicadores"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_play_arrow"
+            tools:targetApi="o"
+            android:drawableStart="@drawable/ic_play_arrow" />
+
+        <TextView
+            android:id="@+id/textLinkDocsTemaId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_link_docs_tema"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_play_arrow"
+            tools:targetApi="o"
+            android:drawableStart="@drawable/ic_play_arrow" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

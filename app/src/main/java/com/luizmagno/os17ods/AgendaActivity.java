@@ -27,7 +27,7 @@ public class AgendaActivity extends AppCompatActivity implements YouTubePlayer.O
 
         //Set Toolbar
         toolbar = findViewById(R.id.toolbarInAgendaId);
-        toolbar.setNavigationIcon(R.drawable.ic_back);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         toolbar.setTitle(getResources().getString(R.string.title_agenda));
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

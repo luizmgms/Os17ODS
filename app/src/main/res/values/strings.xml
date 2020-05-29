@@ -682,9 +682,7 @@
 
         \n\nAs Nações Unidas trabalharam junto aos governos, sociedade civil e outros parceiros para aproveitar o impulso gerado pelos ODM e levar à frente uma agenda de desenvolvimento pós-2015 ambiciosa.
     </string>
-    <string name="legend_image_moment_agenda">
-        A redução da pobreza é um dos eixos da agenda de desenvolvimento pós-2015. Crianças na favela de Kallayanpur, uma das favelas urbanas em Daca, Bangladesh. Foto: ONU/Kibae Park
-    </string>
+    <string name="legend_image_moment_agenda">Foto: ONU/Kibae Park</string>
     <string name="title_rumo_agenda">Rumo à Agenda de Desenvolvimento Sustentável</string>
     <string name="rumo_agenda">
         Garantir uma vida com dignidade – 2015 foi o ano no qual os países se adaptaram e adotaram uma nova agenda de desenvolvimento que se baseou nos Objetivos de Desenvolvimento do Milênio (ODM).
@@ -819,6 +817,7 @@
     <string name="link_video_que">https://www.youtube.com/watch?v=Bue5c2kpgPo</string>
     <string name="link_video_trans">https://www.youtube.com/watch?v=p1I_OiSO1DU</string>
     <string name="link_video_qual">https://www.youtube.com/watch?v=bhFwHcKtVXU</string>
+    <string name="link_video_obj_glob">https://www.youtube.com/watch?v=9nQblX1_z2M</string>
 
 
 </resources>

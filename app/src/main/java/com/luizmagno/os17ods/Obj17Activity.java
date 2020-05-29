@@ -36,8 +36,8 @@ public class Obj17Activity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.layout_obj17);
 
         //Set Toolbar
-        toolbar = findViewById(R.id.toolbarIn17ObjId);
-        toolbar.setNavigationIcon(R.drawable.ic_back);
+        toolbar = findViewById(R.id.toolbarInObj17Id);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         toolbar.setTitle(getResources().getString(R.string.title_17_obj));
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

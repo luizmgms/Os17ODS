@@ -1,317 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:gravity="center"
-    android:background="@android:color/white">
+    android:fitsSystemWindows="true"
+    tools:context=".Obj17Activity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarIn17ObjId"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/AppTheme.PopupOverlay" />
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-    <ScrollView
-        android:id="@+id/scrollIn17ObjId"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarIn17ObjId">
-
-        <LinearLayout
+        <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:toolbarId="@+id/toolbarInObj17Id">
 
             <ImageView
-                android:id="@+id/imageOf17Obj1Id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/legend_image_17_obj"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/obj_17_transf_mundo" />
+                app:srcCompat="@drawable/trans_mundo2" />
 
-            <TextView
-                android:id="@+id/legendImage117ObjId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/legend_image_17_obj"
-                android:textSize="12sp" />
-
-            <ImageView
-                android:id="@+id/imageOf17Obj2Id"
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarInObj17Id"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/legend_image2_17_obj"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/plataforma2030" />
+                android:layout_height="?attr/actionBarSize"
+                app:title="Transformar o Mundo"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-            <TextView
-                android:id="@+id/legendImage217ObjId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/legend_image2_17_obj"
-                android:textSize="12sp" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
-            <TextView
-                android:id="@+id/textNoticiasId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="@string/text_noticias"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:textColor="@color/colorPrimary"/>
+    <include layout="@layout/content_scroll_obj17" />
 
-            <fragment
-                android:id="@+id/youTubeFragmentIn17ObjId"
-                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp" />
-
-            <TextView
-                android:id="@+id/titleRoteiro17ObjId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:paddingLeft="8dp"
-                android:paddingTop="8dp"
-                android:paddingRight="8dp"
-                android:text="@string/title_roteiro_17obj"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/roteiro17ObjId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/roteiro_obj17"
-                android:textSize="16sp"
-                tools:targetApi="o" />
-
-            <TextView
-                android:id="@+id/textLinkDocumentId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="@string/text_link_document"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:textColor="@color/colorPrimary"/>
-
-            <TextView
-                android:id="@+id/textDuvidasId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/text_duvidas"
-                android:textStyle="bold"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:id="@+id/imageDuvidasId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="8dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/text_duvidas"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/duvidas" />
-
-            <TextView
-                android:id="@+id/descDuvidasId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/desc_duvidas"
-                android:textSize="16sp"
-                tools:targetApi="o" />
-
-            <TextView
-                android:id="@+id/textLinkDuvidasId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="8dp"
-                android:text="@string/text_link_duvidas"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:textColor="@color/colorPrimary"/>
-
-            <TextView
-                android:id="@+id/textLinkDadosId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/text_link_dados"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:drawableLeft="@drawable/ic_play_arrow"
-                tools:targetApi="o" />
-
-            <TextView
-                android:id="@+id/textLinkSaibaId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/text_link_saiba"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:drawableLeft="@drawable/ic_play_arrow"
-                tools:targetApi="o" />
-
-            <TextView
-                android:id="@+id/textLinkAcompId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/text_link_acomp"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:drawableLeft="@drawable/ic_play_arrow"
-                tools:targetApi="o" />
-
-            <TextView
-                android:id="@+id/textLinkPageEspId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/text_link_page_esp"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:drawableLeft="@drawable/ic_play_arrow"
-                tools:targetApi="o" />
-
-            <TextView
-                android:id="@+id/textLinkTempRealId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/text_link_temp_real"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:drawableLeft="@drawable/ic_play_arrow"
-                tools:targetApi="o" />
-
-            <TextView
-                android:id="@+id/textLinkAgendPtId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/text_link_agend_pt"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:drawableLeft="@drawable/ic_play_arrow"
-                tools:targetApi="o" />
-
-            <TextView
-                android:id="@+id/textLinkAgendIngId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/text_link_agend_ing"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:drawableLeft="@drawable/ic_play_arrow"
-                tools:targetApi="o" />
-
-            <TextView
-                android:id="@+id/textLinkInicadoresId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/text_link_indicadores"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:drawableLeft="@drawable/ic_play_arrow"
-                tools:targetApi="o" />
-
-            <TextView
-                android:id="@+id/textLinkDocsTemaId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:paddingBottom="8dp"
-                android:text="@string/text_link_docs_tema"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:drawableLeft="@drawable/ic_play_arrow"
-                tools:targetApi="o" />
-
-        </LinearLayout>
-
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -33,11 +33,12 @@
             android:text="@string/text_subtitle_cup"
             tools:targetApi="O"/>
 
-        <fragment
-            android:id="@+id/youTubeFragInCupId"
-            android:name="com.google.android.youtube.player.YouTubePlayerFragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/videoObjGlobId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/video_obj_glob"/>
 
         <TextView
             android:layout_width="wrap_content"

@@ -2,7 +2,6 @@ package com.luizmagno.os17ods;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,7 +12,7 @@ import android.widget.TextView;
 public class CupulaActivity extends AppCompatActivity implements View.OnClickListener{
 
     private Toolbar toolbar;
-    private ImageView video1, video2, video3;
+    private ImageView video1, video2, video3, video4;
     private TextView link;
 
     @Override
@@ -35,15 +34,14 @@ public class CupulaActivity extends AppCompatActivity implements View.OnClickLis
         video1 = findViewById(R.id.videoTransId);
         video2 = findViewById(R.id.videoQualoMId);
         video3 = findViewById(R.id.videoQeDesSusId);
+        video4 = findViewById(R.id.videoObjGlobId);
         link = findViewById(R.id.textLinkAcessAgendId);
 
         video1.setOnClickListener(this);
         video2.setOnClickListener(this);
         video3.setOnClickListener(this);
+        video4.setOnClickListener(this);
         link.setOnClickListener(this);
-
-
-
 
     }
 
@@ -62,6 +60,8 @@ public class CupulaActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.textLinkAcessAgendId:
                 startUrl(getResources().getString(R.string.link_acess_agend));
                 break;
+            case R.id.videoObjGlobId:
+                startUrl(getResources().getString(R.string.link_video_obj_glob));
             default:
                 break;
         }
