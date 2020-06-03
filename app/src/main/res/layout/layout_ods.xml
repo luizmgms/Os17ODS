@@ -1,98 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/backgroundOdsId"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:alpha="1"
-    android:background="@color/colorBackgroundOds">
+    android:fitsSystemWindows="true"
+    tools:context=".OdsActivity">
 
-    <ScrollView
-        android:id="@+id/scrollTextDescOdsId"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapseTbLayoutId"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:toolbarId="@+id/toolbarInOdsId">
 
-            <View
-                android:id="@+id/backgroundTitleId"
+            <ImageView
+                android:id="@+id/imageCollapseInOdsId"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginBottom="-8dp"
-                android:background="@color/colorOfOds1"
-                app:layout_constraintBottom_toBottomOf="@+id/subTitleOdOdsId"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/numOdsId"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:alpha="0.5"
-                android:text="@string/defaultNumberOfOds"
-                android:textColor="#000000"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/legend_image_17_obj"
+                app:srcCompat="@drawable/trans_mundo2" />
 
-            <TextView
-                android:id="@+id/titleOdsId"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginRight="4dp"
-                android:text="@string/defaultTitleOfOds"
-                android:textColor="@color/colorTitleOfOds"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                app:fontFamily="sans-serif-black"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/numOdsId"
-                app:layout_constraintTop_toTopOf="@+id/numOdsId" />
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarInOdsId"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Objetivo Nº "
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-            <TextView
-                android:id="@+id/subTitleOdOdsId"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="@string/subTitleOfOds"
-                android:textColor="@color/colorSubTitleOfOds"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/titleOdsId"
-                app:layout_constraintTop_toBottomOf="@+id/titleOdsId" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
-            <TextView
-                android:id="@+id/descOfOdsId"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="@string/ods1_desc"
-                android:textAllCaps="false"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/backgroundTitleId"
-                tools:targetApi="O"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    <include layout="@layout/content_scroll_ods" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

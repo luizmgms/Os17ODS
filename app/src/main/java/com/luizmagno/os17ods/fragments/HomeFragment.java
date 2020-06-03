@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 
+import com.luizmagno.os17ods.OdsActivity;
 import com.luizmagno.os17ods.R;
 
 import org.jetbrains.annotations.NotNull;
@@ -82,19 +83,12 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        v.setAlpha(0.6f);
+        v.animate().alpha(0.7f);
         String numOfOds = getNumOds(v);
-        Fragment ods_frag = new OdsFragment();
-        Bundle bund = new Bundle();
-        bund.putString("idOds", numOfOds);
-        ods_frag.setArguments(bund);
 
-        fragmentManager = getActivity().getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                .replace(R.id.content_fragment, ods_frag)
-                .addToBackStack(null)
-                .commit();
+        Intent intent = new Intent(getActivity(), OdsActivity.class);
+        intent.putExtra("idOds", numOfOds);
+        startActivity(intent);
 
     }
 
