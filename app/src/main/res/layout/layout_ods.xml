@@ -24,6 +24,7 @@
             app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
             app:toolbarId="@+id/toolbarInOdsId">
 
+
             <ImageView
                 android:id="@+id/imageCollapseInOdsId"
                 android:layout_width="match_parent"
@@ -31,6 +32,19 @@
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/legend_image_17_obj"
                 app:srcCompat="@drawable/trans_mundo2" />
+
+            <TextView
+                android:id="@+id/titleOdsId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/ods1_title"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-black"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarInOdsId"

@@ -6,18 +6,13 @@ import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-
-
 import com.luizmagno.os17ods.OdsActivity;
 import com.luizmagno.os17ods.R;
-
 import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
@@ -41,6 +36,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         //Setando altura, largura e click dos constraintsLayouts
         setWidthAndHeightOfObjectives(side);
+
+        //fragmentManager
+        fragmentManager = getActivity().getSupportFragmentManager();
 
         return homeView;
     }
@@ -83,12 +81,18 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        v.animate().alpha(0.7f);
+
+        v.setAlpha(0.6f);
         String numOfOds = getNumOds(v);
 
         Intent intent = new Intent(getActivity(), OdsActivity.class);
         intent.putExtra("idOds", numOfOds);
         startActivity(intent);
+
+        //Replace Homefragment
+        fragmentManager.beginTransaction()
+                .replace(R.id.content_fragment, new HomeFragment())
+                .commit();
 
     }
 

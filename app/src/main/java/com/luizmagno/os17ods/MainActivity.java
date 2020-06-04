@@ -51,26 +51,12 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onBackPressed() {
 
-        toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-        toolbar.setTitle(R.string.app_name);
-
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
 
-        //Se o Nav está aberto e a Pilha de Fragments é > 0
+        //Se o Nav está aberto
         if (drawer.isDrawerOpen(GravityCompat.START) ) {
 
             drawer.closeDrawer(GravityCompat.START);
-
-        } else if(fragmentManager.getBackStackEntryCount() > 0) {
-
-            setHome();
-            setToolbar();
-            fragmentManager.popBackStack();
-
-        } else if(fragmentManager.getBackStackEntryCount() == 0 && fragmentManager.getFragments().size() == 1 && fragmentManager.findFragmentByTag("home") == null) {
-
-            setHome();
-            setToolbar();
 
         } else {
             super.onBackPressed();
@@ -94,21 +80,8 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_about) {
-            return true;
-        } else if (id == R.id.action_home) {
-
-            //Não coloca o home na Pilha de Fragments
-            if (fragmentManager.getBackStackEntryCount() > 0) {
-
-                setHome();
-                setToolbar();
-                verifyStackOfFragments();
-
-            } else if (fragmentManager.getBackStackEntryCount() == 0 && fragmentManager.getFragments().size() == 1 && fragmentManager.findFragmentByTag("home") == null) {
-                setHome();
-                setToolbar();
-            }
-
+            //Intent intent = new Intent(this, AboutActivity.class);
+            //startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
@@ -125,60 +98,41 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, DeclaracaoActivity.class);
             startActivity(intent);
             setHome();
-            setToolbar();
 
         } else if (id == R.id.nav_docs) {
 
             Intent intent = new Intent(this, DocumentsActivity.class);
             startActivity(intent);
             setHome();
-            setToolbar();
 
         } else if (id == R.id.nav_cupula) {
 
             Intent intent = new Intent(this, CupulaActivity.class);
             startActivity(intent);
             setHome();
-            setToolbar();
 
         } else if (id == R.id.nav_agenda) {
 
             Intent intent = new Intent(this, AgendaActivity.class);
             startActivity(intent);
             setHome();
-            setToolbar();
 
         } else if (id == R.id.nav_17_obj) {
             Intent intent = new Intent(this, Obj17Activity.class);
             startActivity(intent);
             setHome();
-            setToolbar();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
 
-    //Verificar pilha de fragments
-    private void verifyStackOfFragments() {
-        if (fragmentManager.getBackStackEntryCount()> 0){
-            fragmentManager.popBackStack();
-        }
+        return true;
     }
 
     //Set Home
     private void setHome(){
         fragmentManager.beginTransaction()
-                .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-                .replace(R.id.content_fragment, new HomeFragment(), "home")
+                .replace(R.id.content_fragment, new HomeFragment())
                 .commit();
     }
-
-    //Set Toolbar
-    private void setToolbar(){
-        toolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-        toolbar.setTitle(R.string.app_name);
-    }
-
 }

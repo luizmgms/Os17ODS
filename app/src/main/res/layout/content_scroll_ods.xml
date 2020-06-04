@@ -24,48 +24,21 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/numOdsId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
-            android:alpha="0.5"
-            android:text="@string/defaultNumberOfOds"
-            android:textColor="#000000"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/titleOdsId"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginRight="4dp"
-            android:text="@string/defaultTitleOfOds"
-            android:textColor="@color/colorTitleOfOds"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            app:fontFamily="sans-serif-black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/numOdsId"
-            app:layout_constraintTop_toTopOf="@+id/numOdsId" />
-
-        <TextView
             android:id="@+id/subTitleOdOdsId"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
             android:paddingBottom="8dp"
             android:text="@string/subTitleOfOds"
             android:textColor="@color/colorSubTitleOfOds"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/titleOdsId"
-            app:layout_constraintTop_toBottomOf="@+id/titleOdsId" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/descOfOdsId"

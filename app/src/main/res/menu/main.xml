@@ -6,9 +6,4 @@
         android:orderInCategory="100"
         android:title="@string/action_about"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_home"
-        android:title="@string/menu_home"
-        android:icon="@drawable/ic_home"
-        app:showAsAction="always"/>
 </menu>

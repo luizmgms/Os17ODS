@@ -17,7 +17,6 @@ public class OdsActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private ImageView collapseImage;
     private View containerTitleOfOds;
-    private TextView numOfOds;
     private TextView titleOfOds;
     private TextView subTitleOfOds;
     private TextView descOfOds;
@@ -41,7 +40,6 @@ public class OdsActivity extends AppCompatActivity {
         //Atributos
         collapsingToolbarLayout = findViewById(R.id.collapseTbLayoutId);
         containerTitleOfOds = findViewById(R.id.backgroundTitleId);
-        numOfOds = findViewById(R.id.numOdsId);
         titleOfOds = findViewById(R.id.titleOdsId);
         subTitleOfOds = findViewById(R.id.subTitleOdOdsId);
         descOfOds = findViewById(R.id.descOfOdsId);
@@ -61,9 +59,6 @@ public class OdsActivity extends AppCompatActivity {
             toolbar.setTitle(R.string.app_name);
         }
 
-        //Set TextView com Número da Ods
-        numOfOds.setText(num_ods);
-
         //Setando Views
         setAttributesOfOds(num_ods);
     }
@@ -75,24 +70,22 @@ public class OdsActivity extends AppCompatActivity {
 
         switch (idOfOds) {
             case "1":
-                collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_1));
+                collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.img_ods_01));
                 titleOfOds.setText(R.string.ods1_title);
                 subTitleOfOds.setText(R.string.ods1_subtitle);
                 descOfOds.setText(R.string.ods1_desc);
                 color = ContextCompat.getColor(this, R.color.colorOfOds1);
                 containerTitleOfOds.setBackgroundColor(color);
                 collapsingToolbarLayout.setContentScrimColor(color);
-                //toolbar.setBackgroundColor(color);
                 break;
             case "2":
-                collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_2));
+                collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.img_ods_02));
                 titleOfOds.setText(R.string.ods2_title);
                 subTitleOfOds.setText(R.string.ods2_subtitle);
                 descOfOds.setText(R.string.ods2_desc);
                 color = ContextCompat.getColor(this, R.color.colorOfOds2);
                 containerTitleOfOds.setBackgroundColor(color);
                 collapsingToolbarLayout.setContentScrimColor(color);
-                //toolbar.setBackgroundColor(color);
                 break;
             case "3":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_3));
@@ -101,7 +94,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods3_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds3);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "4":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_4));
@@ -110,7 +103,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods4_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds4);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "5":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_5));
@@ -119,7 +112,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods5_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds5);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "6":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_6));
@@ -128,7 +121,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods6_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds6);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "7":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_7));
@@ -137,7 +130,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods7_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds7);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "8":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_8));
@@ -146,7 +139,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods8_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds8);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "9":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_9));
@@ -155,7 +148,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods9_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds9);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "10":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_10));
@@ -164,7 +157,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods10_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds10);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "11":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_11));
@@ -173,7 +166,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods11_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds11);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "12":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_12));
@@ -182,7 +175,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods12_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds12);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "13":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_13));
@@ -191,7 +184,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods13_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds13);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "14":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_14));
@@ -200,7 +193,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods14_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds14);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "15":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_15));
@@ -209,7 +202,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods15_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds15);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "16":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_16));
@@ -218,7 +211,7 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods16_desc);
                 color = ContextCompat.getColor(this,R.color.colorOfOds16);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             case "17":
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_17));
@@ -227,17 +220,16 @@ public class OdsActivity extends AppCompatActivity {
                 descOfOds.setText(R.string.ods17_desc);
                 color = ContextCompat.getColor(this, R.color.colorOfOds17);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
             default:
                 collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_onu));
-                titleOfOds.setText(R.string.ods_onu_title);
+                titleOfOds.setText("");
                 subTitleOfOds.setText(R.string.ods_onu_subtitle);
                 descOfOds.setText(R.string.ods_onu_desc_full);
                 color = ContextCompat.getColor(this, R.color.colorOfOdsONU);
                 containerTitleOfOds.setBackgroundColor(color);
-                toolbar.setBackgroundColor(color);
-                numOfOds.setText("");
+                collapsingToolbarLayout.setContentScrimColor(color);
                 break;
         }
 
