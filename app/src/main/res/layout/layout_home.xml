@@ -32,10 +32,12 @@
 
                     <ImageView
                         android:id="@+id/imageONUId"
+                        android:transitionName="transform"
                         android:layout_width="200dp"
                         android:layout_height="200dp"
                         android:contentDescription="@string/ods_onu_desc"
-                        android:src="@drawable/ods_onu" />
+                        android:src="@drawable/ods_onu"
+                        tools:targetApi="lollipop"/>
 
                     <ImageView
                         android:id="@+id/imageOds1Id"

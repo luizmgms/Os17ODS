@@ -1,6 +1,8 @@
 package com.luizmagno.os17ods.fragments;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
@@ -87,12 +89,20 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         Intent intent = new Intent(getActivity(), OdsActivity.class);
         intent.putExtra("idOds", numOfOds);
-        startActivity(intent);
 
-        //Replace Homefragment
+        //Transição com elemento comum
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ActivityOptions options = ActivityOptions
+                    .makeSceneTransitionAnimation(getActivity(), v, "transform");
+            startActivity(intent, options.toBundle());
+        } else {
+            startActivity(intent);
+        }
+
+        /*//Replace Homefragment
         fragmentManager.beginTransaction()
                 .replace(R.id.content_fragment, new HomeFragment())
-                .commit();
+                .commit();*/
 
     }
 
