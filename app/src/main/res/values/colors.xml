@@ -26,4 +26,5 @@
     <color name="colorOfOds16">#00689C</color>
     <color name="colorOfOds17">#19486A</color>
     <color name="colorOfOdsONU">#0084C9</color>
+    <color name="gray">#6F6F6F</color>
 </resources>

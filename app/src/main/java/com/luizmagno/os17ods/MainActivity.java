@@ -1,29 +1,44 @@
 package com.luizmagno.os17ods;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 import com.google.android.material.navigation.NavigationView;
-import com.luizmagno.os17ods.fragments.HomeFragment;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
 import android.view.Menu;
+import android.view.View;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
 
-    //Gerenciamento dos Fragments
-    public FragmentManager fragmentManager;
+    private ArrayList<View> objectives;
     public Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        objectives = new ArrayList<>();
+
+        //Preenchendo Array de Objetivos - 0 a 17
+        fillListOfObjectives();
+
+        //Set OnClick
+        for (View objective: objectives) {
+            objective.setOnClickListener(this);
+        }
 
         //toolbar
         toolbar = findViewById(R.id.toolbar);
@@ -41,11 +56,6 @@ public class MainActivity extends AppCompatActivity
         //Ação do Item do Navigation
         navigationView.setNavigationItemSelectedListener(this);
 
-        //Set Fragment Home
-        fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.content_fragment, new HomeFragment(), "home")
-                .commit();
     }
 
     @Override
@@ -131,8 +141,113 @@ public class MainActivity extends AppCompatActivity
 
     //Set Home
     private void setHome(){
-        fragmentManager.beginTransaction()
+        /*fragmentManager.beginTransaction()
                 .replace(R.id.content_fragment, new HomeFragment())
-                .commit();
+                .commit();*/
+    }
+
+    private void fillListOfObjectives() {
+        objectives.add( findViewById(R.id.imageOds1Id) );
+        objectives.add( findViewById(R.id.imageOds2Id) );
+        objectives.add(  findViewById(R.id.imageOds3Id) );
+        objectives.add(  findViewById(R.id.imageOds4Id) );
+        objectives.add(  findViewById(R.id.imageOds5Id) );
+        objectives.add(  findViewById(R.id.imageOds6Id) );
+        objectives.add(  findViewById(R.id.imageOds7Id) );
+        objectives.add(  findViewById(R.id.imageOds8Id) );
+        objectives.add(  findViewById(R.id.imageOds9Id) );
+        objectives.add(  findViewById(R.id.imageOds10Id) );
+        objectives.add(  findViewById(R.id.imageOds11Id) );
+        objectives.add(  findViewById(R.id.imageOds12Id) );
+        objectives.add(  findViewById(R.id.imageOds13Id) );
+        objectives.add(  findViewById(R.id.imageOds14Id) );
+        objectives.add(  findViewById(R.id.imageOds15Id) );
+        objectives.add(  findViewById(R.id.imageOds16Id) );
+        objectives.add(  findViewById(R.id.imageOds17Id) );
+        objectives.add(  findViewById(R.id.imageONUId) );
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        v.setAlpha(0.6f);
+        String numOfOds = getNumOds(v);
+
+        Intent intent = new Intent(this, OdsActivity.class);
+        intent.putExtra("idOds", numOfOds);
+
+        //Transição com elemento comum
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ActivityOptions options = ActivityOptions
+                    .makeSceneTransitionAnimation(this, v, "transform");
+            startActivity(intent, options.toBundle());
+        } else {
+            startActivity(intent);
+        }
+
+    }
+
+    private String getNumOds(@NotNull View v){
+        String numOds;
+        switch (v.getId()) {
+            case R.id.imageOds1Id:
+                numOds = "1";
+                break;
+            case R.id.imageOds2Id:
+                numOds = "2";
+                break;
+            case R.id.imageOds3Id:
+                numOds = "3";
+                break;
+            case R.id.imageOds4Id:
+                numOds = "4";
+                break;
+            case R.id.imageOds5Id:
+                numOds = "5";
+                break;
+            case R.id.imageOds6Id:
+                numOds = "6";
+                break;
+            case R.id.imageOds7Id:
+                numOds = "7";
+                break;
+            case R.id.imageOds8Id:
+                numOds = "8";
+                break;
+            case R.id.imageOds9Id:
+                numOds = "9";
+                break;
+            case R.id.imageOds10Id:
+                numOds = "10";
+                break;
+            case R.id.imageOds11Id:
+                numOds = "11";
+                break;
+            case R.id.imageOds12Id:
+                numOds = "12";
+                break;
+            case R.id.imageOds13Id:
+                numOds = "13";
+                break;
+            case R.id.imageOds14Id:
+                numOds = "14";
+                break;
+            case R.id.imageOds15Id:
+                numOds = "15";
+                break;
+            case R.id.imageOds16Id:
+                numOds = "16";
+                break;
+            case R.id.imageOds17Id:
+                numOds = "17";
+                break;
+            default:
+                numOds = "0";
+                break;
+        }
+
+        return numOds;
+
     }
 }
