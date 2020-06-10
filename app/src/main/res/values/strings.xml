@@ -13,8 +13,8 @@
     <string name="menu_declaration">A Declaração</string>
     <string name="menu_docs">Documentos Temáticos</string>
     <string name="menu_cupula">A Cúpula</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_share">Compartilhe o App</string>
+    <string name="menu_send">Envie a um Amigo</string>
 
     <string name="splash_description">Os 17 Objetivos para o desenvolvimento sustentável da ONU</string>
     <string name="logo_description">Os 17 Objetivos para um desenvolvimento sustentável</string>

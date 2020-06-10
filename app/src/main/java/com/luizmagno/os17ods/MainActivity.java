@@ -11,12 +11,9 @@ import com.google.android.material.navigation.NavigationView;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.FragmentManager;
 import android.view.Menu;
 import android.view.View;
-
 import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
@@ -65,9 +62,7 @@ public class MainActivity extends AppCompatActivity
 
         //Se o Nav está aberto
         if (drawer.isDrawerOpen(GravityCompat.START) ) {
-
             drawer.closeDrawer(GravityCompat.START);
-
         } else {
             super.onBackPressed();
         }
@@ -141,9 +136,7 @@ public class MainActivity extends AppCompatActivity
 
     //Set Home
     private void setHome(){
-        /*fragmentManager.beginTransaction()
-                .replace(R.id.content_fragment, new HomeFragment())
-                .commit();*/
+
     }
 
     private void fillListOfObjectives() {
@@ -185,6 +178,7 @@ public class MainActivity extends AppCompatActivity
         } else {
             startActivity(intent);
         }
+
 
     }
 

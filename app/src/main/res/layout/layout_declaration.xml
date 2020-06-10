@@ -1,234 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/backDeclarationId"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:fitsSystemWindows="true"
+    tools:context=".DeclaracaoActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarInDeclaracaoId"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/AppTheme.PopupOverlay" />
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-    <ScrollView
-        android:id="@+id/scrollInDeclarationId"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarInDeclaracaoId">
-
-        <LinearLayout
+        <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:toolbarId="@+id/toolbarInDeclaracaoId">
 
             <ImageView
-                android:id="@+id/image2030Id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/image2030_desc"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ods_2030" />
 
             <TextView
-                android:id="@+id/credit2030Id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/margin_of_texts"
                 android:text="@string/credit_image_2030"
                 android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/titleIntroId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/title_intro_declaration"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/introDeclarationId"
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarInDeclaracaoId"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:padding="10dp"
-                android:text="@string/intro_declaration"
-                android:textSize="16sp"
-                tools:targetApi="O" />
+                android:layout_height="?attr/actionBarSize"
+                app:title="A Declaração"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
-            <TextView
-                android:id="@+id/titleVisionId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/title_vision_declaration"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-            <TextView
-                android:id="@+id/visionDeclarationId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:padding="10dp"
-                android:text="@string/vision_declaration"
-                android:textSize="16sp"
-                tools:targetApi="O" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-            <TextView
-                android:id="@+id/titlePrinciplesId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:text="@string/title_principles_declaration"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+    <include layout="@layout/content_scroll_declaracao" />
 
-            <TextView
-                android:id="@+id/principlesDeclarationId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:padding="10dp"
-                android:text="@string/principles_declaration"
-                android:textSize="16sp"
-                tools:targetApi="O" />
-
-            <TextView
-                android:id="@+id/titleWordId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:text="@string/title_world_declaration"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/worldDeclarationId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:padding="10dp"
-                android:text="@string/world_declaration"
-                android:textSize="16sp"
-                tools:targetApi="O" />
-
-            <TextView
-                android:id="@+id/titleNewAgendaDeclarationId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:text="@string/title_new_agenda_declaration"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/newAgendaDeclarationId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:padding="10dp"
-                android:text="@string/new_agenda_declaration"
-                android:textSize="16sp"
-                tools:targetApi="O" />
-
-            <TextView
-                android:id="@+id/titleMiddlesDeclarationId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:text="@string/title_middles_declaration"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/middlesDeclarationId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:padding="10dp"
-                android:text="@string/middles_declaration"
-                android:textSize="16sp"
-                tools:targetApi="O" />
-
-            <TextView
-                android:id="@+id/titleAvaliationDeclarationId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:text="@string/title_avaliation_declaration"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/avaliationDeclarationId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:padding="10dp"
-                android:text="@string/avaliation_declaration"
-                android:textSize="16sp"
-                tools:targetApi="O" />
-
-            <TextView
-                android:id="@+id/titleChamadoDeclarationId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:text="@string/title_chamado_decla"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/chamadoDeclarationId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:padding="10dp"
-                android:text="@string/chamado_decla"
-                android:textSize="16sp"
-                tools:targetApi="O" />
-
-            <TextView
-                android:id="@+id/titleObjeDeclarationId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:text="@string/title_obje_decla"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/objeDeclarationId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:justificationMode="inter_word"
-                android:padding="10dp"
-                android:text="@string/obje_decla"
-                android:textSize="16sp"
-                tools:targetApi="O" />
-
-        </LinearLayout>
-
-    </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

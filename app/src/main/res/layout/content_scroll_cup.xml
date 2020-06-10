@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margin_of_texts"
             android:textSize="16sp"
             android:text="@string/text_subtitle_cup"
             tools:targetApi="O"/>
@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margin_of_texts"
             android:textSize="16sp"
             android:text="@string/text_new_agend_cup"
             tools:targetApi="O"/>
@@ -70,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margin_of_texts"
             android:textSize="16sp"
             android:text="@string/text_new_agend_cup2"
             tools:targetApi="O"/>
@@ -89,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margin_of_texts"
             android:textSize="16sp"
             android:text="@string/text_process_inter"
             tools:targetApi="O"/>
@@ -105,7 +105,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margin_of_texts"
             android:textSize="16sp"
             android:text="@string/text_process_inter2"
             tools:targetApi="O"/>
@@ -121,7 +121,7 @@
             android:id="@+id/textLinkAcessAgendId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margin_of_texts"
             android:textSize="16sp"
             android:text="@string/text_link_acess_agend"
             android:textColor="@color/colorPrimary"/>
