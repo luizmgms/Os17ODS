@@ -12,4 +12,6 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="margin_of_texts">16dp</dimen>
     <dimen name="padding_of_images">8dp</dimen>
+    <dimen name="size_of_titles">18sp</dimen>
+    <dimen name="size_of_texts">16sp</dimen>
 </resources>

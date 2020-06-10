@@ -17,7 +17,7 @@ public class DeclaracaoActivity extends AppCompatActivity {
 
         //Set Toolbar
         toolbar = findViewById(R.id.toolbarInDeclaracaoId);
-        toolbar.setNavigationIcon(R.drawable.ic_back);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         toolbar.setTitle(getResources().getString(R.string.menu_declaration));
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

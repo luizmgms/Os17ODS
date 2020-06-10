@@ -818,6 +818,13 @@
     <string name="link_video_trans">https://www.youtube.com/watch?v=p1I_OiSO1DU</string>
     <string name="link_video_qual">https://www.youtube.com/watch?v=bhFwHcKtVXU</string>
     <string name="link_video_obj_glob">https://www.youtube.com/watch?v=9nQblX1_z2M</string>
+    <string name="text_share_link">Texto a ser comparatilhado.</string>
+    <string name="title_about">Os 17 Objetivos para o Desenvolvimento Sustentável</string>
+    <string name="text_created_about">Criado por Luiz Magno M. Sousa</string>
+    <string name="explanation_about">Todo o conteúdo neste app foi extraído exclusivamente do site ONU Brasil (disponível em https://nacoesunidas.org/pos2015/agenda2030/) para fins de estudo, sem nenhuma consulta ou parceria com a ONU Brasil, visando auto-conhecimento e uma ajuda simplória para manter a sustentabilidade do planeta para a nossa e futuras gerações.</string>
+    <string name="text_link_about">Para acessar a página, clique aqui.</string>
+    <string name="git_about">Acesse o repositório do app no Github.</string>
+    <string name="desc_icon_git">Repositório no github.</string>
 
 
 </resources>

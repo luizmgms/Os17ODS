@@ -9,8 +9,8 @@
     <color name="colorTitleOfOds">#FFFFFF</color>
     <color name="colorSubTitleOfOds">#FFFFFF</color>
     <color name="colorOfOds1">#E4243B</color>
-    <color name="colorOfOds2">#E4B635</color>
-    <color name="colorOfOds3">#4C9E38</color>
+    <color name="colorOfOds2">#DDA73A</color>
+    <color name="colorOfOds3">#4CA146</color>
     <color name="colorOfOds4">#C4192D</color>
     <color name="colorOfOds5">#FD3A21</color>
     <color name="colorOfOds6">#26BCE1</color>
@@ -19,10 +19,10 @@
     <color name="colorOfOds9">#FB6925</color>
     <color name="colorOfOds10">#DC1367</color>
     <color name="colorOfOds11">#FB9C24</color>
-    <color name="colorOfOds12">#C8982D</color>
+    <color name="colorOfOds12">#BF8D2C</color>
     <color name="colorOfOds13">#3F7E44</color>
     <color name="colorOfOds14">#0A96D8</color>
-    <color name="colorOfOds15">#56BF2B</color>
+    <color name="colorOfOds15">#59BA47</color>
     <color name="colorOfOds16">#00689C</color>
     <color name="colorOfOds17">#19486A</color>
     <color name="colorOfOdsONU">#0084C9</color>

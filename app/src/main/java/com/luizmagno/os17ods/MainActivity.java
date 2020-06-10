@@ -126,6 +126,14 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, Obj17Activity.class);
             startActivity(intent);
             setHome();
+        } else if (id == R.id.nav_share) {
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, R.string.text_share_link);
+            sendIntent.setType("text/plain");
+
+            Intent shareIntent = Intent.createChooser(sendIntent, null);
+            startActivity(shareIntent);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -164,7 +172,12 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onClick(View v) {
 
-        v.setAlpha(0.6f);
+        if(v.getAlpha() == 0.6f) {
+            v.setAlpha(1);
+        } else {
+            v.setAlpha(0.6f);
+        }
+
         String numOfOds = getNumOds(v);
 
         Intent intent = new Intent(this, OdsActivity.class);
