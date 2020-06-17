@@ -85,14 +85,15 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_about) {
-            //Intent intent = new Intent(this, AboutActivity.class);
-            //startActivity(intent);
+
+            Intent intent = new Intent(this, AboutActivity.class);
+            startActivity(intent);
+
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -102,31 +103,29 @@ public class MainActivity extends AppCompatActivity
 
             Intent intent = new Intent(this, DeclaracaoActivity.class);
             startActivity(intent);
-            setHome();
 
         } else if (id == R.id.nav_docs) {
 
             Intent intent = new Intent(this, DocumentsActivity.class);
             startActivity(intent);
-            setHome();
 
         } else if (id == R.id.nav_cupula) {
 
             Intent intent = new Intent(this, CupulaActivity.class);
             startActivity(intent);
-            setHome();
 
         } else if (id == R.id.nav_agenda) {
 
             Intent intent = new Intent(this, AgendaActivity.class);
             startActivity(intent);
-            setHome();
 
         } else if (id == R.id.nav_17_obj) {
+            
             Intent intent = new Intent(this, Obj17Activity.class);
             startActivity(intent);
-            setHome();
+            
         } else if (id == R.id.nav_share) {
+            
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
             sendIntent.putExtra(Intent.EXTRA_TEXT, R.string.text_share_link);
@@ -140,11 +139,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
 
         return true;
-    }
-
-    //Set Home
-    private void setHome(){
-
     }
 
     private void fillListOfObjectives() {
@@ -172,12 +166,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onClick(View v) {
 
-        if(v.getAlpha() == 0.6f) {
-            v.setAlpha(1);
-        } else {
-            v.setAlpha(0.6f);
-        }
-
+        //Número do ODS
         String numOfOds = getNumOds(v);
 
         Intent intent = new Intent(this, OdsActivity.class);
@@ -196,65 +185,45 @@ public class MainActivity extends AppCompatActivity
     }
 
     private String getNumOds(@NotNull View v){
-        String numOds;
         switch (v.getId()) {
             case R.id.imageOds1Id:
-                numOds = "1";
-                break;
+                return "1";
             case R.id.imageOds2Id:
-                numOds = "2";
-                break;
+                return "2";
             case R.id.imageOds3Id:
-                numOds = "3";
-                break;
+                return "3";
             case R.id.imageOds4Id:
-                numOds = "4";
-                break;
+                return "4";
             case R.id.imageOds5Id:
-                numOds = "5";
-                break;
+                return "5";
             case R.id.imageOds6Id:
-                numOds = "6";
-                break;
+                return "6";
             case R.id.imageOds7Id:
-                numOds = "7";
-                break;
+                return "7";
             case R.id.imageOds8Id:
-                numOds = "8";
-                break;
+                return "8";
             case R.id.imageOds9Id:
-                numOds = "9";
-                break;
+                return "9";
             case R.id.imageOds10Id:
-                numOds = "10";
-                break;
+                return "10";
             case R.id.imageOds11Id:
-                numOds = "11";
-                break;
+                return "11";
             case R.id.imageOds12Id:
-                numOds = "12";
-                break;
+                return "12";
             case R.id.imageOds13Id:
-                numOds = "13";
-                break;
+                return "13";
             case R.id.imageOds14Id:
-                numOds = "14";
-                break;
+                return "14";
             case R.id.imageOds15Id:
-                numOds = "15";
-                break;
+                return "15";
             case R.id.imageOds16Id:
-                numOds = "16";
-                break;
+                return "16";
             case R.id.imageOds17Id:
-                numOds = "17";
-                break;
+                return "17";
             default:
-                numOds = "0";
-                break;
+                return "0";
+                
         }
-
-        return numOds;
 
     }
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,8 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_of_texts"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="16dp"
             android:gravity="center"
             android:text="@string/text_created_about"
             android:textStyle="italic" />
@@ -49,35 +50,178 @@
             tools:targetApi="O"/>
 
         <TextView
+            android:id="@+id/textLinkPageAboutId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_link_about"
-            android:layout_margin="@dimen/margin_of_texts"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="@dimen/margin_of_texts"
+            android:layout_marginRight="@dimen/margin_of_texts"
+            android:layout_marginBottom="@dimen/margin_of_texts"
             android:justificationMode="inter_word"
             android:textSize="@dimen/size_of_texts"
             android:textColor="@color/colorPrimary"
             tools:targetApi="O"/>
 
         <ImageView
+            android:id="@+id/logoGitHubId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/logo_github_small"
+            android:src="@drawable/ic_github"
             android:adjustViewBounds="true"
             android:elevation="4dp"
             android:layout_marginTop="16dp"
-            android:contentDescription="@string/desc_icon_git"/>
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/desc_icon_git"
+            tools:targetApi="lollipop"
+            tools:ignore="VectorDrawableCompat" />
 
         <TextView
+            android:id="@+id/textLinkLogoGitId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/git_about"
-            android:layout_margin="@dimen/margin_of_texts"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="4dp"
             android:justificationMode="inter_word"
             android:textSize="@dimen/size_of_texts"
             android:gravity="center"
             tools:targetApi="O"
              />
+        <Button
+            android:id="@+id/buttonAvaliaAppId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:text="@string/text_button_avalia"
+            android:textColor="@color/colorPrimary"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_redes_sociais_onu"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_of_texts"
+            android:layout_marginRight="@dimen/margin_of_texts"
+            android:layout_marginLeft="@dimen/margin_of_texts"
+            android:layout_marginBottom="4dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_of_texts"
+            android:layout_marginRight="@dimen/margin_of_texts">
+
+            <ImageView
+                android:id="@+id/logoInstaOnuBrId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/link_instagram_onu"
+                android:src="@drawable/ic_instagram"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/logoTwitterOnuBrId"
+                tools:ignore="VectorDrawableCompat" />
+            <ImageView
+                android:id="@+id/logoTwitterOnuBrId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_twitter"
+                android:contentDescription="@string/link_twitter_onu"
+                app:layout_constraintStart_toEndOf="@+id/logoInstaOnuBrId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/logoYouTubeOnuBrId"
+                tools:ignore="VectorDrawableCompat" />
+            <ImageView
+                android:id="@+id/logoYouTubeOnuBrId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_margin="2dp"
+                android:src="@drawable/ic_youtube"
+                android:contentDescription="@string/link_youtube_onu"
+                app:layout_constraintStart_toEndOf="@+id/logoTwitterOnuBrId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/logoFaceOnuBrId"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/logoFaceOnuBrId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/link_facebook_onu"
+                android:src="@drawable/ic_facebook"
+                app:layout_constraintStart_toEndOf="@+id/logoYouTubeOnuBrId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/logoFlickrOnuBrId"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/logoFlickrOnuBrId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/link_trello_onu"
+                android:src="@drawable/ic_flickr"
+                app:layout_constraintStart_toEndOf="@+id/logoFaceOnuBrId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/logoVimeoOnuBrId"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/logoVimeoOnuBrId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/link_vimeo_onu"
+                android:src="@drawable/ic_vimeo"
+                app:layout_constraintStart_toEndOf="@+id/logoFlickrOnuBrId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/logoTrelloOnuBrId"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/logoTrelloOnuBrId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/link_trello_onu"
+                android:src="@drawable/ic_trello"
+                app:layout_constraintStart_toEndOf="@+id/logoVimeoOnuBrId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="VectorDrawableCompat" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/text_api"
+            android:layout_margin="@dimen/margin_of_texts"
+            android:justificationMode="inter_word"
+            android:textSize="@dimen/size_of_texts"
+            tools:targetApi="O"/>
 
 
     </LinearLayout>
