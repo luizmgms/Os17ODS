@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
+
 import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 
@@ -125,14 +126,14 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
             
         } else if (id == R.id.nav_share) {
-            
+
             Intent sendIntent = new Intent();
             sendIntent.setAction(Intent.ACTION_SEND);
             sendIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.text_share_link));
             sendIntent.setType("text/plain");
-
             Intent shareIntent = Intent.createChooser(sendIntent, null);
             startActivity(shareIntent);
+
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -181,7 +182,6 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         }
 
-
     }
 
     private String getNumOds(@NotNull View v){
@@ -222,7 +222,6 @@ public class MainActivity extends AppCompatActivity
                 return "17";
             default:
                 return "0";
-                
         }
 
     }
