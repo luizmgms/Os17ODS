@@ -74,13 +74,13 @@
             android:textColor="@color/colorPrimary"
             android:textSize="16sp" />
 
-        <fragment
-            android:id="@+id/youTubeFragmentId"
-            android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+        <ImageView
+            android:id="@+id/videoAgendaId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp" />
+            android:src="@drawable/img_video_agenda_1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/video_agenda"/>
 
         <TextView
             android:layout_width="match_parent"

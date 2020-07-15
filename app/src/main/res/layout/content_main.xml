@@ -150,7 +150,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:src="@drawable/ods_10_b"
+            android:src="@drawable/ods_10"
             android:contentDescription="@string/ods10_description"
             android:transitionName="transform"
             tools:targetApi="LOLLIPOP"

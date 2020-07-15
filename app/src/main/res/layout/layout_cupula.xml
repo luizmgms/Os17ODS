@@ -26,12 +26,14 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:src="@drawable/cupula"
+                android:contentDescription="@string/menu_cupula"
                 app:layout_collapseMode="parallax" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Imagem:ONU"/>
+                android:layout_margin="4dp"
+                android:text="@string/imagem_onu"/>
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarInCupulaId"

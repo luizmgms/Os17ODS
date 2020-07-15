@@ -2,6 +2,7 @@ package com.luizmagno.os17ods;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import androidx.core.view.GravityCompat;
@@ -86,10 +87,12 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_about) {
-
             Intent intent = new Intent(this, AboutActivity.class);
             startActivity(intent);
-
+        } else if (id == R.id.action_policy) {
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(getResources().getString(R.string.link_to_policy)));
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);

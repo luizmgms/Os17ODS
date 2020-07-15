@@ -7,6 +7,6 @@
         android:orderInCategory="100"
         android:title="@string/action_shared"
         android:icon="@drawable/ic_menu_share"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
 
 </menu>

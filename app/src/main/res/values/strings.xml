@@ -708,7 +708,7 @@
     </string>
     <string name="text_link_playslist_videos">\n\t - Acesse todos os vídeos sobre a agenda pós-2015 clicando aqui!\n</string>
     <string name="link_playslist">https://www.youtube.com/playlist?list=PLUZOt6bFc2fghKopTJcswi3GSYntbRsY3</string>
-    <string name="video_yt_agenda_1">j8L1CcanjT8</string>
+    <string name="link_video_agenda_1">https://www.youtube.com/watch?v=j8L1CcanjT8</string>
     <string name="video_yt_os_17_t_m">u2K0Ff6bzZ4</string>
     <string name="title_agenda">A Agenda 2030</string>
     <string name="now_agenda_2">
@@ -855,4 +855,9 @@
     <string name="text_share_ods16">Estou aprendendo sobre o Objetivo de Desenvolvimento Sustentável Nº 16 - Paz, Justiça e Instituições Eficazes, que tem por objetivo principal: Promover sociedades pacíficas e inclusivas para o desenvolvimento sustentável, proporcionar o acesso à justiça para todos e construir instituições eficazes, responsáveis e inclusivas em todos os níveis.\n\nSe quiser saber mais sobre os 17 ODS, baixe o App para Android na PlayStore: link\n\n Ou então Acesse a Página: https://nacoesunidas.org/pos2015/agenda2030/</string>
     <string name="text_share_ods17">Estou aprendendo sobre o Objetivo de Desenvolvimento Sustentável Nº 17 - Parcerias e Meios de Implementação, que tem por objetivo principal: Fortalecer os meios de implementação e revitalizar a parceria global para o desenvolvimento sustentável.\n\nSe quiser saber mais sobre os 17 ODS, baixe o App para Android na PlayStore: link\n\n Ou então Acesse a Página: https://nacoesunidas.org/pos2015/agenda2030/</string>
     <string name="text_share_ods_onu">Estou aprendendo sobre os 17 Objetivos de Desenvolvimento Sustentável da ONU.\n\nSe quiser saber mais sobre os 17 ODS, baixe o App para Android na PlayStore: link\n\n Ou então Acesse a Página: https://nacoesunidas.org/pos2015/agenda2030/</string>
+    <string name="nav_comunication">Comunicação</string>
+    <string name="imagem_onu">Imagem: ONU</string>
+    <string name="video_agenda">O que é a Agenda 2030?</string>
+    <string name="action_policy">Política de Privacidade</string>
+    <string name="link_to_policy">https://luizmgms.wixsite.com/home/17-objetivos-sustentaveis</string>
 </resources>
