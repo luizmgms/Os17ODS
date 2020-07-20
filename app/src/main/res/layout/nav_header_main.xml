@@ -14,11 +14,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/nav_header_desc"
+        android:adjustViewBounds="true"
         android:paddingTop="16dp"
-        app:srcCompat="@drawable/ic_anel_17_ods" />
+        app:srcCompat="@drawable/ods_2030"/>
 
     <TextView
         android:layout_width="match_parent"
