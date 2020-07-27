@@ -57,7 +57,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                 openUrl(getResources().getString(R.string.link_git_app));
                 break;
             case R.id.buttonAvaliaAppId:
-                openUrl("https://www.google.com");
+                openUrl(getResources().getString(R.string.link_of_play_store));
                 break;
             case R.id.logoInstaOnuBrId:
                 openUrl(getResources().getString(R.string.link_instagram_onu));
