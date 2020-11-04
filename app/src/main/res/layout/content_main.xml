@@ -20,9 +20,7 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_onu"
             android:contentDescription="@string/ods_onu_desc"
-            android:transitionName="transform"
             android:background="?android:attr/selectableItemBackground"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintEnd_toStartOf="@+id/imageOds1Id"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -34,9 +32,7 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_1"
             android:contentDescription="@string/ods1_description"
-            android:transitionName="transform"
             android:background="?android:attr/selectableItemBackground"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageONUId"
             app:layout_constraintTop_toTopOf="parent" />
@@ -48,8 +44,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_2"
             android:contentDescription="@string/ods2_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageOds3Id"
             app:layout_constraintTop_toBottomOf="@+id/imageONUId" />
@@ -61,8 +55,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_3"
             android:contentDescription="@string/ods3_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toEndOf="@+id/imageOds2Id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageOds1Id"/>
@@ -74,8 +66,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_4"
             android:contentDescription="@string/ods4_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageOds5Id"
             app:layout_constraintTop_toBottomOf="@+id/imageOds2Id" />
@@ -87,8 +77,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_5"
             android:contentDescription="@string/ods5_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toEndOf="@+id/imageOds4Id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageOds3Id"/>
@@ -100,11 +88,9 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_6"
             android:contentDescription="@string/ods6_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageOds7Id"
-            app:layout_constraintTop_toBottomOf="@+id/imageOds4Id" />
+            app:layout_constraintTop_toBottomOf="@+id/imageOds4Id"/>
 
         <ImageView
             android:id="@+id/imageOds7Id"
@@ -113,8 +99,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_7"
             android:contentDescription="@string/ods7_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toEndOf="@+id/imageOds6Id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageOds5Id"/>
@@ -126,8 +110,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_8"
             android:contentDescription="@string/ods8_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageOds9Id"
             app:layout_constraintTop_toBottomOf="@+id/imageOds6Id" />
@@ -139,8 +121,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_9"
             android:contentDescription="@string/ods9_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toEndOf="@+id/imageOds8Id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageOds7Id"/>
@@ -152,8 +132,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_10"
             android:contentDescription="@string/ods10_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageOds11Id"
             app:layout_constraintTop_toBottomOf="@+id/imageOds8Id" />
@@ -165,8 +143,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_11"
             android:contentDescription="@string/ods11_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toEndOf="@+id/imageOds10Id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageOds9Id"/>
@@ -178,8 +154,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_12"
             android:contentDescription="@string/ods12_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageOds13Id"
             app:layout_constraintTop_toBottomOf="@+id/imageOds10Id" />
@@ -191,8 +165,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_13"
             android:contentDescription="@string/ods13_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toEndOf="@+id/imageOds12Id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageOds11Id"/>
@@ -204,8 +176,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_14"
             android:contentDescription="@string/ods14_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageOds15Id"
             app:layout_constraintTop_toBottomOf="@+id/imageOds12Id" />
@@ -217,8 +187,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_15"
             android:contentDescription="@string/ods15_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toEndOf="@+id/imageOds14Id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageOds13Id"/>
@@ -230,8 +198,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_16"
             android:contentDescription="@string/ods16_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageOds17Id"
             app:layout_constraintTop_toBottomOf="@+id/imageOds14Id" />
@@ -243,8 +209,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/ods_17"
             android:contentDescription="@string/ods17_description"
-            android:transitionName="transform"
-            tools:targetApi="LOLLIPOP"
             app:layout_constraintStart_toEndOf="@+id/imageOds16Id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageOds15Id"/>

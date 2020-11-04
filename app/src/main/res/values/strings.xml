@@ -861,4 +861,5 @@
     <string name="action_policy">Política de Privacidade</string>
     <string name="link_to_policy">https://luizmgms.wixsite.com/home/17-objetivos-sustentaveis</string>
     <string name="link_of_play_store">https://play.google.com/store/apps/details?id=com.luizmagno.os17ods</string>
+    <string name="erro">Ocorreu um Erro!</string>
 </resources>

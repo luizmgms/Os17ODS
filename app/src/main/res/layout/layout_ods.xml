@@ -29,7 +29,6 @@
                 android:id="@+id/imageCollapseInOdsId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:transitionName="transform"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/legend_image_17_obj"
                 app:srcCompat="@drawable/ods_1"
@@ -50,5 +49,14 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_scroll_ods" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabShareId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/action_shared"
+        android:src="@drawable/ic_menu_share"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

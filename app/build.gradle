@@ -4,15 +4,16 @@ android {
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.luizmagno.os17ods"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 30
-        versionCode 5
-        versionName "2.3"
+        versionCode 8
+        versionName "2.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             android.defaultConfig.vectorDrawables.useSupportLibrary = true
         }
