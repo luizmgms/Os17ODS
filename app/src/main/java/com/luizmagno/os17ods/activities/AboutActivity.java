@@ -1,6 +1,8 @@
-package com.luizmagno.os17ods;
+package com.luizmagno.os17ods.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -9,28 +11,26 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class AboutActivity extends AppCompatActivity implements View.OnClickListener {
+import com.luizmagno.os17ods.R;
 
-    private ImageView logoGitHub, logoInst, logoTwitter, logoYouTube, logoFace, logoFlickr, logoVim, logoTrello;
-    private TextView textAcessPageOnuBr, textLogoGitHub;
-    private Button buttonAvalieApp;
+public class AboutActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_about);
 
-        logoGitHub = findViewById(R.id.logoGitHubId);
-        logoInst = findViewById(R.id.logoInstaOnuBrId);
-        logoTwitter = findViewById(R.id.logoTwitterOnuBrId);
-        logoYouTube = findViewById(R.id.logoYouTubeOnuBrId);
-        logoFace = findViewById(R.id.logoFaceOnuBrId);
-        logoFlickr = findViewById(R.id.logoFlickrOnuBrId);
-        logoVim = findViewById(R.id.logoVimeoOnuBrId);
-        logoTrello = findViewById(R.id.logoTrelloOnuBrId);
-        textAcessPageOnuBr = findViewById(R.id.textLinkPageAboutId);
-        textLogoGitHub = findViewById(R.id.textLinkLogoGitId);
-        buttonAvalieApp = findViewById(R.id.buttonAvaliaAppId);
+        ImageView logoGitHub = findViewById(R.id.logoGitHubId);
+        ImageView logoInst = findViewById(R.id.logoInstaOnuBrId);
+        ImageView logoTwitter = findViewById(R.id.logoTwitterOnuBrId);
+        ImageView logoYouTube = findViewById(R.id.logoYouTubeOnuBrId);
+        ImageView logoFace = findViewById(R.id.logoFaceOnuBrId);
+        ImageView logoFlickr = findViewById(R.id.logoFlickrOnuBrId);
+        ImageView logoVim = findViewById(R.id.logoVimeoOnuBrId);
+        ImageView logoTrello = findViewById(R.id.logoTrelloOnuBrId);
+        TextView textAcessPageOnuBr = findViewById(R.id.textLinkPageAboutId);
+        TextView textLogoGitHub = findViewById(R.id.textLinkLogoGitId);
+        Button buttonAvalieApp = findViewById(R.id.buttonAvaliaAppId);
 
         logoGitHub.setOnClickListener(this);
         logoInst.setOnClickListener(this);
@@ -46,6 +46,7 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

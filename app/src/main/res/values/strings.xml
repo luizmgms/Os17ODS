@@ -862,4 +862,8 @@
     <string name="link_to_policy">https://luizmgms.wixsite.com/home/17-objetivos-sustentaveis</string>
     <string name="link_of_play_store">https://play.google.com/store/apps/details?id=com.luizmagno.os17ods</string>
     <string name="erro">Ocorreu um Erro!</string>
+    <string name="share_with">Compartilhar com...</string>
+    <string name="image_ods">Imagem do ODS</string>
+    <string name="video_o_que_sao">Video o que são os ODS</string>
+    <string name="link_video_o_que_sao">https://youtu.be/Y8OH66wXTXI</string>
 </resources>

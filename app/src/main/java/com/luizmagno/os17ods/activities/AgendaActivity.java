@@ -1,4 +1,4 @@
-package com.luizmagno.os17ods;
+package com.luizmagno.os17ods.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.luizmagno.os17ods.R;
 
 public class AgendaActivity extends AppCompatActivity {
 

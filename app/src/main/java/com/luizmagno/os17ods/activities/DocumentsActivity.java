@@ -1,4 +1,4 @@
-package com.luizmagno.os17ods;
+package com.luizmagno.os17ods.activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,16 +10,15 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class DocumentsActivity extends AppCompatActivity {
+import com.luizmagno.os17ods.R;
 
-    private Toolbar toolbar;
-    private TextView link;
+public class DocumentsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_documents);
-        toolbar = findViewById(R.id.toolbarInDocs);
+        Toolbar toolbar = findViewById(R.id.toolbarInDocs);
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,7 +26,7 @@ public class DocumentsActivity extends AppCompatActivity {
                 DocumentsActivity.super.onBackPressed();
             }
         });
-        link = findViewById(R.id.textLinkDocsTemsId);
+        TextView link = findViewById(R.id.textLinkDocsTemsId);
         link.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

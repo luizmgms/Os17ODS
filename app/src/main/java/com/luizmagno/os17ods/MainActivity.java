@@ -1,43 +1,41 @@
 package com.luizmagno.os17ods;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import androidx.core.view.GravityCompat;
-import androidx.appcompat.app.ActionBarDrawerToggle;
+import android.view.Menu;
 import android.view.MenuItem;
-import com.google.android.material.navigation.NavigationView;
-import androidx.drawerlayout.widget.DrawerLayout;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import android.view.Menu;
-import android.view.View;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import org.jetbrains.annotations.NotNull;
+import com.google.android.material.navigation.NavigationView;
+import com.luizmagno.os17ods.activities.AboutActivity;
+import com.luizmagno.os17ods.activities.AgendaActivity;
+import com.luizmagno.os17ods.activities.CupulaActivity;
+import com.luizmagno.os17ods.activities.DeclaracaoActivity;
+import com.luizmagno.os17ods.activities.DocumentsActivity;
+import com.luizmagno.os17ods.activities.Obj17Activity;
+import com.luizmagno.os17ods.adapters.OdsAdapter;
+
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+import static com.luizmagno.os17ods.utils.Utilities.getListIdsImagesOds;
 
-    private ArrayList<View> objectives;
+public class MainActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
+
     public Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        objectives = new ArrayList<>();
-
-        //Preenchendo Array de Objetivos - 0 a 17
-        fillListOfObjectives();
-
-        //Set OnClick
-        for (View objective: objectives) {
-            objective.setOnClickListener(this);
-        }
 
         //toolbar
         toolbar = findViewById(R.id.toolbar);
@@ -54,6 +52,18 @@ public class MainActivity extends AppCompatActivity
 
         //Ação do Item do Navigation
         navigationView.setNavigationItemSelectedListener(this);
+
+        //RecyclerView
+        RecyclerView recyclerView = findViewById(R.id.listViewOdsId);
+        //Lista de Ids das Imagens dos ODS
+        ArrayList<Integer> listOds = getListIdsImagesOds();
+        //SetLayout (Grid)
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        //Adapter
+        OdsAdapter odsAdapter = new OdsAdapter(this, listOds);
+        //Set Adapter
+        recyclerView.setAdapter(odsAdapter);
+        recyclerView.setHasFixedSize(true);
 
     }
 
@@ -145,87 +155,4 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    private void fillListOfObjectives() {
-        objectives.add( findViewById(R.id.imageOds1Id) );
-        objectives.add( findViewById(R.id.imageOds2Id) );
-        objectives.add(  findViewById(R.id.imageOds3Id) );
-        objectives.add(  findViewById(R.id.imageOds4Id) );
-        objectives.add(  findViewById(R.id.imageOds5Id) );
-        objectives.add(  findViewById(R.id.imageOds6Id) );
-        objectives.add(  findViewById(R.id.imageOds7Id) );
-        objectives.add(  findViewById(R.id.imageOds8Id) );
-        objectives.add(  findViewById(R.id.imageOds9Id) );
-        objectives.add(  findViewById(R.id.imageOds10Id) );
-        objectives.add(  findViewById(R.id.imageOds11Id) );
-        objectives.add(  findViewById(R.id.imageOds12Id) );
-        objectives.add(  findViewById(R.id.imageOds13Id) );
-        objectives.add(  findViewById(R.id.imageOds14Id) );
-        objectives.add(  findViewById(R.id.imageOds15Id) );
-        objectives.add(  findViewById(R.id.imageOds16Id) );
-        objectives.add(  findViewById(R.id.imageOds17Id) );
-        objectives.add(  findViewById(R.id.imageONUId) );
-
-    }
-
-    @Override
-    public void onClick(View v) {
-
-        //Número do ODS
-        String numOfOds = getNumOds(v);
-
-        Intent intent = new Intent(this, OdsActivity.class);
-        intent.putExtra("idOds", numOfOds);
-
-        //Transição com elemento comum
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            ActivityOptions options = ActivityOptions
-                    .makeSceneTransitionAnimation(this, v, "transform");
-            startActivity(intent, options.toBundle());
-        } else {
-            startActivity(intent);
-        }
-
-    }
-
-    private String getNumOds(@NotNull View v){
-        switch (v.getId()) {
-            case R.id.imageOds1Id:
-                return "1";
-            case R.id.imageOds2Id:
-                return "2";
-            case R.id.imageOds3Id:
-                return "3";
-            case R.id.imageOds4Id:
-                return "4";
-            case R.id.imageOds5Id:
-                return "5";
-            case R.id.imageOds6Id:
-                return "6";
-            case R.id.imageOds7Id:
-                return "7";
-            case R.id.imageOds8Id:
-                return "8";
-            case R.id.imageOds9Id:
-                return "9";
-            case R.id.imageOds10Id:
-                return "10";
-            case R.id.imageOds11Id:
-                return "11";
-            case R.id.imageOds12Id:
-                return "12";
-            case R.id.imageOds13Id:
-                return "13";
-            case R.id.imageOds14Id:
-                return "14";
-            case R.id.imageOds15Id:
-                return "15";
-            case R.id.imageOds16Id:
-                return "16";
-            case R.id.imageOds17Id:
-                return "17";
-            default:
-                return "0";
-        }
-
-    }
 }

@@ -1,54 +1,39 @@
-package com.luizmagno.os17ods;
+package com.luizmagno.os17ods.utils;
 
-import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
+import com.luizmagno.os17ods.R;
 
 import java.util.ArrayList;
 
-public class ViewPagerOdsAdapter extends FragmentStatePagerAdapter {
+public class Utilities {
 
-    private final ArrayList<Integer> listNumOds;
-    private final OdsActivity odsActivity;
+    public static ArrayList<Integer> getListIdsImagesOds() {
+        ArrayList<Integer> list = new ArrayList<>();
 
-    public ViewPagerOdsAdapter(@NonNull FragmentManager fm, int behavior, ArrayList<Integer> list, OdsActivity odsActivity) {
-        super(fm, behavior);
+        list.add(R.drawable.ods_onu);
+        list.add(R.drawable.ods_1);
+        list.add(R.drawable.ods_2);
+        list.add(R.drawable.ods_3);
+        list.add(R.drawable.ods_4);
+        list.add(R.drawable.ods_5);
+        list.add(R.drawable.ods_6);
+        list.add(R.drawable.ods_7);
+        list.add(R.drawable.ods_8);
+        list.add(R.drawable.ods_9);
+        list.add(R.drawable.ods_10);
+        list.add(R.drawable.ods_11);
+        list.add(R.drawable.ods_12);
+        list.add(R.drawable.ods_13);
+        list.add(R.drawable.ods_14);
+        list.add(R.drawable.ods_15);
+        list.add(R.drawable.ods_16);
+        list.add(R.drawable.ods_17);
 
-        this.listNumOds = list;
-        this.odsActivity = odsActivity;
+        return list;
 
     }
 
-    @NonNull
-    @Override
-    public Fragment getItem(int position) {
+    public static int[] getIdsOfAttribOds(int num) {
 
-        int numOds = listNumOds.get(position);
-        Fragment fragment = OdsFragment.newInstance(odsActivity);
-        Bundle bundle = new Bundle();
-
-        int [] ids = getIdsOfAttribOds(numOds);
-
-        bundle.putInt("numOds", numOds);
-        bundle.putInt("idImageOds", ids[0]);
-        bundle.putInt("idStringSubtitleOds",ids[1]);
-        bundle.putInt("idStringDescOds", ids[2]);
-        bundle.putInt("idColorOds", ids[3]);
-        bundle.putInt("idStringShareOds", ids[4]);
-        fragment.setArguments(bundle);
-
-        return fragment;
-    }
-
-    @Override
-    public int getCount() {
-        return listNumOds.size();
-    }
-
-    private int[] getIdsOfAttribOds(int num) {
         int[] ids = {0, 0, 0, 0, 0};
 
         switch (num) {
@@ -179,14 +164,6 @@ public class ViewPagerOdsAdapter extends FragmentStatePagerAdapter {
                 ids[4] = R.string.text_share_ods17;
                 break;
             default:
-                /*collapseImage.setImageDrawable(getResources().getDrawable(R.drawable.ods_onu));
-                subTitleOfOds.setText(R.string.ods_onu_subtitle);
-                descOfOds.setText(R.string.ods_onu_desc_full);
-                color = ContextCompat.getColor(this, R.color.colorOfOdsONU);
-                appBarLayout.setBackgroundColor(getResources().getColor(android.R.color.white));
-                containerTitleOfOds.setBackgroundColor(color);
-                collapsingToolbarLayout.setContentScrimColor(color);
-                textOfShared = getResources().getString(R.string.text_share_ods_onu);*/
                 ids[0] = R.drawable.ods_onu;
                 ids[1] = R.string.erro;
                 ids[2] = R.string.erro;
@@ -197,4 +174,47 @@ public class ViewPagerOdsAdapter extends FragmentStatePagerAdapter {
 
         return ids;
     }
+
+    /*public static int getIdColor(int pos) {
+        switch (pos) {
+            case 0:
+                return R.color.colorOfOdsONU;
+            case 1:
+                return R.color.colorOfOds1;
+            case 2:
+                return R.color.colorOfOds2;
+            case 3:
+                return R.color.colorOfOds3;
+            case 4:
+                return R.color.colorOfOds4;
+            case 5:
+                return R.color.colorOfOds5;
+            case 6:
+                return R.color.colorOfOds6;
+            case 7:
+                return R.color.colorOfOds7;
+            case 8:
+                return R.color.colorOfOds8;
+            case 9:
+                return R.color.colorOfOds9;
+            case 10:
+                return R.color.colorOfOds10;
+            case 11:
+                return R.color.colorOfOds11;
+            case 12:
+                return R.color.colorOfOds12;
+            case 13:
+                return R.color.colorOfOds13;
+            case 14:
+                return R.color.colorOfOds14;
+            case 15:
+                return R.color.colorOfOds15;
+            case 16:
+                return R.color.colorOfOds16;
+            case 17:
+                return R.color.colorOfOds17;
+            default:
+                return 0;
+        }
+    }*/
 }

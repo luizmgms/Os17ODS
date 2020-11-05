@@ -7,14 +7,5 @@ Todo o conteúdo neste app foi extraído exclusivamente do site ONU Brasil (disp
   A App conta com uma Atividade de Abertura Splash em Fullscreen. 
   
   O App utiliza  como Atividade Principal um NavigationView.
-  
-  A Atividade Principal como com uma transição de animação com elemento comun entre ela e a Atividade ODS de descrição de um ODS.
-  
-  As atividades Secundárias são implementadas com CoordinatorLayout e CollapsingToolbarLayout.  
-  
-  Algumas atividades possuem vídeo do Youtube embutidos que são carregados com a API do Youtube para Android.
-  
-  Se você for utilizar este Projeto com a API do YouTube, você deve criar uma Classe JAVA como o nome DeveloperKey e criar uma constante com a sua chave de API:
-    public static final String DEVELOPER_KEY = "YouKeyforAPIYoutube";
-    
-  Para mais informações sobre a API do Youtube para Android acesse: https://developers.google.com/youtube/android/player?hl=pt-br
+
+  As atividades Secundárias são implementadas com CoordinatorLayout e CollapsingToolbarLayout.

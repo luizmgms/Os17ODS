@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".DeclaracaoActivity"
+    tools:context=".activities.DeclaracaoActivity"
     tools:showIn="@layout/layout_declaration">
 
     <LinearLayout

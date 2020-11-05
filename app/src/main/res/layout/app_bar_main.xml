@@ -24,6 +24,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include layout="@layout/list_ods" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,12 +1,8 @@
-package com.luizmagno.os17ods;
+package com.luizmagno.os17ods.fragments;
 
-import android.content.Intent;
-import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -20,9 +16,8 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.util.Objects;
+import com.luizmagno.os17ods.R;
+import com.luizmagno.os17ods.activities.OdsActivity;
 
 public class OdsFragment extends Fragment {
 
@@ -54,7 +49,6 @@ public class OdsFragment extends Fragment {
         int idStringSubtitleOds = 0;
         int idStringDescOds = 0;
         int idColorOds = 0;
-        int idStringShareOds = 0;
 
         if (bundle != null) {
             numOds = bundle.getInt("numOds");
@@ -62,7 +56,6 @@ public class OdsFragment extends Fragment {
             idStringSubtitleOds = bundle.getInt("idStringSubtitleOds");
             idStringDescOds = bundle.getInt("idStringDescOds");
             idColorOds = bundle.getInt("idColorOds");
-            idStringShareOds = bundle.getInt("idStringShareOds");
         }
 
 
@@ -91,39 +84,18 @@ public class OdsFragment extends Fragment {
         TextView subTitleOfOds = fragment.findViewById(R.id.subTitleOdOdsId);
         TextView descOfOds = fragment.findViewById(R.id.descOfOdsId);
         ImageView collapseImage = fragment.findViewById(R.id.imageCollapseInOdsId);
-        FloatingActionButton fabShare = fragment.findViewById(R.id.fabShareId);
 
         collapseImage.setImageDrawable(getResources().getDrawable(idImageOds));
         subTitleOfOds.setText(idStringSubtitleOds);
         descOfOds.setText(idStringDescOds);
         int color = ContextCompat.getColor(odsActivity, idColorOds);
         appBarLayout.setBackgroundColor(color);
+        collapsingToolbarLayout.setExpandedTitleColor(Color.TRANSPARENT);
+        collapsingToolbarLayout.setCollapsedTitleTextColor(Color.WHITE);
         containerTitleOfOds.setBackgroundColor(color);
         collapsingToolbarLayout.setContentScrimColor(color);
-        final String textOfShared = Objects.requireNonNull(
-                getActivity()).getResources().getString(idStringShareOds);
-        fabShare.setBackgroundTintList(ColorStateList.valueOf(color));
-
-        fabShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                share(textOfShared);
-            }
-        });
-
-
 
         return fragment;
     }
 
-    private void share(String textOfShared) {
-
-        Intent sendIntent = new Intent();
-        sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_TEXT, textOfShared);
-        sendIntent.setType("text/plain");
-        Intent shareIntent = Intent.createChooser(sendIntent, "Compartilhar com...");
-        startActivity(shareIntent);
-
-    }
 }

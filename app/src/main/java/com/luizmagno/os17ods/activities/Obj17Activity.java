@@ -1,8 +1,6 @@
-package com.luizmagno.os17ods;
+package com.luizmagno.os17ods.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,25 +8,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.youtube.player.YouTubeInitializationResult;
-import com.google.android.youtube.player.YouTubePlayer;
-import com.google.android.youtube.player.YouTubePlayerFragment;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
-public class Obj17Activity extends AppCompatActivity implements View.OnClickListener, YouTubePlayer.OnInitializedListener{
+import com.luizmagno.os17ods.R;
 
-    private Toolbar toolbar;
-    private ImageView imageOf17Obj1;
-    private TextView legendImage117Obj;
-    private ImageView imageOf17Obj2;
-    private TextView legendImage217Obj;
-    private TextView textNewspt;
-    private YouTubePlayerFragment youTubePlayerFragment;
-    private YouTubePlayer youTubePlayer;
-    private TextView textLinkDocument;
-    private TextView textLinkDuvidas;
-    private ImageView imageDuvidas;
-    private TextView textLinkDados, textLinkSaiba, textLinkAcomp, textLinkPageEsp, textLinkDocsTema;
-    private TextView textLinkTempReal, textLinkAgendPt, textLinkAgendIng, textLinkInicadores;
+public class Obj17Activity extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +21,7 @@ public class Obj17Activity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.layout_obj17);
 
         //Set Toolbar
-        toolbar = findViewById(R.id.toolbarInObj17Id);
+        Toolbar toolbar = findViewById(R.id.toolbarInObj17Id);
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         toolbar.setTitle(getResources().getString(R.string.title_17_obj));
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
@@ -47,23 +32,23 @@ public class Obj17Activity extends AppCompatActivity implements View.OnClickList
             }
         });
 
-        imageOf17Obj1 = findViewById(R.id.imageOf17Obj1Id);
-        legendImage117Obj = findViewById(R.id.legendImage117ObjId);
-        imageOf17Obj2 = findViewById(R.id.imageOf17Obj2Id);
-        legendImage217Obj = findViewById(R.id.legendImage217ObjId);
-        textNewspt = findViewById(R.id.textNoticiasId);
-        textLinkDocument = findViewById(R.id.textLinkDocumentId);
-        imageDuvidas = findViewById(R.id.imageDuvidasId);
-        textLinkDuvidas = findViewById(R.id.textLinkDuvidasId);
-        textLinkDados = findViewById(R.id.textLinkDadosId);
-        textLinkSaiba = findViewById(R.id.textLinkSaibaId);
-        textLinkAcomp = findViewById(R.id.textLinkAcompId);
-        textLinkPageEsp = findViewById(R.id.textLinkPageEspId);
-        textLinkDocsTema = findViewById(R.id.textLinkDocsTemaId);
-        textLinkTempReal = findViewById(R.id.textLinkTempRealId);
-        textLinkAgendPt = findViewById(R.id.textLinkAgendPtId);
-        textLinkAgendIng = findViewById(R.id.textLinkAgendIngId);
-        textLinkInicadores = findViewById(R.id.textLinkInicadoresId);
+        ImageView imageOf17Obj1 = findViewById(R.id.imageOf17Obj1Id);
+        TextView legendImage117Obj = findViewById(R.id.legendImage117ObjId);
+        ImageView imageOf17Obj2 = findViewById(R.id.imageOf17Obj2Id);
+        TextView legendImage217Obj = findViewById(R.id.legendImage217ObjId);
+        TextView textNewspt = findViewById(R.id.textNoticiasId);
+        TextView textLinkDocument = findViewById(R.id.textLinkDocumentId);
+        ImageView imageDuvidas = findViewById(R.id.imageDuvidasId);
+        TextView textLinkDuvidas = findViewById(R.id.textLinkDuvidasId);
+        TextView textLinkDados = findViewById(R.id.textLinkDadosId);
+        TextView textLinkSaiba = findViewById(R.id.textLinkSaibaId);
+        TextView textLinkAcomp = findViewById(R.id.textLinkAcompId);
+        TextView textLinkPageEsp = findViewById(R.id.textLinkPageEspId);
+        TextView textLinkDocsTema = findViewById(R.id.textLinkDocsTemaId);
+        TextView textLinkTempReal = findViewById(R.id.textLinkTempRealId);
+        TextView textLinkAgendPt = findViewById(R.id.textLinkAgendPtId);
+        TextView textLinkAgendIng = findViewById(R.id.textLinkAgendIngId);
+        TextView textLinkInicadores = findViewById(R.id.textLinkInicadoresId);
 
 
         imageOf17Obj1.setOnClickListener(this);
@@ -84,12 +69,17 @@ public class Obj17Activity extends AppCompatActivity implements View.OnClickList
         textLinkAgendIng.setOnClickListener(this);
         textLinkInicadores.setOnClickListener(this);
 
-        //Set PlayerYouTube
-        youTubePlayerFragment = (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youTubeFragmentIn17ObjId);
-        youTubePlayerFragment.initialize(DeveloperKey.DEVELOPER_KEY, this);
+        ImageView videoYouTube = findViewById(R.id.videoOqueSaoId);
+        videoYouTube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startUrl(getResources().getString(R.string.link_video_o_que_sao));
+            }
+        });
 
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -147,29 +137,5 @@ public class Obj17Activity extends AppCompatActivity implements View.OnClickList
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
-    }
-
-    @Override
-    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer ytPlayer, boolean wasRestored) {
-        youTubePlayer = ytPlayer;
-
-        //Enables automatic control of orientation
-        youTubePlayer.setFullscreenControlFlags(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_ORIENTATION);
-
-        //System controls will appear automatically
-        youTubePlayer.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_SYSTEM_UI);
-
-        if (!wasRestored) {
-            youTubePlayer.cueVideo(getResources().getString(R.string.video_yt_obj17));
-        }
-        else
-        {
-            youTubePlayer.play();
-        }
-    }
-
-    @Override
-    public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-        youTubePlayer = null;
     }
 }
