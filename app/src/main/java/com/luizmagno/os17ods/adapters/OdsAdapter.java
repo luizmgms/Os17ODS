@@ -1,7 +1,11 @@
 package com.luizmagno.os17ods.adapters;
 
+import android.annotation.SuppressLint;
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -43,6 +47,7 @@ public class OdsAdapter extends RecyclerView.Adapter<OdsAdapter.ItemOdsViewHolde
         return new ItemOdsViewHolder(itemView);
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public void onBindViewHolder(@NonNull ItemOdsViewHolder holder, final int position) {
         final int id = listIdsOds.get(position);
@@ -53,6 +58,7 @@ public class OdsAdapter extends RecyclerView.Adapter<OdsAdapter.ItemOdsViewHolde
                 startOdsActivity(position);
             }
         });
+        holder.imageOds.setOnTouchListener(onTouchListener());
     }
 
     @Override
@@ -63,7 +69,36 @@ public class OdsAdapter extends RecyclerView.Adapter<OdsAdapter.ItemOdsViewHolde
     public void startOdsActivity(int pos) {
         Intent i = new Intent(mainActivity, OdsActivity.class);
         i.putExtra("pos", pos);
-        mainActivity.startActivity(i);
+        mainActivity.startActivity(i, ActivityOptions
+                .makeSceneTransitionAnimation(mainActivity).toBundle());
+    }
+
+    private View.OnTouchListener onTouchListener() {
+        return (new View.OnTouchListener() {
+            @SuppressLint("ClickableViewAccessibility")
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN: {
+                        ImageView view = (ImageView) v;
+                        //overlay is black with transparency of 0x77 (119)
+                        view.getDrawable().setColorFilter(0x77000000, PorterDuff.Mode.SRC_ATOP);
+                        view.invalidate();
+                        break;
+                    }
+                    case MotionEvent.ACTION_UP:
+                    case MotionEvent.ACTION_CANCEL: {
+                        ImageView view = (ImageView) v;
+                        //clear the overlay
+                        view.getDrawable().clearColorFilter();
+                        view.invalidate();
+                        break;
+                    }
+                }
+
+                return false;
+            }
+        });
     }
 
 }

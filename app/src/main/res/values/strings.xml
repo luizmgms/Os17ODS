@@ -866,4 +866,8 @@
     <string name="image_ods">Imagem do ODS</string>
     <string name="video_o_que_sao">Video o que são os ODS</string>
     <string name="link_video_o_que_sao">https://youtu.be/Y8OH66wXTXI</string>
+    <string name="video_obj_global">Video Objetivos Globais</string>
+    <string name="video_q_des_sus">Video Que é Desenvolvimento Sustentável</string>
+    <string name="video_trans_obj_mil">Video Transformando os Objetivos do Milênio</string>
+    <string name="video_qual_o">Video qual é o melhor dia para começar?</string>
 </resources>
