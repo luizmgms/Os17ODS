@@ -1,9 +1,13 @@
 package com.luizmagno.os17ods.activities;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -20,7 +24,7 @@ import static com.luizmagno.os17ods.utils.Utilities.getIdsOfAttribOds;
 
 public class OdsActivity extends AppCompatActivity {
 
-    FloatingActionButton fabShare;
+    FloatingActionButton fabShare, fabCopy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +60,27 @@ public class OdsActivity extends AppCompatActivity {
             }
         });
 
+        fabCopy = findViewById(R.id.fabCopyId);
+        fabCopy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int[] id = getIdsOfAttribOds(viewPager.getCurrentItem());
+                copyText(id);
+            }
+        });
+
+    }
+
+    private void copyText(int[] id) {
+        String texto = getResources().getString(id[5]) + "\n\n"
+                + getResources().getString(id[1]) + "\n\n"
+                + getResources().getString(id[2]);
+        ClipboardManager clipboard = (ClipboardManager)
+                getSystemService(Context.CLIPBOARD_SERVICE);
+        ClipData clip = ClipData.newPlainText("text copy", texto);
+        clipboard.setPrimaryClip(clip);
+        Toast.makeText(OdsActivity.this, R.string.text_copied,
+                Toast.LENGTH_SHORT).show();
     }
 
     private ViewPager.OnPageChangeListener onPageChangeListener() {

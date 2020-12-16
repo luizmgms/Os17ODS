@@ -870,4 +870,6 @@
     <string name="video_q_des_sus">Video Que é Desenvolvimento Sustentável</string>
     <string name="video_trans_obj_mil">Video Transformando os Objetivos do Milênio</string>
     <string name="video_qual_o">Video qual é o melhor dia para começar?</string>
+    <string name="action_copy">Copiar Texto</string>
+    <string name="text_copied">Texto copiado para área de transferência</string>
 </resources>

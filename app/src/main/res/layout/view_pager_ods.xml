@@ -13,6 +13,19 @@
         android:id="@+id/viewPagerOdsId" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCopyId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="40dp"
+        app:borderWidth="0dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:contentDescription="@string/action_copy"
+        android:src="@drawable/ic_copy"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fabShareId"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabShareId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
