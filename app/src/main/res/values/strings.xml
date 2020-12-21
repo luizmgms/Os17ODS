@@ -872,4 +872,7 @@
     <string name="video_qual_o">Video qual é o melhor dia para começar?</string>
     <string name="action_copy">Copiar Texto</string>
     <string name="text_copied">Texto copiado para área de transferência</string>
+    <string name="back">Voltar</string>
+    <string name="shared_with">Compartilhar com...</string>
+    <string name="save_on_dis">Salvo no dispositivo</string>
 </resources>
