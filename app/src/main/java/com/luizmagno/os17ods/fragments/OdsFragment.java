@@ -1,12 +1,7 @@
 package com.luizmagno.os17ods.fragments;
 
-import android.content.ContentResolver;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.content.res.Resources;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,9 +20,6 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.luizmagno.os17ods.R;
 import com.luizmagno.os17ods.activities.OdsActivity;
 import com.luizmagno.os17ods.activities.ViewImageActivity;
-
-import java.util.List;
-import java.util.Objects;
 
 public class OdsFragment extends Fragment {
 
@@ -105,20 +97,20 @@ public class OdsFragment extends Fragment {
         containerTitleOfOds.setBackgroundColor(color);
         collapsingToolbarLayout.setContentScrimColor(color);
 
-        final int id = idImageOds;
+        final int num = numOds;
         collapseImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openImage(id);
+                openImage(num);
             }
         });
 
         return fragment;
     }
 
-    private void openImage(int id){
+    private void openImage(int numOds){
         Intent intent = new Intent(getActivity(), ViewImageActivity.class);
-        intent.putExtra("idImage", id);
+        intent.putExtra("numOds", numOds);
         startActivity(intent);
 
     }

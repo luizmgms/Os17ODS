@@ -19,17 +19,23 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.content.res.ResourcesCompat;
+import androidx.viewpager.widget.ViewPager;
 
-import com.github.chrisbanes.photoview.PhotoView;
 import com.luizmagno.os17ods.R;
+import com.luizmagno.os17ods.adapters.PagerImgOdsAdapter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Random;
+
+import static com.luizmagno.os17ods.utils.Utilities.getIdsOfAttribOds;
+import static com.luizmagno.os17ods.utils.Utilities.getListIdsImagesOds;
 
 public class ViewImageActivity extends AppCompatActivity {
 
@@ -40,10 +46,23 @@ public class ViewImageActivity extends AppCompatActivity {
 
         final Resources resources = getResources();
 
-        final int id = getIntent().getExtras().getInt("idImage");
-        PhotoView imageOds = findViewById(R.id.imagePhotoViewId);
-        imageOds.setImageResource(id);
+        int num_ods = 0;
+        Bundle extras = getIntent().getExtras();
+        if (extras != null ) {
+            num_ods = extras.getInt("numOds");
+        }
 
+        ArrayList<Integer> listIdsImgsOds = getListIdsImagesOds();
+
+        final ViewPager viewPager = findViewById(R.id.viewPagerImgOdsId);
+
+        final PagerImgOdsAdapter pagerImgOdsAdapter = new PagerImgOdsAdapter(
+                getSupportFragmentManager(), 0, listIdsImgsOds);
+
+        viewPager.setAdapter(pagerImgOdsAdapter);
+        viewPager.setCurrentItem(num_ods);
+
+        //BACK
         ImageView btnBack = findViewById(R.id.btnBackId);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,24 +71,28 @@ public class ViewImageActivity extends AppCompatActivity {
             }
         });
 
+        //COMPARTILHAR
         ImageView btnShare = findViewById(R.id.btnShareId);
         btnShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                shareImage(id, resources);
+                int[] id = getIdsOfAttribOds(viewPager.getCurrentItem());
+                shareImage(id[0], resources);
             }
         });
 
+        //SALVAR
         ImageView btnSave = findViewById(R.id.btnSaveId);
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                saveImage();
+                int[] id = getIdsOfAttribOds(viewPager.getCurrentItem());
+                saveImage(viewPager.getCurrentItem());
             }
         });
     }
 
-    private void saveImage() {
+    private void saveImage(int pos) {
 
         // Verifica  o estado da permissão de WRITE_EXTERNAL_STORAGE
         int permissionCheck = ContextCompat
@@ -83,18 +106,8 @@ public class ViewImageActivity extends AppCompatActivity {
                             this, new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE},
                             1);
         } else {
-
-            // Senão vamos compartilhar a imagem
-            PhotoView image = findViewById(R.id.imagePhotoViewId);
-            Bitmap bitmap = ((BitmapDrawable) image.getDrawable()).getBitmap();
-
-            /*MediaStore.Images.Media.insertImage(getContentResolver(), bitmap,
-                    "saveMe", null);*/
-
-            /*Toast.makeText(this, getResources().getString(R.string.save_on_dis),
-                    Toast.LENGTH_SHORT).show();*/
-
-            SaveImage(bitmap);
+            //Se não, vamos salvar a imagem
+            SaveImage(pos, getResources());
         }
     }
 
@@ -114,13 +127,21 @@ public class ViewImageActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(shareIntent, res.getString(R.string.shared_with)));
     }
 
-    private void SaveImage(Bitmap segg) {
+    private void SaveImage(int pos, Resources res) {
+
+        int[] id = getIdsOfAttribOds(pos);
+
+        Bitmap bitmap = ((BitmapDrawable) ResourcesCompat.getDrawable(res, id[0], null))
+                .getBitmap();
+
+        String nameOds = res.getString(id[5]);
+        String descOds = res.getString(id[1]);
 
         OutputStream fOut = null;
         Random generator = new Random();
         int n = 10000;
         n = generator.nextInt(n);
-        String fileName = "Image-"+ n +".png";
+        String fileName = "Image-"+ n +"-ODS"+pos+".png";
         final String appDirectoryName = "imagesOds";
         final File imageRoot = new File(Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PICTURES), appDirectoryName);
@@ -133,7 +154,7 @@ public class ViewImageActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        segg.compress(Bitmap.CompressFormat.PNG, 100, fOut);
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, fOut);
         try {
             Toast.makeText(ViewImageActivity.this,
                     file.getAbsolutePath(),
@@ -145,12 +166,14 @@ public class ViewImageActivity extends AppCompatActivity {
         }
 
         ContentValues values = new ContentValues();
-        values.put(MediaStore.Images.Media.TITLE, "imageOds");
-        values.put(MediaStore.Images.Media.DESCRIPTION, "image description");
+        values.put(MediaStore.Images.Media.TITLE, nameOds);
+        values.put(MediaStore.Images.Media.DESCRIPTION, descOds);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             values.put(MediaStore.Images.Media.DATE_TAKEN, System.currentTimeMillis());
-            values.put(MediaStore.Images.ImageColumns.BUCKET_ID, file.toString().toLowerCase(Locale.getDefault()).hashCode());
-            values.put(MediaStore.Images.ImageColumns.BUCKET_DISPLAY_NAME, file.getName().toLowerCase(Locale.getDefault()));
+            values.put(MediaStore.Images.ImageColumns.BUCKET_ID, file.toString()
+                    .toLowerCase(Locale.getDefault()).hashCode());
+            values.put(MediaStore.Images.ImageColumns.BUCKET_DISPLAY_NAME, file.getName()
+                    .toLowerCase(Locale.getDefault()));
         }
         values.put("_data", file.getAbsolutePath());
         Toast.makeText(ViewImageActivity.this,

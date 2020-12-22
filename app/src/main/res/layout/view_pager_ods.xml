@@ -18,7 +18,6 @@
         android:layout_height="wrap_content"
         app:fabCustomSize="40dp"
         app:borderWidth="0dp"
-        android:backgroundTint="@color/colorPrimary"
         android:contentDescription="@string/action_copy"
         android:src="@drawable/ic_copy"
         android:layout_margin="16dp"
