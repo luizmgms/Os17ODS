@@ -86,7 +86,6 @@ public class ViewImageActivity extends AppCompatActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int[] id = getIdsOfAttribOds(viewPager.getCurrentItem());
                 saveImage(viewPager.getCurrentItem());
             }
         });
@@ -107,7 +106,7 @@ public class ViewImageActivity extends AppCompatActivity {
                             1);
         } else {
             //Se não, vamos salvar a imagem
-            SaveImage(pos, getResources());
+            toSaveImage(pos, getResources());
         }
     }
 
@@ -127,7 +126,7 @@ public class ViewImageActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(shareIntent, res.getString(R.string.shared_with)));
     }
 
-    private void SaveImage(int pos, Resources res) {
+    private void toSaveImage(int pos, Resources res) {
 
         int[] id = getIdsOfAttribOds(pos);
 
@@ -141,21 +140,21 @@ public class ViewImageActivity extends AppCompatActivity {
         Random generator = new Random();
         int n = 10000;
         n = generator.nextInt(n);
-        String fileName = "Image-"+ n +"-ODS"+pos+".png";
+        String fileName = "Image-" + n + "-ODS" + pos + ".png";
         final String appDirectoryName = "imagesOds";
         final File imageRoot = new File(Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PICTURES), appDirectoryName);
 
         imageRoot.mkdirs();
+
         final File file = new File(imageRoot, fileName);
         try {
             fOut = new FileOutputStream(file);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, fOut);
         try {
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, fOut);
             Toast.makeText(ViewImageActivity.this,
                     file.getAbsolutePath(),
                     Toast.LENGTH_LONG).show();
@@ -182,6 +181,8 @@ public class ViewImageActivity extends AppCompatActivity {
         ContentResolver cr = getContentResolver();
         cr.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
         Toast.makeText(ViewImageActivity.this,
-                getResources().getString(R.string.save_on_dis), Toast.LENGTH_LONG).show();
+                    getResources().getString(R.string.save_on_dis), Toast.LENGTH_LONG).show();
+
+
     }
 }
